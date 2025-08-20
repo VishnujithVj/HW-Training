@@ -1,0 +1,15 @@
+
+- Revisied Python basics topics (Indentation, Data types, Basic operations, If-else, Loops).
+- Practiced OOP concepts - Classes & Objects, Polymorphism, Inheritance, Abstraction, Encapsulation, Lambda.
+- Python practice and exercises.
+- Mentor meeting - discussed today's topics and tomorrow's MongoDB plan.
+- Updated training log and early-out
+
+Tomorrow Plan:
+- Install MongoDB
+- Install Mongo Shell
+- Get familiar with Mongo Shell
+- Basic MongoDB operations (Insert, Delete, Update, Bulk Insert, Export, Import, Dump, Restore)
+- Sharding, Clustering, Nodes (basic notes)
+- Indexing
+- ObjectID & Timestamp generation
