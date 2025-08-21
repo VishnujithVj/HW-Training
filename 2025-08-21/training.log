@@ -1,0 +1,10 @@
+- implemented Python basics (Indentation, Data types, Basic operations, If-else, Loops, type checking).
+- Meeting about coding tasks (Student Report Generator & Grocery Store Data Organizer).
+- Checked Ubuntu system and installed required tools & resources.
+- Implemented Task A (Student Report Generator) and Task B (Grocery Store Data Organizer). 
+  Tested and reviewed code.
+- Updated training log and pushed today's progress & code to GitHub.
+
+Tasks Completed:
+- Student Report Generator: Worked with multiple data types, calculations, loops, if-else, sets, tuples, None, boolean. Generated student report.
+- Grocery Store Data Organizer: Used dict, list, set, tuple, None, boolean. Checked inventory, Add userinputs, calculated bill, applied discount logic.
