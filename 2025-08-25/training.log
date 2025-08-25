@@ -1,0 +1,23 @@
+## Overview :
+
+A full day dedicated to hands-on web scraping using the Web Scraper extension. 
+Successfully completed data extraction tasks from four different e-commerce websites.
+
+## Tasks Completed :
+
+Croma - iPhones
+Extracted product details including name, model, price, and product URL.
+
+H&M - Men's Shirts
+craped the product catalog to collect data on shirt names, prices, and links.
+
+Flipkart - Smartwatches
+Harvested listings for smartwatches, capturing brand, model, price, and customer ratings.
+
+99bookstores - Kids books
+craped book data, including titles, authors, prices, and availability status.
+
+Successfully extracted structured data from diverse and complex e-commerce pages.
+Output data into usable formats (likely CSV/JSON) for further analysis.
+
+ 
