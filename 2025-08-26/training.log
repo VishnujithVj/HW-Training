@@ -1,0 +1,22 @@
+Overview:
+Today's focus shifted towards understanding company workflows, reinforcing foundational skills, and applying manual QA testing methodologies to real estate data.
+
+
+Skill Development:
+- Deepened understanding of advanced features and use cases for webscraper.io.
+- Practiced and reviewed essential Linux commands for file navigation and management.
+
+Meeting:
+- Attended a general meeting on company operational workflows and processes.
+- Held a dedicated meeting with Revathy to discuss the specific workflows and responsibilities of the QA team.
+
+QA Testing Task:
+- Task: Performed manual quality assurance testing on a set of JSON data files.
+- Files Tested:
+  - evrealestate_2025_09_05.json
+  - century21_us_2025_09_05.json
+  - compass_2025_09_05.json
+  - ewm_2025_09_05.json 
+  
+Outcome: Successfully completed the testing and submitted the QA report.
+ 
