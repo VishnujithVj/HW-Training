@@ -1,0 +1,22 @@
+Overview:
+
+- Focused on executing assigned QA testing tasks for both JSON and CSV data formats, improve efficiency in handling and validating structured data.
+- Learned Regular Expressions (Regex) to locate and extract specific text patterns within files, a key skill for data validation.
+- Explored the Rainbow CSV VS Code package for structured formatting and column highlighting, improving accuracy in reviewing CSV files.
+- Utilized the Pretty JSON package to format and view JSON files, significantly enhancing readability and ease of analysis.
+
+Meetings:
+
+Attended a task assignment meeting where new QA responsibilities for supplier CSV files were delegated.
+
+QA Testing Tasks:
+
+task: Performed manual quality assurance testing on a set of CSV data files.
+
+Files Tested:
+- autoteiledirekt-2025_04_15.csv
+- mister_auto_2025_04_15.csv
+- autodoc_2025_04_15.csv
+- autoonderdelen24_2025_04_15.csv
+
+Outcome: Successfully completed testing for all four files.
