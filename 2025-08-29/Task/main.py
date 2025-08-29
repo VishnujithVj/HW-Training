@@ -1,53 +1,49 @@
 import requests
 from bs4 import BeautifulSoup
-
-class DataMiningError(Exception):
-    """Custom exception for data mining errors."""
-    def __init__(self, message, url=None):
-        super().__init__(message)
-        self.message = message
-        self.url = url
-
-    def __str__(self):
-        if self.url:
-            return f"{self.message} (URL: {self.url})"
-        return self.message
+from settings import (
+    BASE_URL, RAW_HTML_FILE, LINKS_FILE, CLEANED_DATA_FILE,
+    logger, DataMiningError, save_to_file, yield_lines_from_file
+)
 
 class siteBikewaleParser:
     def __init__(self):
-        self.base_url = "https://www.bikewale.com/new-bike-search/best-bikes-under-2-lakh/"
+        self.base_url = BASE_URL
         self.session = requests.Session()
         self.results = []
 
     def fetch_html(self, url, save_raw=False):
         try:
+            logger.info(f"Fetching HTML from {url}")
             r = self.session.get(url, timeout=10)
             r.raise_for_status()
             if save_raw:
-                with open("raw.html", "w", encoding="utf-8") as f:
+                with open(RAW_HTML_FILE, "w", encoding="utf-8") as f:
                     f.write(r.text)
+                logger.info(f"Saved raw HTML to {RAW_HTML_FILE}")
             return r.text
         except requests.ConnectionError as e:
-            print(f"Connection error while fetching {url}: {e}")
+            logger.error(f"Connection error while fetching {url}: {e}")
             return None
         except requests.HTTPError as e:
-            print(f"HTTP error while fetching {url}: {e}")
+            logger.error(f"HTTP error while fetching {url}: {e}")
             return None
         except requests.RequestException as e:
-            print(f"Request exception while fetching {url}: {e}")
+            logger.error(f"Request exception while fetching {url}: {e}")
             return None
 
     def parse_data(self, html):
         try:
+            logger.info("Parsing bike links from HTML")
             soup = BeautifulSoup(html, "html.parser")
             links = []
             for a in soup.select("div.o-f7.o-o > a"):
                 href = a.get("href")
                 if not href:
                     continue
-                links.append("https://www.bikewale.com" + href)
+                links.append(f"https://www.bikewale.com{href}")
             if not links:
                 raise DataMiningError("No bike links found in the HTML.")
+            logger.info(f"Found {len(links)} bike links")
             return links
         except Exception as e:
             raise DataMiningError(f"Failed to parse data: {e}")
@@ -57,11 +53,13 @@ class siteBikewaleParser:
         if not html:
             return None
         try:
+            logger.info(f"Parsing item from {url}")
             soup = BeautifulSoup(html, "html.parser")
             title = soup.select_one("h1.o-j6.o-jm.o-jJ")
             price = soup.select_one("span.o-j5.o-jl.o-js")
             if not title or not price:
                 raise DataMiningError("Missing title or price", url=url)
+            logger.info(f"Parsed item: {title.get_text(strip=True)} - {price.get_text(strip=True)}")
             return {
                 "url": url,
                 "title": title.get_text(strip=True),
@@ -70,43 +68,37 @@ class siteBikewaleParser:
         except Exception as e:
             raise DataMiningError(f"Failed to parse item: {e}", url=url)
 
-    def save_links_to_file(self, links, filename="links.txt"):
+    def save_links_to_file(self, links, filename=LINKS_FILE):
         with open(filename, "w", encoding="utf-8") as f:
             for link in links:
-                f.write(link + "\n")
-
-    def yield_lines_from_file(self, filename):
-        """Generator that yields lines from a file one by one."""
-        with open(filename, "r", encoding="utf-8") as f:
-            for line in f:
-                yield line.strip()
-
-    def save_to_file(self, filename="cleaned_data.txt"):
-        with open(filename, "w", encoding="utf-8") as f:
-            for item in self.results:
-                f.write(str(item) + "\n")
+                f.write(f"{link}\n")
+        logger.info(f"Saved {len(links)} links to {filename}")
 
     def start(self):
+        logger.info("Starting Bikewale parser")
         html = self.fetch_html(self.base_url, save_raw=True)
         if not html:
+            logger.info("No HTML fetched, exiting.")
             return
         try:
             bike_urls = self.parse_data(html)
         except DataMiningError as e:
-            print(e)
+            logger.error(str(e))
             return
-        self.save_links_to_file(bike_urls, "links.txt")
-        for url in self.yield_lines_from_file("links.txt"):
+        self.save_links_to_file(bike_urls, LINKS_FILE)
+        for url in yield_lines_from_file(LINKS_FILE):
             try:
                 item = self.parse_item(url)
                 if item:
                     self.results.append(item)
             except DataMiningError as e:
-                print(e)
-        self.save_to_file()
+                logger.error(str(e))
+        save_to_file(CLEANED_DATA_FILE, self.results)
+        logger.info(f"Saved cleaned data to {CLEANED_DATA_FILE}")
 
     def close(self):
         self.session.close()
+        logger.info("Closed session")
 
 
 if __name__ == "__main__":
