@@ -39,6 +39,17 @@ class siteBikewaleParser:
             "price": price.get_text(strip=True).replace("₹", "") if price else None
         }
 
+    def save_links_to_file(self, links, filename="links.txt"):
+        with open(filename, "w", encoding="utf-8") as f:
+            for link in links:
+                f.write(link + "\n")
+
+    def yield_lines_from_file(self, filename):
+        """Generator that yields lines from a file one by one."""
+        with open(filename, "r", encoding="utf-8") as f:
+            for line in f:
+                yield line.strip()
+
     def save_to_file(self, filename="cleaned_data.txt"):
         with open(filename, "w", encoding="utf-8") as f:
             for item in self.results:
@@ -49,7 +60,8 @@ class siteBikewaleParser:
         if not html:
             return
         bike_urls = self.parse_data(html)
-        for url in bike_urls:
+        self.save_links_to_file(bike_urls, "links.txt")
+        for url in self.yield_lines_from_file("links.txt"):
             item = self.parse_item(url)
             if item:
                 self.results.append(item)
