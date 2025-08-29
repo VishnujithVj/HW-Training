@@ -1,0 +1,196 @@
+2025-08-29 17:39:20,602 [INFO] Starting Bikewale parser
+2025-08-29 17:39:20,602 [INFO] Fetching HTML from https://www.bikewale.com/new-bike-search/best-bikes-under-2-lakh/
+2025-08-29 17:39:21,499 [INFO] Saved raw HTML to raw.html
+2025-08-29 17:39:21,501 [INFO] Parsing bike links from HTML
+2025-08-29 17:39:21,635 [INFO] Found 30 bike links
+2025-08-29 17:39:21,635 [INFO] Saved 30 links to links.txt
+2025-08-29 17:39:21,635 [INFO] Fetching HTML from https://www.bikewale.com/ktm-bikes/160-duke/
+2025-08-29 17:39:21,901 [INFO] Parsing item from https://www.bikewale.com/ktm-bikes/160-duke/
+2025-08-29 17:39:22,008 [INFO] Parsed item: KTM 160 Duke - ₹ 1,85,195
+2025-08-29 17:39:22,009 [INFO] Fetching HTML from https://www.bikewale.com/royalenfield-bikes/hunter-350/
+2025-08-29 17:39:23,066 [INFO] Parsing item from https://www.bikewale.com/royalenfield-bikes/hunter-350/
+2025-08-29 17:39:23,288 [INFO] Parsed item: Royal Enfield Hunter 350 - ₹ 1,49,900
+2025-08-29 17:39:23,288 [INFO] Fetching HTML from https://www.bikewale.com/royalenfield-bikes/classic-350/
+2025-08-29 17:39:23,627 [INFO] Parsing item from https://www.bikewale.com/royalenfield-bikes/classic-350/
+2025-08-29 17:39:23,777 [INFO] Parsed item: Royal Enfield Classic 350 - ₹ 1,97,253
+2025-08-29 17:39:23,777 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/cb-125-hornet/
+2025-08-29 17:39:23,984 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/cb-125-hornet/
+2025-08-29 17:39:24,124 [INFO] Parsed item: Honda CB 125 Hornet - ₹ 1,12,000
+2025-08-29 17:39:24,124 [INFO] Fetching HTML from https://www.bikewale.com/yamaha-bikes/mt-15/
+2025-08-29 17:39:24,415 [INFO] Parsing item from https://www.bikewale.com/yamaha-bikes/mt-15/
+2025-08-29 17:39:24,637 [INFO] Parsed item: Yamaha MT 15 V2 - ₹ 1,70,583
+2025-08-29 17:39:24,637 [INFO] Fetching HTML from https://www.bikewale.com/royalenfield-bikes/bullet/
+2025-08-29 17:39:24,864 [INFO] Parsing item from https://www.bikewale.com/royalenfield-bikes/bullet/
+2025-08-29 17:39:25,017 [INFO] Parsed item: Royal Enfield Bullet 350 - ₹ 1,76,625
+2025-08-29 17:39:25,017 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/glamour-x-125/
+2025-08-29 17:39:25,276 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/glamour-x-125/
+2025-08-29 17:39:25,404 [INFO] Parsed item: Hero Glamour X 125 - ₹ 90,000
+2025-08-29 17:39:25,404 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/sp-125/
+2025-08-29 17:39:25,706 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/sp-125/
+2025-08-29 17:39:25,939 [INFO] Parsed item: Honda SP 125 - ₹ 94,221
+2025-08-29 17:39:25,939 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/xtreme-125r/
+2025-08-29 17:39:26,788 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/xtreme-125r/
+2025-08-29 17:39:26,968 [INFO] Parsed item: Hero Xtreme 125R - ₹ 99,123
+2025-08-29 17:39:26,968 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/apache-160/
+2025-08-29 17:39:27,213 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/apache-160/
+2025-08-29 17:39:27,384 [INFO] Parsed item: TVS Apache RTR 160 - ₹ 1,18,142
+2025-08-29 17:39:27,384 [INFO] Fetching HTML from https://www.bikewale.com/yamaha-bikes/r15/
+2025-08-29 17:39:27,680 [INFO] Parsing item from https://www.bikewale.com/yamaha-bikes/r15/
+2025-08-29 17:39:27,943 [INFO] Parsed item: Yamaha R15 V4 - ₹ 1,85,644
+2025-08-29 17:39:27,943 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-n160/
+2025-08-29 17:39:28,463 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-n160/
+2025-08-29 17:39:28,608 [INFO] Parsed item: Bajaj Pulsar N160 - ₹ 1,23,291
+2025-08-29 17:39:28,608 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/orbiter/
+2025-08-29 17:39:28,887 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/orbiter/
+2025-08-29 17:39:28,988 [INFO] Parsed item: TVS Orbiter - ₹ 99,900
+2025-08-29 17:39:28,988 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns/
+2025-08-29 17:39:29,411 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns/
+2025-08-29 17:39:29,541 [INFO] Parsed item: Bajaj Pulsar NS200 - ₹ 1,52,895
+2025-08-29 17:39:29,541 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/raider-125/
+2025-08-29 17:39:29,894 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/raider-125/
+2025-08-29 17:39:30,149 [INFO] Parsed item: TVS Raider 125 - ₹ 90,094
+2025-08-29 17:39:30,149 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/splendor-plus/
+2025-08-29 17:39:30,480 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/splendor-plus/
+2025-08-29 17:39:30,647 [INFO] Parsed item: Hero Splendor Plus - ₹ 79,121
+2025-08-29 17:39:30,647 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/ronin/
+2025-08-29 17:39:30,999 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/ronin/
+2025-08-29 17:39:31,167 [INFO] Parsed item: TVS Ronin - ₹ 1,35,551
+2025-08-29 17:39:31,167 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-125/
+2025-08-29 17:39:31,507 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-125/
+2025-08-29 17:39:31,746 [INFO] Parsed item: Bajaj Pulsar 125 - ₹ 86,756
+2025-08-29 17:39:31,747 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns125/
+2025-08-29 17:39:32,132 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns125/
+2025-08-29 17:39:32,298 [INFO] Parsed item: Bajaj Pulsar NS125 - ₹ 1,00,029
+2025-08-29 17:39:32,298 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns400/
+2025-08-29 17:39:32,586 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns400/
+2025-08-29 17:39:32,743 [INFO] Parsed item: Bajaj Pulsar NS400Z - ₹ 1,92,935
+2025-08-29 17:39:32,743 [INFO] Fetching HTML from https://www.bikewale.com/suzuki-bikes/access-125/
+2025-08-29 17:39:32,978 [INFO] Parsing item from https://www.bikewale.com/suzuki-bikes/access-125/
+2025-08-29 17:39:33,232 [INFO] Parsed item: Suzuki Access 125 - ₹ 86,792
+2025-08-29 17:39:33,233 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/jupiter/
+2025-08-29 17:39:33,600 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/jupiter/
+2025-08-29 17:39:33,756 [INFO] Parsed item: TVS Jupiter - ₹ 81,853
+2025-08-29 17:39:33,756 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/activa-6g/
+2025-08-29 17:39:34,304 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/activa-6g/
+2025-08-29 17:39:34,464 [INFO] Parsed item: Honda Activa - ₹ 83,873
+2025-08-29 17:39:34,465 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/shine/
+2025-08-29 17:39:34,810 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/shine/
+2025-08-29 17:39:34,986 [INFO] Parsed item: Honda Shine - ₹ 86,592
+2025-08-29 17:39:34,986 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns-160/
+2025-08-29 17:39:35,430 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns-160/
+2025-08-29 17:39:35,698 [INFO] Parsed item: Bajaj Pulsar NS160 - ₹ 1,39,841
+2025-08-29 17:39:35,699 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/apache-rtr-160-4v/
+2025-08-29 17:39:36,002 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/apache-rtr-160-4v/
+2025-08-29 17:39:36,166 [INFO] Parsed item: TVS Apache RTR 160 4V - ₹ 1,23,670
+2025-08-29 17:39:36,166 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-150/
+2025-08-29 17:39:36,496 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-150/
+2025-08-29 17:39:36,657 [INFO] Parsed item: Bajaj Pulsar 150 - ₹ 1,17,224
+2025-08-29 17:39:36,657 [INFO] Fetching HTML from https://www.bikewale.com/ather-bikes/rizta/
+2025-08-29 17:39:37,390 [INFO] Parsing item from https://www.bikewale.com/ather-bikes/rizta/
+2025-08-29 17:39:37,645 [INFO] Parsed item: Ather Rizta - ₹ 1,14,746
+2025-08-29 17:39:37,645 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/ntorq-125/
+2025-08-29 17:39:37,974 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/ntorq-125/
+2025-08-29 17:39:38,133 [INFO] Parsed item: TVS Ntorq 125 - ₹ 94,645
+2025-08-29 17:39:38,133 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/hf-deluxe/
+2025-08-29 17:39:38,533 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/hf-deluxe/
+2025-08-29 17:39:38,695 [INFO] Parsed item: Hero HF Deluxe - ₹ 59,417
+2025-08-29 17:39:38,696 [INFO] Saved cleaned data to cleaned_data.txt
+2025-08-29 17:39:38,698 [INFO] Closed session
+2025-08-29 18:13:10,214 [INFO] Starting Bikewale parser
+2025-08-29 18:13:10,214 [INFO] Fetching HTML from https://www.bikewale.com/new-bike-search/best-bikes-under-2-lakh/
+2025-08-29 18:13:10,888 [INFO] Saved raw HTML to raw.html
+2025-08-29 18:13:10,890 [INFO] Parsing bike links from HTML
+2025-08-29 18:13:11,014 [INFO] Found 30 bike links
+2025-08-29 18:13:11,014 [INFO] Saved 30 links to links.txt
+2025-08-29 18:13:11,014 [INFO] Fetching HTML from https://www.bikewale.com/ktm-bikes/160-duke/
+2025-08-29 18:13:11,306 [INFO] Parsing item from https://www.bikewale.com/ktm-bikes/160-duke/
+2025-08-29 18:13:11,423 [INFO] Parsed item: KTM 160 Duke - ₹ 1,85,195
+2025-08-29 18:13:11,423 [INFO] Fetching HTML from https://www.bikewale.com/royalenfield-bikes/hunter-350/
+2025-08-29 18:13:11,803 [INFO] Parsing item from https://www.bikewale.com/royalenfield-bikes/hunter-350/
+2025-08-29 18:13:11,966 [INFO] Parsed item: Royal Enfield Hunter 350 - ₹ 1,49,900
+2025-08-29 18:13:11,966 [INFO] Fetching HTML from https://www.bikewale.com/royalenfield-bikes/classic-350/
+2025-08-29 18:13:12,278 [INFO] Parsing item from https://www.bikewale.com/royalenfield-bikes/classic-350/
+2025-08-29 18:13:12,418 [INFO] Parsed item: Royal Enfield Classic 350 - ₹ 1,97,253
+2025-08-29 18:13:12,418 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/cb-125-hornet/
+2025-08-29 18:13:12,691 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/cb-125-hornet/
+2025-08-29 18:13:12,814 [INFO] Parsed item: Honda CB 125 Hornet - ₹ 1,12,000
+2025-08-29 18:13:12,815 [INFO] Fetching HTML from https://www.bikewale.com/yamaha-bikes/mt-15/
+2025-08-29 18:13:13,183 [INFO] Parsing item from https://www.bikewale.com/yamaha-bikes/mt-15/
+2025-08-29 18:13:13,397 [INFO] Parsed item: Yamaha MT 15 V2 - ₹ 1,70,583
+2025-08-29 18:13:13,398 [INFO] Fetching HTML from https://www.bikewale.com/royalenfield-bikes/bullet/
+2025-08-29 18:13:13,718 [INFO] Parsing item from https://www.bikewale.com/royalenfield-bikes/bullet/
+2025-08-29 18:13:13,873 [INFO] Parsed item: Royal Enfield Bullet 350 - ₹ 1,76,625
+2025-08-29 18:13:13,873 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/glamour-x-125/
+2025-08-29 18:13:14,184 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/glamour-x-125/
+2025-08-29 18:13:14,300 [INFO] Parsed item: Hero Glamour X 125 - ₹ 90,000
+2025-08-29 18:13:14,300 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/sp-125/
+2025-08-29 18:13:14,598 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/sp-125/
+2025-08-29 18:13:14,821 [INFO] Parsed item: Honda SP 125 - ₹ 94,221
+2025-08-29 18:13:14,821 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/xtreme-125r/
+2025-08-29 18:13:15,148 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/xtreme-125r/
+2025-08-29 18:13:15,305 [INFO] Parsed item: Hero Xtreme 125R - ₹ 99,123
+2025-08-29 18:13:15,305 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/apache-160/
+2025-08-29 18:13:15,699 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/apache-160/
+2025-08-29 18:13:15,860 [INFO] Parsed item: TVS Apache RTR 160 - ₹ 1,18,142
+2025-08-29 18:13:15,861 [INFO] Fetching HTML from https://www.bikewale.com/yamaha-bikes/r15/
+2025-08-29 18:13:16,216 [INFO] Parsing item from https://www.bikewale.com/yamaha-bikes/r15/
+2025-08-29 18:13:16,444 [INFO] Parsed item: Yamaha R15 V4 - ₹ 1,85,644
+2025-08-29 18:13:16,445 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-n160/
+2025-08-29 18:13:16,803 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-n160/
+2025-08-29 18:13:16,961 [INFO] Parsed item: Bajaj Pulsar N160 - ₹ 1,23,291
+2025-08-29 18:13:16,962 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/orbiter/
+2025-08-29 18:13:17,282 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/orbiter/
+2025-08-29 18:13:17,377 [INFO] Parsed item: TVS Orbiter - ₹ 99,900
+2025-08-29 18:13:17,378 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns/
+2025-08-29 18:13:17,710 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns/
+2025-08-29 18:13:17,848 [INFO] Parsed item: Bajaj Pulsar NS200 - ₹ 1,52,895
+2025-08-29 18:13:17,848 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/raider-125/
+2025-08-29 18:13:18,208 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/raider-125/
+2025-08-29 18:13:18,449 [INFO] Parsed item: TVS Raider 125 - ₹ 90,094
+2025-08-29 18:13:18,450 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/splendor-plus/
+2025-08-29 18:13:18,795 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/splendor-plus/
+2025-08-29 18:13:18,926 [INFO] Parsed item: Hero Splendor Plus - ₹ 79,121
+2025-08-29 18:13:18,927 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/ronin/
+2025-08-29 18:13:19,311 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/ronin/
+2025-08-29 18:13:19,445 [INFO] Parsed item: TVS Ronin - ₹ 1,35,551
+2025-08-29 18:13:19,445 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-125/
+2025-08-29 18:13:19,725 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-125/
+2025-08-29 18:13:19,941 [INFO] Parsed item: Bajaj Pulsar 125 - ₹ 86,756
+2025-08-29 18:13:19,942 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns125/
+2025-08-29 18:13:20,293 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns125/
+2025-08-29 18:13:20,414 [INFO] Parsed item: Bajaj Pulsar NS125 - ₹ 1,00,029
+2025-08-29 18:13:20,414 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns400/
+2025-08-29 18:13:20,784 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns400/
+2025-08-29 18:13:20,907 [INFO] Parsed item: Bajaj Pulsar NS400Z - ₹ 1,92,935
+2025-08-29 18:13:20,907 [INFO] Fetching HTML from https://www.bikewale.com/suzuki-bikes/access-125/
+2025-08-29 18:13:21,250 [INFO] Parsing item from https://www.bikewale.com/suzuki-bikes/access-125/
+2025-08-29 18:13:21,451 [INFO] Parsed item: Suzuki Access 125 - ₹ 86,792
+2025-08-29 18:13:21,451 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/jupiter/
+2025-08-29 18:13:21,745 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/jupiter/
+2025-08-29 18:13:21,878 [INFO] Parsed item: TVS Jupiter - ₹ 81,853
+2025-08-29 18:13:21,878 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/activa-6g/
+2025-08-29 18:13:22,281 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/activa-6g/
+2025-08-29 18:13:22,430 [INFO] Parsed item: Honda Activa - ₹ 83,873
+2025-08-29 18:13:22,430 [INFO] Fetching HTML from https://www.bikewale.com/honda-bikes/shine/
+2025-08-29 18:13:22,690 [INFO] Parsing item from https://www.bikewale.com/honda-bikes/shine/
+2025-08-29 18:13:22,842 [INFO] Parsed item: Honda Shine - ₹ 86,592
+2025-08-29 18:13:22,842 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-ns-160/
+2025-08-29 18:13:23,239 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-ns-160/
+2025-08-29 18:13:23,454 [INFO] Parsed item: Bajaj Pulsar NS160 - ₹ 1,39,841
+2025-08-29 18:13:23,455 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/apache-rtr-160-4v/
+2025-08-29 18:13:23,828 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/apache-rtr-160-4v/
+2025-08-29 18:13:23,969 [INFO] Parsed item: TVS Apache RTR 160 4V - ₹ 1,23,670
+2025-08-29 18:13:23,969 [INFO] Fetching HTML from https://www.bikewale.com/bajaj-bikes/pulsar-150/
+2025-08-29 18:13:24,359 [INFO] Parsing item from https://www.bikewale.com/bajaj-bikes/pulsar-150/
+2025-08-29 18:13:24,505 [INFO] Parsed item: Bajaj Pulsar 150 - ₹ 1,17,224
+2025-08-29 18:13:24,506 [INFO] Fetching HTML from https://www.bikewale.com/ather-bikes/rizta/
+2025-08-29 18:13:25,043 [INFO] Parsing item from https://www.bikewale.com/ather-bikes/rizta/
+2025-08-29 18:13:25,258 [INFO] Parsed item: Ather Rizta - ₹ 1,14,746
+2025-08-29 18:13:25,258 [INFO] Fetching HTML from https://www.bikewale.com/tvs-bikes/ntorq-125/
+2025-08-29 18:13:25,633 [INFO] Parsing item from https://www.bikewale.com/tvs-bikes/ntorq-125/
+2025-08-29 18:13:25,787 [INFO] Parsed item: TVS Ntorq 125 - ₹ 94,645
+2025-08-29 18:13:25,787 [INFO] Fetching HTML from https://www.bikewale.com/hero-bikes/hf-deluxe/
+2025-08-29 18:13:26,106 [INFO] Parsing item from https://www.bikewale.com/hero-bikes/hf-deluxe/
+2025-08-29 18:13:26,240 [INFO] Parsed item: Hero HF Deluxe - ₹ 59,417
+2025-08-29 18:13:26,240 [INFO] Saved cleaned data to cleaned_data.txt
+2025-08-29 18:13:26,241 [INFO] Closed session

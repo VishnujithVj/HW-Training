@@ -1,0 +1,30 @@
+{'url': 'https://www.bikewale.com/ktm-bikes/160-duke/', 'title': 'KTM 160 Duke', 'price': ' 1,85,195'}
+{'url': 'https://www.bikewale.com/royalenfield-bikes/hunter-350/', 'title': 'Royal Enfield Hunter 350', 'price': ' 1,49,900'}
+{'url': 'https://www.bikewale.com/royalenfield-bikes/classic-350/', 'title': 'Royal Enfield Classic 350', 'price': ' 1,97,253'}
+{'url': 'https://www.bikewale.com/honda-bikes/cb-125-hornet/', 'title': 'Honda CB 125 Hornet', 'price': ' 1,12,000'}
+{'url': 'https://www.bikewale.com/yamaha-bikes/mt-15/', 'title': 'Yamaha MT 15 V2', 'price': ' 1,70,583'}
+{'url': 'https://www.bikewale.com/royalenfield-bikes/bullet/', 'title': 'Royal Enfield Bullet 350', 'price': ' 1,76,625'}
+{'url': 'https://www.bikewale.com/hero-bikes/glamour-x-125/', 'title': 'Hero Glamour X 125', 'price': ' 90,000'}
+{'url': 'https://www.bikewale.com/honda-bikes/sp-125/', 'title': 'Honda SP 125', 'price': ' 94,221'}
+{'url': 'https://www.bikewale.com/hero-bikes/xtreme-125r/', 'title': 'Hero Xtreme 125R', 'price': ' 99,123'}
+{'url': 'https://www.bikewale.com/tvs-bikes/apache-160/', 'title': 'TVS Apache RTR 160', 'price': ' 1,18,142'}
+{'url': 'https://www.bikewale.com/yamaha-bikes/r15/', 'title': 'Yamaha R15 V4', 'price': ' 1,85,644'}
+{'url': 'https://www.bikewale.com/bajaj-bikes/pulsar-n160/', 'title': 'Bajaj Pulsar N160', 'price': ' 1,23,291'}
+{'url': 'https://www.bikewale.com/tvs-bikes/orbiter/', 'title': 'TVS Orbiter', 'price': ' 99,900'}
+{'url': 'https://www.bikewale.com/bajaj-bikes/pulsar-ns/', 'title': 'Bajaj Pulsar NS200', 'price': ' 1,52,895'}
+{'url': 'https://www.bikewale.com/tvs-bikes/raider-125/', 'title': 'TVS Raider 125', 'price': ' 90,094'}
+{'url': 'https://www.bikewale.com/hero-bikes/splendor-plus/', 'title': 'Hero Splendor Plus', 'price': ' 79,121'}
+{'url': 'https://www.bikewale.com/tvs-bikes/ronin/', 'title': 'TVS Ronin', 'price': ' 1,35,551'}
+{'url': 'https://www.bikewale.com/bajaj-bikes/pulsar-125/', 'title': 'Bajaj Pulsar 125', 'price': ' 86,756'}
+{'url': 'https://www.bikewale.com/bajaj-bikes/pulsar-ns125/', 'title': 'Bajaj Pulsar NS125', 'price': ' 1,00,029'}
+{'url': 'https://www.bikewale.com/bajaj-bikes/pulsar-ns400/', 'title': 'Bajaj Pulsar NS400Z', 'price': ' 1,92,935'}
+{'url': 'https://www.bikewale.com/suzuki-bikes/access-125/', 'title': 'Suzuki Access 125', 'price': ' 86,792'}
+{'url': 'https://www.bikewale.com/tvs-bikes/jupiter/', 'title': 'TVS Jupiter', 'price': ' 81,853'}
+{'url': 'https://www.bikewale.com/honda-bikes/activa-6g/', 'title': 'Honda Activa', 'price': ' 83,873'}
+{'url': 'https://www.bikewale.com/honda-bikes/shine/', 'title': 'Honda Shine', 'price': ' 86,592'}
+{'url': 'https://www.bikewale.com/bajaj-bikes/pulsar-ns-160/', 'title': 'Bajaj Pulsar NS160', 'price': ' 1,39,841'}
+{'url': 'https://www.bikewale.com/tvs-bikes/apache-rtr-160-4v/', 'title': 'TVS Apache RTR 160 4V', 'price': ' 1,23,670'}
+{'url': 'https://www.bikewale.com/bajaj-bikes/pulsar-150/', 'title': 'Bajaj Pulsar 150', 'price': ' 1,17,224'}
+{'url': 'https://www.bikewale.com/ather-bikes/rizta/', 'title': 'Ather Rizta', 'price': ' 1,14,746'}
+{'url': 'https://www.bikewale.com/tvs-bikes/ntorq-125/', 'title': 'TVS Ntorq 125', 'price': ' 94,645'}
+{'url': 'https://www.bikewale.com/hero-bikes/hf-deluxe/', 'title': 'Hero HF Deluxe', 'price': ' 59,417'}

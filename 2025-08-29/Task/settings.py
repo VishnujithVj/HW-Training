@@ -17,7 +17,13 @@ logger = logging.getLogger(__name__)
 
 # Exceptions
 class DataMiningError(Exception):
-    """Custom exception for data mining errors."""
+    """
+    Custom exception for data mining errors.
+
+    Args:
+        message (str): Description of the error.
+        url (str, optional): URL related to the error, if applicable.
+    """
     def __init__(self, message, url=None):
         super().__init__(message)
         self.message = message
