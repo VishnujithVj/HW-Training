@@ -7,10 +7,13 @@ class siteBikewaleParser:
         self.session = requests.Session()
         self.results = []
 
-    def fetch_html(self, url):
+    def fetch_html(self, url, save_raw=False):
         try:
             r = self.session.get(url, timeout=10)
             r.raise_for_status()
+            if save_raw:
+                with open("raw.html", "w", encoding="utf-8") as f:
+                    f.write(r.text)
             return r.text
         except requests.RequestException as e:
             print(f"Failed to fetch {url}: {e}")
@@ -36,13 +39,13 @@ class siteBikewaleParser:
             "price": price.get_text(strip=True).replace("₹", "") if price else None
         }
 
-    def save_to_file(self, filename="bikes_data.txt"):
+    def save_to_file(self, filename="cleaned_data.txt"):
         with open(filename, "w", encoding="utf-8") as f:
             for item in self.results:
                 f.write(str(item) + "\n")
 
     def start(self):
-        html = self.fetch_html(self.base_url)
+        html = self.fetch_html(self.base_url, save_raw=True)
         if not html:
             return
         bike_urls = self.parse_data(html)
