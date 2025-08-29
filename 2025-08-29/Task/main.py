@@ -105,3 +105,20 @@ if __name__ == "__main__":
     p = siteBikewaleParser()
     p.start()
     p.close()
+
+    # New example list of dictionaries
+    items = [
+        {"title": "Bike Alpha", "price": 120000},
+        {"title": "Bike Beta", "price": None},
+        {"title": "Bike Gamma", "price": 95000},
+        {"title": "Bike Delta", "price": None},
+        {"title": "Bike Epsilon", "price": 110000}
+    ]
+
+    # 1. Extract only product titles from the list of dictionaries
+    titles = [item["title"] for item in items]
+    print(f"Titles: {titles}")
+
+    # 2. Filter out entries with null prices
+    items_with_price = [item for item in items if item.get("price") is not None]
+    print(f"Items with price: {items_with_price}")
