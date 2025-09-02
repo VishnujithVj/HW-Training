@@ -1,0 +1,32 @@
+Overview:
+Today's focus was on XPath for web data extraction, including syntax, functions, and practical application. The session included a comprehensive review of previous web concepts and hands-on task execution.
+Refreshing previous topics: Reviewed cookies, user-agents, APIs, and sitemaps.
+
+Daily Meeting: 
+Discussed new tasks and learning topics focused on XPath.
+
+Learning Topics:
+
+- XPath syntax and structure.
+- XPath functions: contains(), starts-with(), last(), position(), count(), etc.
+- XPath conditions and operators.
+
+
+New Task Assigned:
+
+Inspect a target website: https://www.flipkart.com/mens-footwear/sports-shoes/pr?sid=osp,cil,1cu&otracker=categorytree
+- Data loading AJAX URL.
+- Request Headers.
+- Response Headers.
+- Response Cookies.
+- Request method type (GET/POST).
+- Response status code.
+- Category name using inspection tools.
+
+
+Hands-On Task: https://www2.hm.com/en_in/productpage.1306054001.html
+
+- Applied XPath to extract basic fields (e.g., titles, prices, colors) from a given website.
+- Validated XPaths using browser developer tools (e.g., Chrome DevTools).
+
+Task status: partially completed.
