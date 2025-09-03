@@ -23,10 +23,82 @@ Inspect a target website: https://www.flipkart.com/mens-footwear/sports-shoes/pr
 - Response status code.
 - Category name using inspection tools.
 
+Work updates:
+
+Task - Browser analysis
+-----------------------
+1. Data loading ajax URL
+https://2.rome.api.flipkart.com/api/4/product/swatch
+
+2. Request Headers
+
+Accept: */*
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+Connection: keep-alive
+Content-Length: 226
+Content-Type: application/json
+Cookie: T=TI174737221248500014396007685138592732841554750981986539431719302765; vh=966; dpr=1; ULSN=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb29raWUiLCJhdWQiOiJmbGlwa2FydCIsImlzcyI6ImF1dGguZmxpcGthcnQuY29tIiwiY2xhaW1zIjp7ImdlbiI6IjEiLCJ1bmlxdWVJZCI6IlVVSTI1MDYwMjEyMzMxMDEzMjQyRU85SUciLCJma0RldiI6bnVsbH0sImV4cCI6MTc2NDYyNzc5MCwiaWF0IjoxNzQ4ODQ3NzkwLCJqdGkiOiJiMGMxNjdkNC00YzIxLTRkNjQtODNmZi0yMDMzZjI4NmYyNzkifQ.85SA_r7Hb0zg-pfooY6kK8ZuC20Bd2fy00rGKL1llsg; ud=8.6uH41AnRCPNLlFt7n-PoRhTd8N2dPG8wYJZtL5RziDULLaudJbOGXwRL42ftRd5d2fX_4aghMWSTDK0onHEfLwwhCCRXdimt3cgbUFOK5nMDUlUAO2JFARRQxGK3Pv4iYRt7rgNwF0SVjJHeiFRBw11P3Vtu-WAnzgCp4CMnQhvQIVM2PvVfKXy7Ur9b0OEjCoEBEW38Me5zHi2aY70RJn-_tKwnw05omlsdXHlIQdimK9_G-TxVFT-6zvM9mDcwmqYj4wzyWFC5RZpbaA6S9o95RY15SpnSJ7m_1xd1S8_cIRFgY6C5AgbtyUHIxseU3l1fmVBS7-nOacWlxpukb2ihsRsR5n_ASbdMwIIS6gu_aQjdjhiCxWRCwfYjobVxCV0Tfk-N22B8-iiEhH5gbzWP0Ov3etKe2glVKxvyh6-m6LUlZE1GNjlQqzsM0go7tL1D8YTfMSzFejwgrjR2jJ9HeAAlXN5-19S3-1GylICKafEk-Va28VSWSfdx4zcAddLQtTZSc79A8QTtxAHyjLspT-TwTBmum6HUpBbgeTZq97ilj8BHnglCUneKbzsxnW3Ink6-N5BfD0vbFXU3kLfbPpCNkZbH4CXCTYJMxgGdK-wseHbqFVQtPC8vhHUJK1izyd9JazN_zkq8KnfN2GfnEard1zCLE_gGmbED9s80YUKG9wjO0KrHPwae5te1dYKVUezxOQX4gMOkBHLzbcZb_Kpc1q6qxQ_8eHAcS9OZsGE0WxFXdatE8K4C1FmRa2LV5eIyG3nWPABtjZ0Qz8ujusKhR9cEuvpPECVy4oM40BgtGf2v0qGxFCWUZOWXQqemamzIAObo4qbBdmzqaw; _gcl_au=1.1.1179349019.1755861691; K-ACTION=null; vw=748; at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjhlM2ZhMGE3LTJmZDMtNGNiMi05MWRjLTZlNTMxOGU1YTkxZiJ9.eyJleHAiOjE3NTY3ODk2NzIsImlhdCI6MTc1Njc4Nzg3MiwiaXNzIjoia2V2bGFyIiwianRpIjoiZjAxZTU2ZGYtOWE3OS00ZmM2LWIwYmUtMGNhY2JjNjBlNDczIiwidHlwZSI6IkFUIiwiZElkIjoiVEkxNzQ3MzcyMjEyNDg1MDAwMTQzOTYwMDc2ODUxMzg1OTI3MzI4NDE1NTQ3NTA5ODE5ODY1Mzk0MzE3MTkzMDI3NjUiLCJiSWQiOiI3M0tHVloiLCJrZXZJZCI6IlZJNjI3RjgzNEQ4QURBNEQyRDk1REI0MDcxODZBQkVFMUYiLCJ0SWQiOiJtYXBpIiwiZWFJZCI6InpUenFFcmJUVjU1a0x0d2JCUURYSUMzbnMwYVczZ2djc1E0eGRpMldNT3YySUxZTzJvZG1zZz09IiwidnMiOiJMSSIsInoiOiJIWUQiLCJtIjp0cnVlLCJnZW4iOjR9.-mNTdafJyJzwp0QTlEfzxrDzSi8-XkOXeIy9kAXzaYQ; rt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjNhNzdlZTgxLTRjNWYtNGU5Ni04ZmRlLWM3YWMyYjVlOTA1NSJ9.eyJleHAiOjE3NzI0MjYyNzIsImlhdCI6MTc1Njc4Nzg3MiwiaXNzIjoia2V2bGFyIiwianRpIjoiZDAwOGJkMzktMDBhMy00YjhiLWIwNmMtZmY4ZmNmYWJmZDBhIiwidHlwZSI6IlJUIiwiZElkIjoiVEkxNzQ3MzcyMjEyNDg1MDAwMTQzOTYwMDc2ODUxMzg1OTI3MzI4NDE1NTQ3NTA5ODE5ODY1Mzk0MzE3MTkzMDI3NjUiLCJiSWQiOiI3M0tHVloiLCJrZXZJZCI6IlZJNjI3RjgzNEQ4QURBNEQyRDk1REI0MDcxODZBQkVFMUYiLCJ0SWQiOiJtYXBpIiwibSI6eyJ0eXBlIjoibiJ9LCJ2IjoiVkFLMUxDIn0.JVpTjLwAC4_CROBvYN_gfX-yr1bAXUYFTapgGZE-w_I; AMCVS_17EB401053DAF4840A490D4C%40AdobeOrg=1; AMCV_17EB401053DAF4840A490D4C%40AdobeOrg=-227196251%7CMCIDTS%7C20334%7CMCMID%7C80962301980950912250214220559357739434%7CMCAAMLH-1757392675%7C12%7CMCAAMB-1757392675%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1756795075s%7CNONE%7CMCAID%7CNONE; vd=VI627F834D8ADA4D2D95DB407186ABEE1F-1747372217006-13.1756788825.1756787872.160098280; S=d1t17P0gVPyNnPz95Gz8wPx8/WmKJkp1jsbpvhmDAHuQl7ZegjGadTljZSFJ2r/TrRmWkloD6/R/Sl+AxMQlNW6F25g==; SN=VI627F834D8ADA4D2D95DB407186ABEE1F.TOK721E7EBA1BEA4908A3D559CFA2814D79.1756788859893.LI; s_sq=flipkart-prd%3D%2526pid%253Dwww.flipkart.com%25253Amens-footwear%25253Asports-shoes%25253Apr%2526pidt%253D1%2526oid%253DfunctionJr%252528%252529%25257B%25257D%2526oidt%253D2%2526ot%253DDIV
+Host: 2.rome.api.flipkart.com
+Origin: https://www.flipkart.com
+Referer: https://www.flipkart.com/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-site
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+X-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 FKUA/website/42/website/Desktop
+sec-ch-ua: "Google Chrome";v="137", "Chromium";v="137", "Not/A)Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+
+3. Response Headers
+
+content-type: application/json;charset=utf-8
+transfer-encoding: chunked
+access-control-allow-origin: https://www.flipkart.com
+access-control-expose-headers: X-BOT
+access-control-allow-methods: POST, GET, OPTIONS, DELETE, PUT
+access-control-allow-headers: X-ACK-RESPONSE,X-PARTNER-CONTEXT
+access-control-max-age: 2592000
+access-control-allow-credentials: true
+x-gcp-route-enabled: false
+x-request-id: 10bdf491-fc42-49cf-b2ed-5b878d35da16
+pragma: no-cache
+x-payload-length: 125251
+cache-control: private
+x-content-language: en
+Set-Cookie: at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjhlM2ZhMGE3LTJmZDMtNGNiMi05MWRjLTZlNTMxOGU1YTkxZiJ9.eyJleHAiOjE3NTY3ODk2NzIsImlhdCI6MTc1Njc4Nzg3MiwiaXNzIjoia2V2bGFyIiwianRpIjoiZjAxZTU2ZGYtOWE3OS00ZmM2LWIwYmUtMGNhY2JjNjBlNDczIiwidHlwZSI6IkFUIiwiZElkIjoiVEkxNzQ3MzcyMjEyNDg1MDAwMTQzOTYwMDc2ODUxMzg1OTI3MzI4NDE1NTQ3NTA5ODE5ODY1Mzk0MzE3MTkzMDI3NjUiLCJiSWQiOiI3M0tHVloiLCJrZXZJZCI6IlZJNjI3RjgzNEQ4QURBNEQyRDk1REI0MDcxODZBQkVFMUYiLCJ0SWQiOiJtYXBpIiwiZWFJZCI6InpUenFFcmJUVjU1a0x0d2JCUURYSUMzbnMwYVczZ2djc1E0eGRpMldNT3YySUxZTzJvZG1zZz09IiwidnMiOiJMSSIsInoiOiJIWUQiLCJtIjp0cnVlLCJnZW4iOjR9.-mNTdafJyJzwp0QTlEfzxrDzSi8-XkOXeIy9kAXzaYQ;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+Set-Cookie: rt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjNhNzdlZTgxLTRjNWYtNGU5Ni04ZmRlLWM3YWMyYjVlOTA1NSJ9.eyJleHAiOjE3NzI0MjYyNzIsImlhdCI6MTc1Njc4Nzg3MiwiaXNzIjoia2V2bGFyIiwianRpIjoiZDAwOGJkMzktMDBhMy00YjhiLWIwNmMtZmY4ZmNmYWJmZDBhIiwidHlwZSI6IlJUIiwiZElkIjoiVEkxNzQ3MzcyMjEyNDg1MDAwMTQzOTYwMDc2ODUxMzg1OTI3MzI4NDE1NTQ3NTA5ODE5ODY1Mzk0MzE3MTkzMDI3NjUiLCJiSWQiOiI3M0tHVloiLCJrZXZJZCI6IlZJNjI3RjgzNEQ4QURBNEQyRDk1REI0MDcxODZBQkVFMUYiLCJ0SWQiOiJtYXBpIiwibSI6eyJ0eXBlIjoibiJ9LCJ2IjoiVkFLMUxDIn0.JVpTjLwAC4_CROBvYN_gfX-yr1bAXUYFTapgGZE-w_I;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+vary: Accept-Encoding, User-Agent
+content-encoding: gzip
+x-bifrost-request-id: 10bdf491-fc42-49cf-b2ed-5b878d35da16
+Set-Cookie: vd=VI627F834D8ADA4D2D95DB407186ABEE1F-1747372217006-13.1756789633.1756787872.160073704;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+Set-Cookie: S=d1t17Pz8LPwo/Pz8/P05iNzJCLc/HlFRJAfIGGXHC9NXbg7RRlFz4LSF0Yhd3wq7I6+t3tgEVyym3ywp1DayDF6N4IQ==;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+Set-Cookie: SN=VI627F834D8ADA4D2D95DB407186ABEE1F.TOKA1B488ED317648ABB4F53972F102B4A7.1756789633046.LI;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+accept-ch: Sec-CH-UA,Sec-CH-UA-Arch,Sec-CH-UA-Full-Version,Sec-CH-UA-Full-Version-List,Sec-CH-UA-Model,Sec-CH-UA-Platform,Sec-CH-UA-Platform-Version
+
+4. Response cookies
+
+set-cookie : at=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjhlM2ZhMGE3LTJmZDMtNGNiMi05MWRjLTZlNTMxOGU1YTkxZiJ9.eyJleHAiOjE3NTY3ODk2NzIsImlhdCI6MTc1Njc4Nzg3MiwiaXNzIjoia2V2bGFyIiwianRpIjoiZjAxZTU2ZGYtOWE3OS00ZmM2LWIwYmUtMGNhY2JjNjBlNDczIiwidHlwZSI6IkFUIiwiZElkIjoiVEkxNzQ3MzcyMjEyNDg1MDAwMTQzOTYwMDc2ODUxMzg1OTI3MzI4NDE1NTQ3NTA5ODE5ODY1Mzk0MzE3MTkzMDI3NjUiLCJiSWQiOiI3M0tHVloiLCJrZXZJZCI6IlZJNjI3RjgzNEQ4QURBNEQyRDk1REI0MDcxODZBQkVFMUYiLCJ0SWQiOiJtYXBpIiwiZWFJZCI6InpUenFFcmJUVjU1a0x0d2JCUURYSUMzbnMwYVczZ2djc1E0eGRpMldNT3YySUxZTzJvZG1zZz09IiwidnMiOiJMSSIsInoiOiJIWUQiLCJtIjp0cnVlLCJnZW4iOjR9.-mNTdafJyJzwp0QTlEfzxrDzSi8-XkOXeIy9kAXzaYQ;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+set-cookie : rt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjNhNzdlZTgxLTRjNWYtNGU5Ni04ZmRlLWM3YWMyYjVlOTA1NSJ9.eyJleHAiOjE3NzI0MjYyNzIsImlhdCI6MTc1Njc4Nzg3MiwiaXNzIjoia2V2bGFyIiwianRpIjoiZDAwOGJkMzktMDBhMy00YjhiLWIwNmMtZmY4ZmNmYWJmZDBhIiwidHlwZSI6IlJUIiwiZElkIjoiVEkxNzQ3MzcyMjEyNDg1MDAwMTQzOTYwMDc2ODUxMzg1OTI3MzI4NDE1NTQ3NTA5ODE5ODY1Mzk0MzE3MTkzMDI3NjUiLCJiSWQiOiI3M0tHVloiLCJrZXZJZCI6IlZJNjI3RjgzNEQ4QURBNEQyRDk1REI0MDcxODZBQkVFMUYiLCJ0SWQiOiJtYXBpIiwibSI6eyJ0eXBlIjoibiJ9LCJ2IjoiVkFLMUxDIn0.JVpTjLwAC4_CROBvYN_gfX-yr1bAXUYFTapgGZE-w_I;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+set-cookie : vd=VI627F834D8ADA4D2D95DB407186ABEE1F-1747372217006-13.1756789633.1756787872.160073704;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+set-cookie : S=d1t17Pz8LPwo/Pz8/P05iNzJCLc/HlFRJAfIGGXHC9NXbg7RRlFz4LSF0Yhd3wq7I6+t3tgEVyym3ywp1DayDF6N4IQ==;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+set-cookie : SN=VI627F834D8ADA4D2D95DB407186ABEE1F.TOKA1B488ED317648ABB4F53972F102B4A7.1756789633046.LI;Version=1;Path=/;Domain=flipkart.com;Expires=Sun, 01-Mar-2026 05:07:13 GMT;Max-Age=15552000;Secure;HttpOnly;SameSite=None
+
+5. Request method type
+ - POST
+
+6. Response status code
+ - 200 OK
+
+7. Inspect and find the category name
+ - The category name is found as: Men's Shoes
+ - <h1 class="BUOuZu">Men's Sports Shoes</h1>
+
 
 Hands-On Task: https://www2.hm.com/en_in/productpage.1306054001.html
 
 - Applied XPath to extract basic fields (e.g., titles, prices, colors) from a given website.
 - Validated XPaths using browser developer tools (e.g., Chrome DevTools).
 
-Task status: partially completed.
+Task status: successfully completed.

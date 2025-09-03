@@ -1,5 +1,7 @@
 import requests
 from lxml import html
+import re
+import json
 
 url = "https://www2.hm.com/en_in/productpage.1306054001.html"
 
@@ -21,13 +23,36 @@ headers = {
 response = requests.get(url, headers=headers)
 print("Status:", response.status_code)
 
-# Parse the HTML
-html_content = html.fromstring(response.content)
+# Parse HTML
+tree = html.fromstring(response.content)
 
-# Extract and clean
-title = html_content.xpath('//h1/text()')
-price = html_content.xpath('//span[@class="a15559 b6e218 bf4f3a"]/text()')
+# Extract product title and price as before
+title = tree.xpath('//h1/text()')[0].strip()
+price = tree.xpath('//span[@class="a15559 b6e218 bf4f3a"]/text()')[0].strip().replace("₹", "").replace(",", "")
+
+# Extract the JSON-LD script using regex
+html_text = response.text
+json_ld_matches = re.findall(r'<script[^>]+type="application/ld\+json"[^>]*>(.*?)</script>', html_text, re.DOTALL)
+product_data = {}
+
+for match in json_ld_matches:
+    try:
+        data = json.loads(match)
+        if data.get("@type") == "Product":
+            product_data = data
+            break
+    except Exception:
+        continue
+
+# Extract required fields from the JSON-LD
+color = product_data.get("color")
+description = product_data.get("description")
+sku = product_data.get("sku")
+material = product_data.get("material")
+pattern = product_data.get("pattern")
 
 print(f"Title: {title}")
 print(f"Price: {price}")
-
+print(f"Color: {color}")
+print(f"Description: {description}")
+print(f"SKU: {sku}")
