@@ -1,0 +1,56 @@
+Overview:
+Today's focus was on refining web scraping techniques using Regex and XPath, with practical application on a real-world e-commerce website. The session involved cleaning previous tasks, writing precise XPaths for complex page structures, and extracting detailed product information.
+
+Task Optimization:
+Updated previous data cleaning tasks using Regex for text processing and XPath for structured data extraction.
+
+Daily Meeting:
+Discussed progress on the ongoing project, clarified doubts, and reviewed challenges faced during XPath development.
+
+New Task Assigned:
+Write XPaths to scrape data from Marks & Spencer (UK):
+
+- PLP (Product Listing Page):
+- Scrape PDP (Product Detail Page) URLs.
+- Extract pagination links.
+- Capture category names.
+
+PDP (Product Detail Page):
+Extract the following fields using XPath:
+
+- unique_id
+- product_name
+- brand
+- category
+- regular_price
+- selling_price
+- promotion_description
+- breadcrumb
+- pop_url
+- product_description
+- currency
+- color
+- size
+- rating
+- review
+- material_composition
+- style
+- care_instructions
+- feature
+- images
+- composition
+
+Continued writing and testing XPaths for both PLP and PDP pages.
+Validated XPath accuracy using browser developer tools.
+
+Developed XPaths for PLP page elements:
+PDP URLs, category names.
+Initiated XPath development for PDP page fields.
+
+
+Challenges Addressed:
+- Dynamic content loading (AJAX).
+- Varied product page structures.
+
+Task Status: 
+Task partially completed. PLP scraping successful, PDP extraction in progress.
