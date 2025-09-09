@@ -8,5 +8,6 @@ env/
 venv/
 .venv/
 
- 
- 
+
+# Scrapy project files
+scrapy.cfg

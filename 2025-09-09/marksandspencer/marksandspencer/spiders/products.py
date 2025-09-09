@@ -7,17 +7,13 @@ class ProductsSpider(scrapy.Spider):
     start_urls = ["https://www.marksandspencer.com/"]
 
     def parse(self, response):
-        """
-        Step 1: Extract category & sub-category links from homepage navigation
-        """
+
         category_links = response.xpath('//a[contains(@href, "/l/")]/@href').getall()
         for link in category_links:
             yield response.follow(link, callback=self.parse_category)
 
     def parse_category(self, response):
-        """
-        Step 2: Extract PLP product links + handle pagination
-        """
+
         # Extract PDP links
         product_links = response.xpath('//a[contains(@href,"/p/")]/@href').getall()
         for link in product_links:
@@ -31,9 +27,6 @@ class ProductsSpider(scrapy.Spider):
             yield response.follow(next_page, callback=self.parse_category)
 
     def parse_product(self, response):
-        """
-        Step 3: Extract product details from PDP
-        """
 
         def clean_list(data):
             return [d.strip() for d in data if d and d.strip()]
