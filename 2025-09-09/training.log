@@ -1,0 +1,29 @@
+Overview:
+Today's focus was on practical implementation of Scrapy fundamentals to develop a robust web scraper for extracting product data from the Marks & Spencer e-commerce website. The session involved hands-on coding, debugging, and optimizing the spider.
+
+Learning:
+- Scrapy fundamentals (Spider creation, Item definition, Selector usage).
+
+Task Implementation:
+- Initiated development of a Scrapy spider for marksandspencer.com.
+- Defined Items for structured data extraction:
+- Product name, brand, price, category, URL, etc.
+- Implemented spider logic to navigate PLP (Product Listing Pages) and PDP (Product Detail Pages).
+
+Continued Development:
+
+- Enhanced spider to handle:
+- Pagination across PLP pages.
+- HTTP requests with headers (User-Agent)
+- Data extraction from PDP pages using XPath/CSS selectors.
+- Tested and debugged the spider using Scrapy Shell.
+
+Tasks:
+- Scrapy Project Setup:
+- Created Scrapy project structure (items.py, spiders/, pipelines.py).
+- Spider Development:
+- Built spider to crawl category pages and product URLs.
+- Implemented parsing logic for both PLP and PDP pages.
+
+Task Status:
+- Scrapy project development almost complete.
