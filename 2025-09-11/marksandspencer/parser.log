@@ -1,0 +1,104 @@
+2025-09-11 17:53:05,035 - INFO - Starting parser (reading from MongoDB)...
+2025-09-11 17:53:05,049 - INFO - Found 15394 product URLs in MongoDB
+2025-09-11 17:53:05,049 - INFO - Parsing product 1/15394: https://www.marksandspencer.com/fleece-ribbed-throw/p/hbp60760685?color=CHOCOLATE#intid=plpnav_swatch|pid_pg1pip48g2r8c1%7Cprodflag_New
+2025-09-11 17:53:06,720 - INFO - Saved product 1: Fleece Ribbed Throw
+2025-09-11 17:53:06,720 - INFO - Parsing product 2/15394: https://www.marksandspencer.com/fleece-ribbed-throw/p/hbp60760685?color=NAVY#intid=plpnav_swatch|pid_pg1pip48g2r17c1%7Cprodflag_New
+2025-09-11 17:53:07,326 - INFO - Saved product 2: Fleece Ribbed Throw
+2025-09-11 17:53:07,326 - INFO - Parsing product 3/15394: https://www.marksandspencer.com/fleece-ribbed-throw/p/hbp60760685?color=OLIVE#intid=plpnav_swatch|pid_pg1pip48g2r17c1%7Cprodflag_New
+2025-09-11 17:53:08,200 - INFO - Saved product 3: Fleece Ribbed Throw
+2025-09-11 17:53:08,200 - INFO - Parsing product 4/15394: https://www.marksandspencer.com/home-for-christmas-3-wick-scented-candle/p/hbp60742030#intid=pid_pg1pip48g2r14c2%7Cprodflag_New
+2025-09-11 17:53:08,629 - INFO - Saved product 4: Home for Christmas 3 Wick Scented Candle
+2025-09-11 17:53:08,629 - INFO - Parsing product 5/15394: https://www.marksandspencer.com/fleece-ribbed-throw/p/hbp60760685?color=OLIVE#intid=plpnav_swatch|pid_pg1pip48g2r12c2%7Cprodflag_New
+2025-09-11 17:53:08,851 - INFO - Saved product 5: Fleece Ribbed Throw
+2025-09-11 17:53:08,851 - INFO - Parsing product 6/15394: https://www.marksandspencer.com/reactive-glaze-cereal-bowl/p/hbp60750550#intid=pid_pg1pip48g2r19c1%7Cprodflag_New
+2025-09-11 17:53:09,082 - INFO - Saved product 6: Reactive Glaze Cereal Bowl
+2025-09-11 17:53:09,082 - INFO - Parsing product 7/15394: https://www.marksandspencer.com/half-metal-ring-wreath/p/hbp60749443#intid=pid_pg1pip48g2r4c1%7Cprodflag_New
+2025-09-11 17:53:09,259 - INFO - Saved product 7: Half Metal Ring Wreath
+2025-09-11 17:53:09,259 - INFO - Parsing product 8/15394: https://www.marksandspencer.com/reactive-glaze-stoneware-serving-platter/p/hbp60754438#intid=pid_pg1pip48g2r10c1%7Cprodflag_New
+2025-09-11 17:53:09,482 - INFO - Saved product 8: Reactive Glaze Stoneware Serving Platter
+2025-09-11 17:53:09,482 - INFO - Parsing product 9/15394: https://www.marksandspencer.com/ribbed-fleece-snuggle/p/hbp60749345?color=GREY#intid=plpnav_swatch|pid_pg1pip48g2r22c2%7Cprodflag_New
+2025-09-11 17:53:09,687 - INFO - Saved product 9: Ribbed Fleece Hooded Blanket
+2025-09-11 17:53:09,687 - INFO - Parsing product 10/15394: https://www.marksandspencer.com/bow-icon-tumbler-2pk/p/hbp60749047#intid=pid_pg1pip48g2r5c2%7Cprodflag_New
+2025-09-11 17:53:09,923 - INFO - Saved product 10: Set of 2 Bow Tumblers
+2025-09-11 17:53:09,924 - INFO - Parsing product 11/15394: https://www.marksandspencer.com/4pk-halloween-scallop-side-plates/p/hbp60751509#intid=pid_pg1pip35g2r18c1%7Cprodflag_New
+2025-09-11 17:53:10,116 - INFO - Saved product 11: 4pk Halloween Scallop Side Plates
+2025-09-11 17:53:10,116 - INFO - Parsing product 12/15394: https://www.marksandspencer.com/halloween-pick-n-mix-string-lights/p/hbp60745212#intid=pid_pg1pip35g2r8c1%7Cprodflag_New
+2025-09-11 17:53:10,305 - INFO - Saved product 12: Halloween Spooky Battery String Lights
+2025-09-11 17:53:10,305 - INFO - Parsing product 13/15394: https://www.marksandspencer.com/cotton-rich-halloween-cat-bag-sweatshirt-2-8-yrs-/p/clp60751288#intid=pid_pg1pip35g2r10c1%7Cprodflag_New
+2025-09-11 17:53:10,507 - INFO - Saved product 13: Cotton Rich Halloween Cat Bag Sweatshirt (2-8 Yrs)
+2025-09-11 17:53:10,508 - INFO - Parsing product 14/15394: https://www.marksandspencer.com/halloween-bat-basket/p/hbp60745225#intid=pid_pg1pip35g2r7c1%7Cprodflag_New
+2025-09-11 17:53:10,722 - INFO - Saved product 14: Halloween Bat Basket
+2025-09-11 17:53:10,722 - INFO - Parsing product 15/15394: https://www.marksandspencer.com/cotton-rich-monster-sweatshirt-2-8-yrs-/p/clp60753535#intid=pid_pg1pip35g2r15c1%7Cprodflag_New
+2025-09-11 17:53:10,901 - INFO - Saved product 15: Cotton Rich Monster Sweatshirt (2-8 Yrs)
+2025-09-11 17:53:10,901 - INFO - Parsing product 16/15394: https://www.marksandspencer.com/spider-web-light-up-decoration/p/hbp60745211#intid=pid_pg1pip35g2r3c2%7Cprodflag_New
+2025-09-11 17:53:11,111 - INFO - Saved product 16: Spider Web Light Up Decoration
+2025-09-11 17:53:11,112 - INFO - Parsing product 17/15394: https://www.marksandspencer.com/-nhalloween-light-up-ceramic-bat/p/hbp60745196#intid=pid_pg1pip35g2r6c1%7Cprodflag_New
+2025-09-11 17:53:11,307 - INFO - Saved product 17: Halloween Ceramic Light Up Bat Decoration
+2025-09-11 17:53:11,308 - INFO - Parsing product 18/15394: https://www.marksandspencer.com/cotton-rich-minecraft-halloween-hoodie-6-16-yrs-/p/clp60749422#intid=pid_pg1pip35g2r18c2%7Cprodflag_New
+2025-09-11 17:53:11,502 - INFO - Saved product 18: Cotton Rich Minecraft™ Halloween Hoodie (6-16 Yrs)
+2025-09-11 17:53:11,503 - INFO - Parsing product 19/15394: https://www.marksandspencer.com/hanging-percy-pig-halloween-decoration/p/hbp60745228#intid=pid_pg1pip35g2r4c2%7Cprodflag_New
+2025-09-11 17:53:11,684 - INFO - Saved product 19: Hanging Percy Pig™ Halloween Decoration
+2025-09-11 17:53:11,684 - INFO - Parsing product 20/15394: https://www.marksandspencer.com/light-up-halloween-window-scene/p/hbp60745197#intid=pid_pg1pip35g2r4c1%7Cprodflag_New
+2025-09-11 17:53:11,870 - INFO - Saved product 20: Light Up Halloween Window Scene
+2025-09-11 17:53:11,870 - INFO - Parsing product 21/15394: https://www.marksandspencer.com/supersoft-faux-fur-cushion/p/hbp60748239?color=SPICE#intid=plpnav_swatch|pid_pg1pip48g2r12c1%7Cprodflag_New
+2025-09-11 17:53:12,069 - INFO - Saved product 21: Supersoft Faux Fur Cushion
+2025-09-11 17:53:12,069 - INFO - Parsing product 22/15394: https://www.marksandspencer.com/faux-fur-bubble-cushion/p/hbp60756865?color=NEUTRAL#intid=pid_pg1pip48g2r12c2%7Cprodflag_New
+2025-09-11 17:53:12,284 - INFO - Saved product 22: Faux Fur Bubble Cushion
+2025-09-11 17:53:12,284 - INFO - Parsing product 23/15394: https://www.marksandspencer.com/pencil-pleat-blackout-curtains/p/hbp60544717?color=BLUE#intid=plpnav_swatch|pid_pg1pip48g2r10c1
+2025-09-11 17:53:12,505 - INFO - Saved product 23: Brushed Pencil Pleat Blackout Thermal Curtains
+2025-09-11 17:53:12,505 - INFO - Parsing product 24/15394: https://www.marksandspencer.com/boucl-eyelet-curtains/p/hbp60693098?color=RUST#intid=plpnav_swatch|pid_pg1pip48g2r17c2
+2025-09-11 17:53:12,739 - INFO - Saved product 24: Bouclé Eyelet Curtains
+2025-09-11 17:53:12,739 - INFO - Parsing product 25/15394: https://www.marksandspencer.com/pencil-pleat-blackout-curtains/p/hbp60544717?color=CHARCOALMIX#intid=plpnav_swatch|pid_pg1pip48g2r22c1
+2025-09-11 17:53:12,941 - INFO - Saved product 25: Brushed Pencil Pleat Blackout Thermal Curtains
+2025-09-11 17:53:12,941 - INFO - Parsing product 26/15394: https://www.marksandspencer.com/faux-fur-bubble-cushion/p/hbp60756865?color=BROWN#intid=plpnav_swatch|pid_pg1pip48g2r13c1%7Cprodflag_New
+2025-09-11 17:53:13,156 - INFO - Saved product 26: Faux Fur Bubble Cushion
+2025-09-11 17:53:13,156 - INFO - Parsing product 27/15394: https://www.marksandspencer.com/pencil-pleat-blackout-curtains/p/hbp60544717?color=TEAL#intid=plpnav_swatch|pid_pg1pip48g2r22c1
+2025-09-11 17:53:13,357 - INFO - Saved product 27: Brushed Pencil Pleat Blackout Thermal Curtains
+2025-09-11 17:53:13,358 - INFO - Parsing product 28/15394: https://www.marksandspencer.com/supersoft-faux-fur-cushion/p/hbp60748239?color=NEUTRAL#intid=pid_pg1pip48g2r11c1%7Cprodflag_New
+2025-09-11 17:53:13,565 - INFO - Saved product 28: Supersoft Faux Fur Cushion
+2025-09-11 17:53:13,566 - INFO - Parsing product 29/15394: https://www.marksandspencer.com/supersoft-faux-fur-cushion/p/hbp60748239?color=CHOCOLATE#intid=pid_pg1pip48g2r11c2%7Cprodflag_New
+2025-09-11 17:53:13,757 - INFO - Saved product 29: Supersoft Faux Fur Cushion
+2025-09-11 17:53:13,757 - INFO - Parsing product 30/15394: https://www.marksandspencer.com/pencil-pleat-blackout-curtains/p/hbp60544717?color=BRONZE#intid=plpnav_swatch|pid_pg1pip48g2r22c1
+2025-09-11 17:53:13,956 - INFO - Saved product 30: Brushed Pencil Pleat Blackout Thermal Curtains
+2025-09-11 17:53:13,956 - INFO - Parsing product 31/15394: https://www.marksandspencer.com/cloud-fleece-bedset/p/hbp60747756?color=CREAM#intid=plpnav_swatch|pid_pg1pip48g2r10c2%7Cprodflag_New
+2025-09-11 17:53:14,182 - INFO - Saved product 31: Cloud Fleece Striped Bedding Set
+2025-09-11 17:53:14,183 - INFO - Parsing product 32/15394: https://www.marksandspencer.com/pure-cotton-sateen-400-thread-count-bedding-set/p/hbp60696531?color=DUCKEGG#intid=plpnav_swatch|pid_pg1pip48g2r14c1
+2025-09-11 17:53:14,402 - INFO - Saved product 32: Pure Cotton Sateen 400 Thread Count Bedding Set
+2025-09-11 17:53:14,402 - INFO - Parsing product 33/15394: https://www.marksandspencer.com/pure-cotton-jacquard-striped-bedding-set/p/hbp60757879?color=WHITE#intid=pid_pg1pip48g2r7c2
+2025-09-11 17:53:14,713 - INFO - Saved product 33: Pure Cotton Jacquard Striped Bedding Set
+2025-09-11 17:53:14,713 - INFO - Parsing product 34/15394: https://www.marksandspencer.com/pure-brushed-cotton-yarn-dye-bedding-set/p/hbp60749761#intid=pid_pg1pip48g2r8c2%7Cprodflag_New
+2025-09-11 17:53:14,873 - INFO - Saved product 34: Pure Brushed Cotton Checked Floral Bedding Set
+2025-09-11 17:53:14,874 - INFO - Parsing product 35/15394: https://www.marksandspencer.com/ultimate-comfort-bedding-set/p/hbp60713978?color=CLAY#intid=plpnav_swatch|pid_pg1pip48g2r24c2
+2025-09-11 17:53:15,077 - INFO - Saved product 35: The Ultimate Soft & Silky Bedding Set
+2025-09-11 17:53:15,078 - INFO - Parsing product 36/15394: https://www.marksandspencer.com/pure-cotton-sateen-cherry-blossom-bedding-set/p/hbp60615006?color=GREENMIX#intid=pid_pg1pip48g2r7c1
+2025-09-11 17:53:15,288 - INFO - Saved product 36: Pure Cotton Sateen Cherry Blossom Bedding Set
+2025-09-11 17:53:15,289 - INFO - Parsing product 37/15394: https://www.marksandspencer.com/ultimate-comfort-bedding-set/p/hbp60713978?color=DENIM#intid=plpnav_swatch|pid_pg1pip48g2r24c2
+2025-09-11 17:53:15,528 - INFO - Saved product 37: The Ultimate Soft & Silky Bedding Set
+2025-09-11 17:53:15,528 - INFO - Parsing product 38/15394: https://www.marksandspencer.com/pure-cotton-sateen-cherry-blossom-bedding-set/p/hbp60615006?color=GREENMIX#intid=plpnav_swatch|pid_pg1pip48g2r7c1
+2025-09-11 17:53:15,746 - INFO - Saved product 38: Pure Cotton Sateen Cherry Blossom Bedding Set
+2025-09-11 17:53:15,746 - INFO - Parsing product 39/15394: https://www.marksandspencer.com/pure-cotton-audlen-flowers-bedding-set/p/hbp23030690#intid=pid_pg1pip48g2r6c2%7Cprodflag_New
+2025-09-11 17:53:15,936 - INFO - Saved product 39: Pure Cotton Audlen Flowers Bedding Set
+2025-09-11 17:53:15,936 - INFO - Parsing product 40/15394: https://www.marksandspencer.com/cotton-rich-stafford-bedding-set/p/hbp23023604#intid=pid_pg1pip48g2r24c1%7Cprodflag_Online%20Only
+2025-09-11 17:53:16,135 - INFO - Saved product 40: Cotton Rich Stafford Bedding Set
+2025-09-11 17:53:16,135 - INFO - Parsing product 41/15394: https://www.marksandspencer.com/fresh-and-cool-4-5-tog-duvet/p/hbp60677804#intid=pid_pg1pip48g2r3c1%7Cprodflag_Online%20Only
+2025-09-11 17:53:16,332 - INFO - Saved product 41: Fresh & Cool 4.5 Tog Duvet
+2025-09-11 17:53:16,332 - INFO - Parsing product 42/15394: https://www.marksandspencer.com/supremely-washable-18-tog-all-season-duvet/p/hbp60705447#intid=pid_pg1pip48g2r14c1%7Cprodflag_Online%20Only
+2025-09-11 17:53:16,551 - INFO - Saved product 42: Supremely Washable 18 Tog All Seasons 3-in-1 Duvet
+2025-09-11 17:53:16,552 - INFO - Parsing product 43/15394: https://www.marksandspencer.com/ultimate-comfort-10-5-tog-duvet/p/hbp60735552#intid=pid_pg1pip48g2r2c2
+2025-09-11 17:53:16,730 - INFO - Saved product 43: Ultimate Comfort 10.5 Tog Duvet
+2025-09-11 17:53:16,730 - INFO - Parsing product 44/15394: https://www.marksandspencer.com/luxury-hungarian-goose-down-13-5-all-seasons-tog-duvet/p/hbp60623883#intid=pid_pg1pip48g2r11c2%7Cprodflag_Online%20Only
+2025-09-11 17:53:16,889 - INFO - Saved product 44: Luxury Hungarian Goose Down 13.5 Tog All Seasons 3-in-1 Duvet
+2025-09-11 17:53:16,889 - INFO - Parsing product 45/15394: https://www.marksandspencer.com/duck-feather-and-down-all-season-13-5-tog-duvet/p/hbp22476517#intid=pid_pg1pip48g2r11c1
+2025-09-11 17:53:17,074 - INFO - Saved product 45: Duck Feather & Down 13.5 Tog All Seasons 3-in-1 Duvet
+2025-09-11 17:53:17,074 - INFO - Parsing product 46/15394: https://www.marksandspencer.com/pure-wool-medium-weight-tog-duvet/p/hbp60615596#intid=pid_pg1pip48g2r21c2%7Cprodflag_Online%20Only
+2025-09-11 17:53:17,284 - INFO - Saved product 46: Pure Wool Medium Weight Duvet
+2025-09-11 17:53:17,285 - INFO - Parsing product 47/15394: https://www.marksandspencer.com/luxury-hungarian-goose-down-4-5-tog-duvet/p/hbp60623882#intid=pid_pg1pip48g2r8c1%7Cprodflag_Online%20Only
+2025-09-11 17:53:17,484 - INFO - Saved product 47: Luxury Hungarian Goose Down 4.5 Tog Duvet
+2025-09-11 17:53:17,484 - INFO - Parsing product 48/15394: https://www.marksandspencer.com/simply-soft-15-tog-duvet/p/hbp60705446#intid=pid_pg1pip48g2r19c2%7Cprodflag_Online%20Only
+2025-09-11 17:53:17,723 - INFO - Saved product 48: Simply Soft 15 Tog Duvet
+2025-09-11 17:53:17,723 - INFO - Parsing product 49/15394: https://www.marksandspencer.com/mulberry-silk-6-to-7-tog-duvet/p/hbp60749380#intid=pid_pg1pip48g2r5c1%7Cprodflag_New
+2025-09-11 17:53:17,913 - INFO - Saved product 49: Mulberry Silk 6 to 7 Tog Duvet
+2025-09-11 17:53:17,913 - INFO - Parsing product 50/15394: https://www.marksandspencer.com/ultimate-comfort-pure-cotton-7-5-tog-duvet/p/hbp60756811#intid=pid_pg1pip48g2r6c2%7Cprodflag_New
+2025-09-11 17:53:18,095 - INFO - Saved product 50: Ultimate Comfort Pure Cotton 7.5 Tog Duvet
+2025-09-11 17:53:18,095 - INFO - Parsing complete! Data saved in 'products_detail' collection.
+2025-09-11 17:53:18,098 - INFO - Export complete: JSON, JSONL, CSV, Pipe-CSV saved.

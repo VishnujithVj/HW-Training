@@ -1,0 +1,33 @@
+Overview:
+Today's focus was on implementing a web scraping solution using Python's requests and parsel libraries for the Marks & Spencer website. The task involved data extraction, transformation, and storage with comprehensive error handling and multiple output formats.
+
+
+Learning :
+Reviewed previously studied topics:
+OS, random, ftplib, dropbox, boto3, js2py, IPython
+
+Daily Meeting:
+- Discussed previous task progress and requirements for the new scraping assignment.
+
+New Task Implementation:
+
+- Initiated scraping for Marks & Spencer (UK) using:
+- requests for HTTP requests.
+- parsel for HTML parsing and data extraction.
+- Implemented regex (re) for extracting dress-related fields.
+- Added timestamp fields using datetime.
+
+
+Continued Task Development:
+
+- Enhanced code with proper logging and exception handling.
+- Integrated pymongo for database insertion.
+- Developed data export functionality for multiple formats:
+- JSON Line, JSON Array
+- Normal CSV, Pipe-Separated CSV
+- Implemented data conversion between formats.
+
+
+Tasks status:
+- Successfully extracted product data from Marks & Spencer using requests + parsel.
+
