@@ -1,0 +1,31 @@
+Overview:
+Today's focus was on advancing web scraping and implementing advanced modules like Selenium and Playwright for handling dynamic content. The session included development of crawlers and parsers using both Scrapy and Selenium.
+
+
+Learning :
+- Refreshed previous learning topics
+
+Daily Meeting:
+- Discussed new learning topics and tasks focused on advanced web scraping tools.
+
+Key Learning Topics:
+
+Selenium:
+- Definition and use cases (dynamic content, JavaScript-heavy sites).
+- Comparison: Selenium vs. Scrapy vs. Requests.
+
+Playwright:
+- Modern automation library for cross-browser testing and scraping.
+
+CURL & Cloudscraper:
+- Command-line tool for HTTP requests and bypassing cloud-based anti-bot measures.
+
+
+Task 1: Developed a Scrapy crawler and parser for structured data extraction.
+
+Task 2: Built a Selenium crawler and parser to handle dynamic content
+
+Tasks status: Completed
+- Completed Scrapy Crawler & Parser
+- Completed Selenium Crawler & Parser
+
