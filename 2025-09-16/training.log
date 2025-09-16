@@ -1,0 +1,54 @@
+Overview:
+Today's focus was on enhancing existing web scraping solutions with improved logging, error handling, and performance optimization. The session also included learning advanced Webscraper.io techniques and developing a complete crawler and parser for the H&M website.
+
+
+Code Optimization:
+
+- Updated previous Scrapy and Selenium crawlers with:
+
+- Enhanced logging using Python's logging module
+
+- Better error handling with try-except blocks and custom exceptions
+
+- Improved time management with delays and timeouts
+
+- Memory management improvements through proper resource cleanup
+
+Daily Meeting:
+
+- Discussed task status and new learning topics including Webscraper.io and Cloudscraper
+
+Tool Learning:
+
+Webscraper.io:
+
+- Installation and advanced usage of the browser extension
+
+- Techniques for extracting urgent data quickly
+
+Cloudscraper:
+
+- Study of the Python library for bypassing cloud-based anti-bot systems
+
+Code Enhancement:
+
+- Updated Playwright and cURL crawlers with:
+
+- Comprehensive logging systems
+
+- Robust error handling mechanisms
+
+- Performance optimization features
+
+H&M Project Development:
+
+Developed complete crawler for https://www.hm.com/
+
+
+
+Tasks status:
+
+H&M Crawler Development:
+- Completed full crawler for H&M website
+- Parser code Development in progress.
+
