@@ -91,8 +91,8 @@ BOT_NAME = 'carbon38'
 SPIDER_MODULES = ['carbon38.spiders']
 NEWSPIDER_MODULE = 'carbon38.spiders'
 
-# obey robots.txt if you want:
-ROBOTSTXT_OBEY = True
+# Robots.txt
+ROBOTSTXT_OBEY = False
 
 # Pipelines
 ITEM_PIPELINES = {
@@ -101,13 +101,12 @@ ITEM_PIPELINES = {
 
 # Mongo settings
 MONGO_URI = 'mongodb://localhost:27017'
-MONGO_DATABASE = 'carbon38'
+MONGO_DATABASE = 'carbon38_scraper'
 MONGO_COLLECTION = 'product_urls'
 
-# User agent etc.
+# User-Agent
 USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) ' \
              'AppleWebKit/537.36 (KHTML, like Gecko) ' \
              'Chrome/94.0.4606.61 Safari/537.36'
 
-# Optional: set download delays, concurrent requests etc.
 DOWNLOAD_DELAY = 1
