@@ -1,0 +1,41 @@
+Overview:
+Today's focus was on enhancing the Carbon38 crawler with comprehensive logging and beginning development of a new crawler and parser for the Bayut real estate website (https://www.bavut.sa/en/). The session included implementing robust logging systems and making significant progress on the Bayut project.
+
+Carbon38 Enhancement:
+
+- Updated existing Carbon38 crawler and parser with advanced logging features
+- Implemented structured logging using Python's logging module.
+
+Daily Meeting:
+
+- Received new task for Bayut website crawling (https://www.bavut.sa/en/)
+- Discussed project requirements and technical specifications
+- Planned crawler architecture for the real estate platform
+
+Bayut Project Development:
+
+Initiated crawler development for Bayut website
+
+- Implemented base crawler structure with session management
+- Added request headers and anti-bot measures
+- collected category URLs and sub category urls and product urls
+
+Parser Development:
+
+- Began parser implementation for property data extraction
+- Defined data model for real estate listings
+- Implemented initial data extraction logic
+
+Tasks status:
+Bayut Crawler Development:
+
+- Base crawler architecture completed
+- Request headers configured
+- URL navigation logic working
+- Initial page scraping functional
+
+Bayut Parser Development:
+
+- Data model defined
+- Basic extraction implemented
+- Partial field mapping completed
