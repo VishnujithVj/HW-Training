@@ -1,0 +1,6 @@
+2025-09-19 18:22:48,594 [INFO] Found 2054 URLs to scrape.
+2025-09-19 18:22:48,594 [INFO] Scraping https://www2.hm.com/en_in/productpage.1309151001.html
+2025-09-19 18:23:48,766 [ERROR] Timeout while scraping https://www2.hm.com/en_in/productpage.1309151001.html
+2025-09-19 18:23:48,779 [INFO] Scraping https://www2.hm.com/en_in/productpage.1306863001.html
+2025-09-19 18:24:48,927 [ERROR] Timeout while scraping https://www2.hm.com/en_in/productpage.1306863001.html
+2025-09-19 18:24:48,935 [INFO] Scraping https://www2.hm.com/en_in/productpage.1311438001.html
