@@ -1,0 +1,179 @@
+2025-09-19 12:51:59,029 [INFO] Found 89 product URLs to parse
+2025-09-19 12:51:59,031 [INFO] [1/89] Parsing https://www.bayut.sa/en/property/details-87665564.html
+2025-09-19 12:52:05,096 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87665564.html
+2025-09-19 12:52:06,096 [INFO] [2/89] Parsing https://www.bayut.sa/en/property/details-87739870.html
+2025-09-19 12:52:08,783 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87739870.html
+2025-09-19 12:52:09,783 [INFO] [3/89] Parsing https://www.bayut.sa/en/property/details-87657802.html
+2025-09-19 12:52:12,480 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87657802.html
+2025-09-19 12:52:13,480 [INFO] [4/89] Parsing https://www.bayut.sa/en/property/details-87752669.html
+2025-09-19 12:52:16,083 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752669.html
+2025-09-19 12:52:17,083 [INFO] [5/89] Parsing https://www.bayut.sa/en/property/details-87691261.html
+2025-09-19 12:52:19,246 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87691261.html
+2025-09-19 12:52:20,246 [INFO] [6/89] Parsing https://www.bayut.sa/en/property/details-87691262.html
+2025-09-19 12:52:22,946 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87691262.html
+2025-09-19 12:52:23,947 [INFO] [7/89] Parsing https://www.bayut.sa/en/property/details-87749547.html
+2025-09-19 12:52:26,671 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87749547.html
+2025-09-19 12:52:27,671 [INFO] [8/89] Parsing https://www.bayut.sa/en/property/details-87729975.html
+2025-09-19 12:52:30,224 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87729975.html
+2025-09-19 12:52:31,224 [INFO] [9/89] Parsing https://www.bayut.sa/en/property/details-87704700.html
+2025-09-19 12:52:33,392 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87704700.html
+2025-09-19 12:52:34,393 [INFO] [10/89] Parsing https://www.bayut.sa/en/property/details-87704703.html
+2025-09-19 12:52:37,049 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87704703.html
+2025-09-19 12:52:38,050 [INFO] [11/89] Parsing https://www.bayut.sa/en/property/details-87648374.html
+2025-09-19 12:52:40,836 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87648374.html
+2025-09-19 12:52:41,836 [INFO] [12/89] Parsing https://www.bayut.sa/en/property/details-87744914.html
+2025-09-19 12:52:44,539 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87744914.html
+2025-09-19 12:52:45,539 [INFO] [13/89] Parsing https://www.bayut.sa/en/property/details-87700579.html
+2025-09-19 12:52:47,240 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87700579.html
+2025-09-19 12:52:48,240 [INFO] [14/89] Parsing https://www.bayut.sa/en/property/details-87661980.html
+2025-09-19 12:52:51,067 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87661980.html
+2025-09-19 12:52:52,068 [INFO] [15/89] Parsing https://www.bayut.sa/en/property/details-87731279.html
+2025-09-19 12:52:54,289 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87731279.html
+2025-09-19 12:52:55,289 [INFO] [16/89] Parsing https://www.bayut.sa/en/property/details-87691295.html
+2025-09-19 12:52:57,417 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87691295.html
+2025-09-19 12:52:58,417 [INFO] [17/89] Parsing https://www.bayut.sa/en/property/details-87632079.html
+2025-09-19 12:53:01,009 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87632079.html
+2025-09-19 12:53:02,010 [INFO] [18/89] Parsing https://www.bayut.sa/en/property/details-87749986.html
+2025-09-19 12:53:04,366 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87749986.html
+2025-09-19 12:53:05,367 [INFO] [19/89] Parsing https://www.bayut.sa/en/property/details-87715760.html
+2025-09-19 12:53:08,152 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87715760.html
+2025-09-19 12:53:09,153 [INFO] [20/89] Parsing https://www.bayut.sa/en/property/details-87682090.html
+2025-09-19 12:53:11,901 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87682090.html
+2025-09-19 12:53:12,902 [INFO] [21/89] Parsing https://www.bayut.sa/en/property/details-87692199.html
+2025-09-19 12:53:15,581 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87692199.html
+2025-09-19 12:53:16,582 [INFO] [22/89] Parsing https://www.bayut.sa/en/property/details-87723552.html
+2025-09-19 12:53:18,734 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87723552.html
+2025-09-19 12:53:19,734 [INFO] [23/89] Parsing https://www.bayut.sa/en/property/details-87716431.html
+2025-09-19 12:53:22,325 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87716431.html
+2025-09-19 12:53:23,325 [INFO] [24/89] Parsing https://www.bayut.sa/en/property/details-87716429.html
+2025-09-19 12:53:25,616 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87716429.html
+2025-09-19 12:53:26,617 [INFO] [25/89] Parsing https://www.bayut.sa/en/property/details-87740368.html
+2025-09-19 12:53:28,879 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87740368.html
+2025-09-19 12:53:29,880 [INFO] [26/89] Parsing https://www.bayut.sa/en/property/details-87756843.html
+2025-09-19 12:53:32,577 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87756843.html
+2025-09-19 12:53:33,577 [INFO] [27/89] Parsing https://www.bayut.sa/en/property/details-87702651.html
+2025-09-19 12:53:36,198 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87702651.html
+2025-09-19 12:53:37,199 [INFO] [28/89] Parsing https://www.bayut.sa/en/property/details-87710562.html
+2025-09-19 12:53:39,878 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87710562.html
+2025-09-19 12:53:40,879 [INFO] [29/89] Parsing https://www.bayut.sa/en/property/details-87745166.html
+2025-09-19 12:53:43,132 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87745166.html
+2025-09-19 12:53:44,132 [INFO] [30/89] Parsing https://www.bayut.sa/en/property/details-87683580.html
+2025-09-19 12:53:46,902 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87683580.html
+2025-09-19 12:53:47,903 [INFO] [31/89] Parsing https://www.bayut.sa/en/property/details-87748921.html
+2025-09-19 12:53:50,562 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87748921.html
+2025-09-19 12:53:51,563 [INFO] [32/89] Parsing https://www.bayut.sa/en/property/details-87598889.html
+2025-09-19 12:53:53,789 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87598889.html
+2025-09-19 12:53:54,789 [INFO] [33/89] Parsing https://www.bayut.sa/en/property/details-87752847.html
+2025-09-19 12:53:56,647 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752847.html
+2025-09-19 12:53:57,647 [INFO] [34/89] Parsing https://www.bayut.sa/en/property/details-87593931.html
+2025-09-19 12:54:00,448 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87593931.html
+2025-09-19 12:54:01,449 [INFO] [35/89] Parsing https://www.bayut.sa/en/property/details-87661705.html
+2025-09-19 12:54:04,422 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87661705.html
+2025-09-19 12:54:05,422 [INFO] [36/89] Parsing https://www.bayut.sa/en/property/details-87678355.html
+2025-09-19 12:54:07,661 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87678355.html
+2025-09-19 12:54:08,661 [INFO] [37/89] Parsing https://www.bayut.sa/en/property/details-87714239.html
+2025-09-19 12:54:10,802 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87714239.html
+2025-09-19 12:54:11,803 [INFO] [38/89] Parsing https://www.bayut.sa/en/property/details-87722784.html
+2025-09-19 12:54:14,529 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87722784.html
+2025-09-19 12:54:15,529 [INFO] [39/89] Parsing https://www.bayut.sa/en/property/details-87718629.html
+2025-09-19 12:54:18,554 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87718629.html
+2025-09-19 12:54:19,555 [INFO] [40/89] Parsing https://www.bayut.sa/en/property/details-87596438.html
+2025-09-19 12:54:22,160 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87596438.html
+2025-09-19 12:54:23,160 [INFO] [41/89] Parsing https://www.bayut.sa/en/property/details-87707842.html
+2025-09-19 12:54:24,688 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87707842.html
+2025-09-19 12:54:25,688 [INFO] [42/89] Parsing https://www.bayut.sa/en/property/details-87642309.html
+2025-09-19 12:54:28,063 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87642309.html
+2025-09-19 12:54:29,064 [INFO] [43/89] Parsing https://www.bayut.sa/en/property/details-87710905.html
+2025-09-19 12:54:30,818 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87710905.html
+2025-09-19 12:54:31,818 [INFO] [44/89] Parsing https://www.bayut.sa/en/property/details-87714613.html
+2025-09-19 12:54:34,085 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87714613.html
+2025-09-19 12:54:35,086 [INFO] [45/89] Parsing https://www.bayut.sa/en/property/details-87748174.html
+2025-09-19 12:54:37,697 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87748174.html
+2025-09-19 12:54:38,698 [INFO] [46/89] Parsing https://www.bayut.sa/en/property/details-87724189.html
+2025-09-19 12:54:41,363 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87724189.html
+2025-09-19 12:54:42,363 [INFO] [47/89] Parsing https://www.bayut.sa/en/property/details-87717799.html
+2025-09-19 12:54:45,065 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87717799.html
+2025-09-19 12:54:46,065 [INFO] [48/89] Parsing https://www.bayut.sa/en/property/details-87744979.html
+2025-09-19 12:54:48,726 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87744979.html
+2025-09-19 12:54:49,727 [INFO] [49/89] Parsing https://www.bayut.sa/en/property/details-87727701.html
+2025-09-19 12:54:52,463 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87727701.html
+2025-09-19 12:54:53,464 [INFO] [50/89] Parsing https://www.bayut.sa/en/property/details-87732563.html
+2025-09-19 12:54:56,109 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87732563.html
+2025-09-19 12:54:57,109 [INFO] [51/89] Parsing https://www.bayut.sa/en/property/details-87714906.html
+2025-09-19 12:54:59,868 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87714906.html
+2025-09-19 12:55:00,869 [INFO] [52/89] Parsing https://www.bayut.sa/en/property/details-87752662.html
+2025-09-19 12:55:03,627 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752662.html
+2025-09-19 12:55:04,627 [INFO] [53/89] Parsing https://www.bayut.sa/en/property/details-87700013.html
+2025-09-19 12:55:06,843 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87700013.html
+2025-09-19 12:55:07,844 [INFO] [54/89] Parsing https://www.bayut.sa/en/property/details-87673471.html
+2025-09-19 12:55:10,527 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87673471.html
+2025-09-19 12:55:11,527 [INFO] [55/89] Parsing https://www.bayut.sa/en/property/details-87740439.html
+2025-09-19 12:55:13,660 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87740439.html
+2025-09-19 12:55:14,661 [INFO] [56/89] Parsing https://www.bayut.sa/en/property/details-87705365.html
+2025-09-19 12:55:17,334 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87705365.html
+2025-09-19 12:55:18,334 [INFO] [57/89] Parsing https://www.bayut.sa/en/property/details-87714911.html
+2025-09-19 12:55:21,002 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87714911.html
+2025-09-19 12:55:22,002 [INFO] [58/89] Parsing https://www.bayut.sa/en/property/details-87750138.html
+2025-09-19 12:55:24,685 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87750138.html
+2025-09-19 12:55:25,685 [INFO] [59/89] Parsing https://www.bayut.sa/en/property/details-87721691.html
+2025-09-19 12:55:28,433 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87721691.html
+2025-09-19 12:55:29,434 [INFO] [60/89] Parsing https://www.bayut.sa/en/property/details-87608446.html
+2025-09-19 12:55:32,129 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87608446.html
+2025-09-19 12:55:33,130 [INFO] [61/89] Parsing https://www.bayut.sa/en/property/details-87721743.html
+2025-09-19 12:55:35,974 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87721743.html
+2025-09-19 12:55:36,975 [INFO] [62/89] Parsing https://www.bayut.sa/en/property/details-87750458.html
+2025-09-19 12:55:39,715 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87750458.html
+2025-09-19 12:55:40,715 [INFO] [63/89] Parsing https://www.bayut.sa/en/property/details-87752115.html
+2025-09-19 12:55:42,915 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752115.html
+2025-09-19 12:55:43,916 [INFO] [64/89] Parsing https://www.bayut.sa/en/property/details-87725049.html
+2025-09-19 12:55:46,655 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87725049.html
+2025-09-19 12:55:47,655 [INFO] [65/89] Parsing https://www.bayut.sa/en/property/details-87690475.html
+2025-09-19 12:55:50,343 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87690475.html
+2025-09-19 12:55:51,344 [INFO] [66/89] Parsing https://www.bayut.sa/en/property/details-87700501.html
+2025-09-19 12:55:54,135 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87700501.html
+2025-09-19 12:55:55,135 [INFO] [67/89] Parsing https://www.bayut.sa/en/property/details-87750346.html
+2025-09-19 12:55:57,901 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87750346.html
+2025-09-19 12:55:58,902 [INFO] [68/89] Parsing https://www.bayut.sa/en/property/details-87749453.html
+2025-09-19 12:56:01,843 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87749453.html
+2025-09-19 12:56:02,843 [INFO] [69/89] Parsing https://www.bayut.sa/en/property/details-87724591.html
+2025-09-19 12:56:05,493 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87724591.html
+2025-09-19 12:56:06,493 [INFO] [70/89] Parsing https://www.bayut.sa/en/property/details-87744774.html
+2025-09-19 12:56:08,727 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87744774.html
+2025-09-19 12:56:09,727 [INFO] [71/89] Parsing https://www.bayut.sa/en/property/details-87748897.html
+2025-09-19 12:56:11,867 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87748897.html
+2025-09-19 12:56:12,867 [INFO] [72/89] Parsing https://www.bayut.sa/en/property/details-87741533.html
+2025-09-19 12:56:15,004 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87741533.html
+2025-09-19 12:56:16,025 [INFO] [73/89] Parsing https://www.bayut.sa/en/property/details-87741554.html
+2025-09-19 12:56:18,662 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87741554.html
+2025-09-19 12:56:19,663 [INFO] [74/89] Parsing https://www.bayut.sa/en/property/details-87747878.html
+2025-09-19 12:56:22,260 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87747878.html
+2025-09-19 12:56:23,261 [INFO] [75/89] Parsing https://www.bayut.sa/en/property/details-87593933.html
+2025-09-19 12:56:26,017 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87593933.html
+2025-09-19 12:56:27,017 [INFO] [76/89] Parsing https://www.bayut.sa/en/property/details-87748216.html
+2025-09-19 12:56:29,108 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87748216.html
+2025-09-19 12:56:30,109 [INFO] [77/89] Parsing https://www.bayut.sa/en/property/details-87705289.html
+2025-09-19 12:56:32,779 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87705289.html
+2025-09-19 12:56:33,779 [INFO] [78/89] Parsing https://www.bayut.sa/en/property/details-87740406.html
+2025-09-19 12:56:36,008 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87740406.html
+2025-09-19 12:56:37,009 [INFO] [79/89] Parsing https://www.bayut.sa/en/property/details-87714866.html
+2025-09-19 12:56:39,722 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87714866.html
+2025-09-19 12:56:40,722 [INFO] [80/89] Parsing https://www.bayut.sa/en/property/details-87740282.html
+2025-09-19 12:56:43,091 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87740282.html
+2025-09-19 12:56:44,091 [INFO] [81/89] Parsing https://www.bayut.sa/en/property/details-87758641.html
+2025-09-19 12:56:46,689 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87758641.html
+2025-09-19 12:56:47,689 [INFO] [82/89] Parsing https://www.bayut.sa/en/property/details-87746253.html
+2025-09-19 12:56:50,289 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87746253.html
+2025-09-19 12:56:51,289 [INFO] [83/89] Parsing https://www.bayut.sa/en/property/details-87752555.html
+2025-09-19 12:56:53,824 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752555.html
+2025-09-19 12:56:54,824 [INFO] [84/89] Parsing https://www.bayut.sa/en/property/details-87752529.html
+2025-09-19 12:56:57,450 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752529.html
+2025-09-19 12:56:58,450 [INFO] [85/89] Parsing https://www.bayut.sa/en/property/details-87752425.html
+2025-09-19 12:57:00,507 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752425.html
+2025-09-19 12:57:01,507 [INFO] [86/89] Parsing https://www.bayut.sa/en/property/details-87750033.html
+2025-09-19 12:57:04,232 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87750033.html
+2025-09-19 12:57:05,232 [INFO] [87/89] Parsing https://www.bayut.sa/en/property/details-87752519.html
+2025-09-19 12:57:07,798 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752519.html
+2025-09-19 12:57:08,798 [INFO] [88/89] Parsing https://www.bayut.sa/en/property/details-87709216.html
+2025-09-19 12:57:11,015 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87709216.html
+2025-09-19 12:57:12,015 [INFO] [89/89] Parsing https://www.bayut.sa/en/property/details-87752535.html
+2025-09-19 12:57:14,069 [INFO] ✅ Saved details for https://www.bayut.sa/en/property/details-87752535.html
