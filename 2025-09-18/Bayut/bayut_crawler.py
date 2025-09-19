@@ -6,36 +6,35 @@ from urllib.parse import urljoin
 from pymongo import MongoClient
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
-# ========== CONFIG ==========
+# CONFIG
 BASE_URL = "https://www.bayut.sa/en"
 OUTPUT_FILE = "bayut_product_urls.json"
+MAX_PAGES = 50  
 
-# Property types to include (match Bayut URL slugs)
 PROPERTY_TYPES = [
     "apartments", "villas", "floors", "residential-buildings", "residential-lands",
     "houses", "rest-houses", "chalets", "rooms", "townhouses"
 ]
 
-# MongoDB setup
+# MongoDB
 client = MongoClient("mongodb://localhost:27017")
 db = client["bayut_scraper"]
 product_urls_col = db["product_urls"]
 
-# Logging setup
+# Logging
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
     handlers=[logging.FileHandler("crawler.log"), logging.StreamHandler()],
 )
 
-# ========== HELPERS ==========
 async def safe_goto(page, url, retries=3):
     """Goto with retries and relaxed wait condition"""
     for attempt in range(1, retries + 1):
         try:
             await page.goto(url, timeout=120000, wait_until="domcontentloaded")
             return True
-        except PlaywrightTimeoutError:
+        except TimeoutError:
             logging.warning(f"Timeout loading {url} (attempt {attempt}/{retries})")
             if attempt == retries:
                 return False
@@ -56,17 +55,17 @@ async def extract_links(page, xpath_expr, filter_keywords=None):
     return list(links)
 
 
-# ========== STEP 1: CATEGORIES ==========
+# CATEGORIES
 async def extract_category_urls(page):
     if not await safe_goto(page, BASE_URL):
         return []
     categories = await extract_links(page, "//a[@href]", ["/for-sale/", "/to-rent/"])
-    categories = list(set([c.split("?")[0] for c in categories]))  # clean dupes
+    categories = list(set([c.split("?")[0] for c in categories])) 
     logging.info(f"Found {len(categories)} category URLs")
     return categories
 
 
-# ========== STEP 2: SUBCATEGORIES ==========
+# SUBCATEGORIES 
 async def extract_subcategory_urls(page, category_url):
     if not await safe_goto(page, category_url):
         return []
@@ -76,12 +75,12 @@ async def extract_subcategory_urls(page, category_url):
     return subcategories
 
 
-# ========== STEP 3: PRODUCT URLS with PAGINATION ==========
+# PRODUCT URLS with PAGINATION 
 async def extract_product_urls(page, category_url, subcategory_url, json_file):
     page_num = 1
     total_saved = 0
 
-    while True:
+    while page_num <= MAX_PAGES:  
         url = f"{subcategory_url}?page={page_num}"
         ok = await safe_goto(page, url)
         if not ok:
@@ -103,14 +102,14 @@ async def extract_product_urls(page, category_url, subcategory_url, json_file):
                 "scraped_at": time.strftime("%Y-%m-%d %H:%M:%S"),
             }
 
-            # Save to MongoDB (upsert to avoid duplicates)
+    
             product_urls_col.update_one(
                 {"product_url": product_url},
                 {"$set": record},
                 upsert=True,
             )
 
-            # Save to JSON incrementally
+    
             json_file.write(json.dumps(record, ensure_ascii=False) + "\n")
             json_file.flush()
 
@@ -118,12 +117,11 @@ async def extract_product_urls(page, category_url, subcategory_url, json_file):
             logging.info(f"Saved → {product_url}")
 
         page_num += 1
-        time.sleep(1)  # polite delay
+        time.sleep(1) 
 
     logging.info(f"Total saved for {subcategory_url}: {total_saved}")
 
 
-# ========== MAIN PIPELINE ==========
 async def main():
     async with async_playwright() as pw:
         browser = await pw.chromium.launch(
@@ -146,12 +144,12 @@ async def main():
             for cat in categories:
                 subcats = await extract_subcategory_urls(page, cat)
 
-                if not subcats:  # if no subcategories, use category directly
+                if not subcats: 
                     subcats = [cat]
 
                 for sub in subcats:
                     await extract_product_urls(page, cat, sub, json_file)
-                    time.sleep(1)  # polite delay
+                    time.sleep(1)  
 
         logging.info(f"All data saved incrementally to {OUTPUT_FILE}")
         await browser.close()
