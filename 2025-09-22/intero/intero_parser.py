@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""
-Intero Agents Details Parser (XPath version)
-- Loads agent profile URLs from MongoDB (intero_db.agents_urls)
-- Visits each agent profile page
-- Extracts agent details with XPath
-- Saves incrementally to:
-    * MongoDB (intero_db.agents_details)
-    * agents_details.json (one JSON object per line)
-    * parser.log (logging)
-"""
-
 import time
 import re
 import json
@@ -21,7 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import WebDriverException, NoSuchElementException
 from pymongo import MongoClient
 
-# ---------------- CONFIG ----------------
+# CONFIG 
 JSON_PATH = Path("agents_details.json")
 LOG_PATH = Path("parser.log")
 MONGO_URI = "mongodb://localhost:27017"
@@ -31,7 +19,6 @@ DETAILS_COLLECTION = "agents_details"
 
 INITIAL_WAIT = 3
 
-# ---------------- LOGGING ----------------
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(message)s",
@@ -42,7 +29,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger("intero_agents_details")
 
-# ---------------- PERSISTENCE ----------------
 client = MongoClient(MONGO_URI)
 db = client[MONGO_DB]
 urls_collection = db[URLS_COLLECTION]
@@ -60,8 +46,6 @@ def save_to_mongo(data: dict):
     if not details_collection.find_one({"profile_url": data["profile_url"]}):
         details_collection.insert_one(data)
 
-
-# ---------------- SCRAPER ----------------
 def parse_agent_page(driver, url: str) -> dict:
     """Extract structured agent details from profile page using XPath."""
     driver.get(url)
@@ -79,7 +63,6 @@ def parse_agent_page(driver, url: str) -> dict:
         except (WebDriverException, NoSuchElementException):
             return [] if multi else ""
 
-    # ---------------- Extract raw fields ----------------
     name_block = safe_xpath("//p[contains(@class,'rng-agent-profile-contact-name')]")
     title = safe_xpath("//span[contains(@class,'rng-agent-profile-contact-title')]")
     image_url = safe_xpath("//img[contains(@class,'rng-agent-profile-photo')]", "src")
@@ -92,12 +75,10 @@ def parse_agent_page(driver, url: str) -> dict:
     agent_phones = safe_xpath("//li[contains(@class,'rng-agent-profile-contact-phone')]/a", "href", multi=True)
     office_phones = safe_xpath("//li[contains(@class,'rng-agent-profile-contact-office-phone')]/a", "href", multi=True)
 
-    # ---------------- Parse name ----------------
     first_name, middle_name, last_name = "", "", ""
     if name_block:
         parts = name_block.split()
 
-        # Remove the title (Realtor, Broker, etc.) if it appears inside name block
         if title and title in parts:
             parts = [p for p in parts if p != title]
 
@@ -110,21 +91,20 @@ def parse_agent_page(driver, url: str) -> dict:
             middle_name = " ".join(parts[1:-1])
             last_name = parts[-1]
 
-    # ---------------- Parse email ----------------
     if email and email.startswith("mailto:"):
         email = email.replace("mailto:", "")
 
-    # ---------------- Parse address ----------------
+    # Parse address
     street, city, state, zipcode, country = "", "", "", "", "USA"
     if address_block:
-        # Example: 32145 Alvarado-Niles Road Suite 101 Union City CA 94587
+    
         match = re.match(r"^(.*)\s+([\w\s]+)\s+([A-Z]{2})\s+(\d{5})$", address_block.strip())
         if match:
             street, city, state, zipcode = match.groups()
         else:
             street = address_block.strip()
 
-    # ---------------- Normalize phones ----------------
+
     def normalize_phones(phone_list):
         nums = []
         for ph in phone_list:
@@ -135,7 +115,6 @@ def parse_agent_page(driver, url: str) -> dict:
     agent_phone_numbers = normalize_phones(agent_phones)
     office_phone_numbers = normalize_phones(office_phones)
 
-    # ---------------- Final structured dict ----------------
     return {
         "profile_url": url,
         "first_name": first_name,
@@ -145,7 +124,7 @@ def parse_agent_page(driver, url: str) -> dict:
         "office_name": office_name,
         "address": street,
         "description": description,
-        "languages": [],  # not present in markup
+        "languages": [], 
         "social": social_links,
         "website": website,
         "email": email,
@@ -159,7 +138,7 @@ def parse_agent_page(driver, url: str) -> dict:
     }
 
 
-# ---------------- MAIN ----------------
+# MAIN 
 def crawl_agent_details():
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
@@ -182,7 +161,6 @@ def crawl_agent_details():
                 logger.info(f"[{idx}/{total}] Scraping {url}")
                 details = parse_agent_page(driver, url)
 
-                # Save one by one
                 save_json_line(details)
                 save_to_mongo(details)
 
