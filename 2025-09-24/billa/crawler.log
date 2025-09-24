@@ -1,0 +1,172 @@
+2025-09-24 11:53:14,720 [INFO] Visiting start url: https://shop.billa.at/
+2025-09-24 11:53:21,901 [INFO] Found 11 categories
+2025-09-24 11:53:22,402 [INFO] Category: https://shop.billa.at/aktionen
+2025-09-24 11:53:29,691 [INFO]   Found 8 subcategories
+2025-09-24 11:53:30,192 [INFO]   Subcategory: https://shop.billa.at/kategorie/kaffee-13802
+2025-09-24 11:53:37,599 [INFO]     Found 30 products
+2025-09-24 11:53:45,699 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751?inPromotion=true
+2025-09-24 11:53:51,054 [INFO]     Found 10 products
+2025-09-24 11:53:54,091 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13766?inPromotion=true
+2025-09-24 11:53:58,369 [INFO]     Found 21 products
+2025-09-24 11:54:04,174 [INFO]   Subcategory: https://shop.billa.at/kategorie/getraenke-13784?inPromotion=true
+2025-09-24 11:54:08,079 [INFO]     Found 30 products
+2025-09-24 11:54:16,153 [INFO]   Subcategory: https://shop.billa.at/kategorie/kuehlwaren-13841?inPromotion=true
+2025-09-24 11:54:20,717 [INFO]     Found 30 products
+2025-09-24 11:54:28,792 [INFO]   Subcategory: https://shop.billa.at/kategorie/tiefkuehl-13916?inPromotion=true
+2025-09-24 11:54:33,275 [INFO]     Found 30 products
+2025-09-24 11:54:41,351 [INFO]   Subcategory: https://shop.billa.at/kategorie/nahrungsmittel-13943?inPromotion=true
+2025-09-24 11:54:44,371 [INFO]     Found 30 products
+2025-09-24 11:54:52,457 [INFO]   Subcategory: https://shop.billa.at/kategorie/suesses-und-salziges-14057?inPromotion=true
+2025-09-24 11:54:56,971 [INFO]     Found 30 products
+2025-09-24 11:55:05,061 [INFO] Category: https://shop.billa.at/sortiment/neu
+2025-09-24 11:55:09,847 [INFO]   Found 0 subcategories
+2025-09-24 11:55:10,348 [INFO] Category: https://shop.billa.at/sortiment/oesterreich
+2025-09-24 11:55:13,851 [INFO]   Found 2 subcategories
+2025-09-24 11:55:14,351 [INFO]   Subcategory: https://shop.billa.at/kategorie/wein-13833?countryOfOrigin=%C3%96sterreich
+2025-09-24 11:55:18,947 [INFO]     Found 30 products
+2025-09-24 11:55:27,039 [INFO]   Subcategory: https://shop.billa.at/kategorie/milchprodukte-13869?countryOfOrigin=Österreich
+2025-09-24 11:55:31,503 [INFO]     Found 30 products
+2025-09-24 11:55:39,601 [INFO] Category: https://shop.billa.at/sortiment/bio
+2025-09-24 11:55:44,062 [INFO]   Found 8 subcategories
+2025-09-24 11:55:44,563 [INFO]   Subcategory: https://shop.billa.at/kategorie/neu-im-online-shop-14506?personalPreference=pp-bio
+2025-09-24 11:55:48,765 [INFO]     Found 30 products
+2025-09-24 11:55:56,846 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751?personalPreference=pp-bio
+2025-09-24 11:55:59,600 [INFO]     Found 30 products
+2025-09-24 11:56:07,679 [INFO]   Subcategory: https://shop.billa.at/kategorie/fleisch-13849?personalPreference=pp-bio
+2025-09-24 11:56:10,611 [INFO]     Found 25 products
+2025-09-24 11:56:17,429 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13766?personalPreference=pp-bio
+2025-09-24 11:56:21,879 [INFO]     Found 30 products
+2025-09-24 11:56:29,985 [INFO]   Subcategory: https://shop.billa.at/kategorie/milchprodukte-13869?personalPreference=pp-bio
+2025-09-24 11:56:33,036 [INFO]     Found 30 products
+2025-09-24 11:56:41,108 [INFO]   Subcategory: https://shop.billa.at/kategorie/tiefkuehl-13916?personalPreference=pp-bio
+2025-09-24 11:56:45,417 [INFO]     Found 30 products
+2025-09-24 11:56:53,530 [INFO]   Subcategory: https://shop.billa.at/kategorie/suesses-und-salziges-14057?personalPreference=pp-bio
+2025-09-24 11:56:58,727 [INFO]     Found 30 products
+2025-09-24 11:57:06,811 [INFO]   Subcategory: https://shop.billa.at/kategorie/getraenke-13784?personalPreference=pp-bio
+2025-09-24 11:57:09,640 [INFO]     Found 30 products
+2025-09-24 11:57:17,736 [INFO] Category: https://shop.billa.at/sortiment/rein-pflanzlich
+2025-09-24 11:57:24,660 [INFO]   Found 9 subcategories
+2025-09-24 11:57:25,160 [INFO]   Subcategory: https://shop.billa.at/kategorie/neu-im-online-shop-14506?personalPreference=pp-vegan
+2025-09-24 11:57:29,591 [INFO]     Found 30 products
+2025-09-24 11:57:37,676 [INFO]   Subcategory: https://shop.billa.at/kategorie/soja-hafer-und-reisdrinks-14052
+2025-09-24 11:57:40,727 [INFO]     Found 30 products
+2025-09-24 11:57:48,808 [INFO]   Subcategory: https://shop.billa.at/kategorie/kuehlwaren-13841?personalPreference=pp-vegan
+2025-09-24 11:57:53,714 [INFO]     Found 30 products
+2025-09-24 11:58:01,804 [INFO]   Subcategory: https://shop.billa.at/kategorie/kaese-aufstriche-und-salate-13855?personalPreference=pp-vegan
+2025-09-24 11:58:04,801 [INFO]     Found 30 products
+2025-09-24 11:58:12,899 [INFO]   Subcategory: https://shop.billa.at/kategorie/wurst-schinken-und-speck-13891?personalPreference=pp-vegan
+2025-09-24 11:58:17,379 [INFO]     Found 25 products
+2025-09-24 11:58:24,200 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13770?personalPreference=pp-vegan
+2025-09-24 11:58:28,705 [INFO]     Found 30 products
+2025-09-24 11:58:36,797 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-24 11:58:40,676 [INFO]     Found 30 products
+2025-09-24 11:58:48,744 [INFO]   Subcategory: https://shop.billa.at/kategorie/suesses-und-salziges-14057?personalPreference=pp-vegan
+2025-09-24 11:58:52,151 [INFO]     Found 30 products
+2025-09-24 11:59:00,253 [INFO]   Subcategory: https://shop.billa.at/kategorie/tiefkuehl-13916?personalPreference=pp-vegan
+2025-09-24 11:59:04,691 [INFO]     Found 30 products
+2025-09-24 11:59:12,793 [INFO] Category: https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-24 11:59:17,411 [INFO]   Found 9 subcategories
+2025-09-24 11:59:17,912 [INFO]   Subcategory: https://shop.billa.at/kategorie/gemuese-13757
+2025-09-24 11:59:20,677 [INFO]     Found 30 products
+2025-09-24 11:59:28,750 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-13752
+2025-09-24 11:59:33,394 [INFO]     Found 30 products
+2025-09-24 11:59:41,485 [INFO]   Subcategory: https://shop.billa.at/kategorie/salate-13761
+2025-09-24 11:59:46,134 [INFO]     Found 26 products
+2025-09-24 11:59:53,205 [INFO]   Subcategory: https://shop.billa.at/kategorie/trockenfruechte-und-nuesse-13764
+2025-09-24 11:59:56,224 [INFO]     Found 30 products
+2025-09-24 12:00:04,309 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=2
+2025-09-24 12:00:07,127 [INFO]     Found 30 products
+2025-09-24 12:00:15,224 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=3
+2025-09-24 12:00:19,208 [INFO]     Found 30 products
+2025-09-24 12:00:27,308 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=4
+2025-09-24 12:00:30,164 [INFO]     Found 30 products
+2025-09-24 12:00:38,256 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=5
+2025-09-24 12:00:41,247 [INFO]     Found 30 products
+2025-09-24 12:00:49,349 [INFO]   Subcategory: https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=12
+2025-09-24 12:00:51,912 [INFO]     Found 2 products
+2025-09-24 12:00:52,923 [INFO] Category: https://shop.billa.at/kategorie/brot-und-gebaeck-13770
+2025-09-24 12:00:57,194 [INFO]   Found 8 subcategories
+2025-09-24 12:00:57,695 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-24 12:01:00,387 [INFO]     Found 30 products
+2025-09-24 12:01:08,460 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-verpackt-13771
+2025-09-24 12:01:11,297 [INFO]     Found 30 products
+2025-09-24 12:01:19,399 [INFO]   Subcategory: https://shop.billa.at/kategorie/ofenfrisches-brot-13772
+2025-09-24 12:01:22,904 [INFO]     Found 30 products
+2025-09-24 12:01:30,980 [INFO]   Subcategory: https://shop.billa.at/kategorie/ofenfrisches-gebaeck-13773
+2025-09-24 12:01:35,126 [INFO]     Found 30 products
+2025-09-24 12:01:43,211 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13770?page=2
+2025-09-24 12:01:47,584 [INFO]     Found 30 products
+2025-09-24 12:01:55,658 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13770?page=3
+2025-09-24 12:01:58,511 [INFO]     Found 30 products
+2025-09-24 12:02:06,579 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13770?page=4
+2025-09-24 12:02:11,040 [INFO]     Found 30 products
+2025-09-24 12:02:19,127 [INFO]   Subcategory: https://shop.billa.at/kategorie/brot-und-gebaeck-13770?page=5
+2025-09-24 12:02:22,112 [INFO]     Found 16 products
+2025-09-24 12:02:26,674 [INFO] Category: https://shop.billa.at/kategorie/fleisch-13849
+2025-09-24 12:02:30,966 [INFO]   Found 11 subcategories
+2025-09-24 12:02:31,467 [INFO]   Subcategory: https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-24 12:02:34,286 [INFO]     Found 30 products
+2025-09-24 12:02:42,354 [INFO]   Subcategory: https://shop.billa.at/kategorie/fisch-13850
+2025-09-24 12:02:46,755 [INFO]     Found 1 products
+2025-09-24 12:02:47,526 [INFO]   Subcategory: https://shop.billa.at/kategorie/huhn-und-truthahn-13851
+2025-09-24 12:02:51,505 [INFO]     Found 30 products
+2025-09-24 12:02:59,602 [INFO]   Subcategory: https://shop.billa.at/kategorie/schweinefleisch-13853
+2025-09-24 12:03:03,462 [INFO]     Found 30 products
+2025-09-24 12:03:11,541 [INFO]   Subcategory: https://shop.billa.at/kategorie/rindfleisch-13854
+2025-09-24 12:03:15,609 [INFO]     Found 30 products
+2025-09-24 12:03:23,690 [INFO]   Subcategory: https://shop.billa.at/kategorie/ente-14735
+2025-09-24 12:03:25,954 [INFO]     Found 2 products
+2025-09-24 12:03:26,959 [INFO]   Subcategory: https://shop.billa.at/kategorie/pute-14766
+2025-09-24 12:03:29,604 [INFO]     Found 10 products
+2025-09-24 12:03:32,630 [INFO]   Subcategory: https://shop.billa.at/kategorie/fleisch-13849?page=2
+2025-09-24 12:03:35,731 [INFO]     Found 30 products
+2025-09-24 12:03:43,827 [INFO]   Subcategory: https://shop.billa.at/kategorie/fleisch-13849?page=3
+2025-09-24 12:03:48,634 [INFO]     Found 30 products
+2025-09-24 12:03:56,706 [INFO]   Subcategory: https://shop.billa.at/kategorie/fleisch-13849?page=4
+2025-09-24 12:03:59,713 [INFO]     Found 30 products
+2025-09-24 12:04:07,797 [INFO]   Subcategory: https://shop.billa.at/kategorie/fleisch-13849?page=5
+2025-09-24 12:04:11,659 [INFO]     Found 2 products
+2025-09-24 12:04:12,666 [INFO] Category: https://shop.billa.at/kategorie/feinkost-13906
+2025-09-24 12:04:17,833 [INFO]   Found 7 subcategories
+2025-09-24 12:04:18,339 [INFO]   Subcategory: https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-24 12:04:22,862 [INFO]     Found 30 products
+2025-09-24 12:04:30,924 [INFO]   Subcategory: https://shop.billa.at/kategorie/kaese-13907
+2025-09-24 12:04:35,045 [INFO]     Found 30 products
+2025-09-24 12:04:43,146 [INFO]   Subcategory: https://shop.billa.at/kategorie/wurst-13908
+2025-09-24 12:04:45,709 [INFO]     Found 30 products
+2025-09-24 12:04:53,804 [INFO]   Subcategory: https://shop.billa.at/kategorie/salate-aufstriche-13909
+2025-09-24 12:04:57,771 [INFO]     Found 15 products
+2025-09-24 12:05:02,068 [INFO]   Subcategory: https://shop.billa.at/kategorie/feinkost-13906?page=2
+2025-09-24 12:05:06,483 [INFO]     Found 30 products
+2025-09-24 12:05:14,566 [INFO]   Subcategory: https://shop.billa.at/kategorie/feinkost-13906?page=3
+2025-09-24 12:05:17,624 [INFO]     Found 30 products
+2025-09-24 12:05:25,724 [INFO]   Subcategory: https://shop.billa.at/kategorie/feinkost-13906?page=4
+2025-09-24 12:05:29,968 [INFO]     Found 13 products
+2025-09-24 12:05:33,755 [INFO] Category: https://shop.billa.at/sortiment/oktoberfest
+2025-09-24 12:05:38,824 [INFO]   Found 7 subcategories
+2025-09-24 12:05:39,325 [INFO]   Subcategory: https://shop.billa.at/kategorie/wuerstel-13904
+2025-09-24 12:05:43,334 [INFO]     Found 30 products
+2025-09-24 12:05:51,430 [INFO]   Subcategory: https://shop.billa.at/kategorie/wurst-schinken-und-speck-13891
+2025-09-24 12:05:54,487 [INFO]     Found 30 products
+2025-09-24 12:06:02,577 [INFO]   Subcategory: https://shop.billa.at/kategorie/fleisch-13849
+2025-09-24 12:06:05,213 [INFO]     Found 30 products
+2025-09-24 12:06:13,280 [INFO]   Subcategory: https://shop.billa.at/kategorie/bier-und-radler-13796
+2025-09-24 12:06:17,283 [INFO]     Found 30 products
+2025-09-24 12:06:25,371 [INFO]   Subcategory: https://shop.billa.at/kategorie/alkoholfreies-bier-13797
+2025-09-24 12:06:28,135 [INFO]     Found 21 products
+2025-09-24 12:06:33,952 [INFO]   Subcategory: https://shop.billa.at/kategorie/spirituosen-13824
+2025-09-24 12:06:36,815 [INFO]     Found 30 products
+2025-09-24 12:06:44,909 [INFO]   Subcategory: https://shop.billa.at/kategorie/alkoholfreie-spirituosen-14533
+2025-09-24 12:06:49,009 [INFO]     Found 14 products
+2025-09-24 12:06:53,065 [INFO] Category: https://shop.billa.at/kategorie/neu-im-online-shop-14506?sortBy=relevance
+2025-09-24 12:06:55,806 [INFO]   Found 5 subcategories
+2025-09-24 12:06:56,307 [INFO]   Subcategory: https://shop.billa.at/kategorie/neu-im-online-shop-14506?sortBy=relevance&page=2
+2025-09-24 12:07:00,569 [INFO]     Found 30 products
+2025-09-24 12:07:08,684 [INFO]   Subcategory: https://shop.billa.at/kategorie/neu-im-online-shop-14506?sortBy=relevance&page=3
+2025-09-24 12:07:12,800 [INFO]     Found 30 products
+2025-09-24 12:07:20,902 [INFO]   Subcategory: https://shop.billa.at/kategorie/neu-im-online-shop-14506?sortBy=relevance&page=4
+2025-09-24 12:07:25,164 [INFO]     Found 30 products
+2025-09-24 12:07:33,246 [INFO]   Subcategory: https://shop.billa.at/kategorie/neu-im-online-shop-14506?sortBy=relevance&page=5
+2025-09-24 12:07:37,472 [INFO]     Found 30 products
+2025-09-24 12:07:45,566 [INFO]   Subcategory: https://shop.billa.at/kategorie/neu-im-online-shop-14506?sortBy=relevance&page=14
+2025-09-24 12:07:49,635 [INFO]     Found 22 products
