@@ -1,156 +1,133 @@
-#!/usr/bin/env python3
-"""
-Billa Crawler with Pagination
------------------------------
-- Extracts category, subcategory, and product URLs (with pagination) from Billa Shop
-- Saves records incrementally to:
-    * MongoDB collection (product_urls)
-    * product_urls.json (one JSON object per line)
-    * crawler.log (logging)
-"""
-
 import asyncio
-import json
 import logging
 from pathlib import Path
 from datetime import datetime
-from datetime import datetime, timezone
+from urllib.parse import urljoin
 from playwright.async_api import async_playwright
 from pymongo import MongoClient
 
 
-# ---------------- Logging ----------------
-LOG_FILE = "crawler.log"
-logging.basicConfig(
-    filename=LOG_FILE,
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(message)s",
-)
+class BillaCrawler:
+    def __init__(self, start_url, mongo_uri="mongodb://localhost:27017", db_name="billa_site_db"):
+        self.start_url = start_url
+        self.mongo_client = MongoClient(mongo_uri)
+        self.db = self.mongo_client[db_name]
+        self.product_urls_col = self.db["product_urls"]
 
-# ---------------- Output Files ----------------
-OUTPUT_JSON = Path("product_urls.json")
-OUTPUT_JSON.touch(exist_ok=True)
-
-# ---------------- MongoDB Setup ----------------
-client = MongoClient("mongodb://localhost:27017")
-db = client["billa_site_db"]
-product_urls_col = db["product_urls"]
-
-# ---------------- Selectors (XPath) ----------------
-CATEGORY_URL = "https://shop.billa.at/kategorie"
-XPATH_CATEGORY = "//a[contains(@class,'ws-category-tree-navigation-button')]"
-XPATH_SUBCATEGORY = "//a[contains(@data-test,'category-tree-navigation-button')]"
-XPATH_PRODUCT = "//a[contains(@class,'ws-product-tile__link')]"
-XPATH_NEXT_PAGE = "//a[contains(@aria-label,'Next page')]"
-
-
-# ---------------- Save Helpers ----------------
-
-def save_record(category_url: str, subcategory_url: str, product_url: str):
-    """Save record to JSON and MongoDB"""
-    inserted_at = datetime.now(timezone.utc)
-
-    record = {
-        "category_url": category_url,
-        "subcategory_url": subcategory_url,
-        "product_url": product_url,
-        "inserted_at": inserted_at,  # datetime for Mongo
-    }
-
-    # Save to JSON (convert datetime → string)
-    json_record = {
-        **record,
-        "inserted_at": inserted_at.isoformat()
-    }
-    with open(OUTPUT_JSON, "a", encoding="utf-8") as f:
-        f.write(json.dumps(json_record, ensure_ascii=False) + "\n")
-
-    # Save to MongoDB (datetime stored natively)
-    if not product_urls_col.find_one({"product_url": product_url}):
-        product_urls_col.insert_one(record)
-
-
-async def scrape_billa():
-    logging.info("🚀 Starting Billa crawler...")
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        context = await browser.new_context(
-            user_agent="Mozilla/5.0 (compatible; BillaCrawler/1.0)"
+        # logging
+        log_path = Path("crawler.log")
+        logging.basicConfig(
+            filename=log_path,
+            level=logging.INFO,
+            format="%(asctime)s [%(levelname)s] %(message)s",
         )
-        page = await context.new_page()
+        self.logger = logging.getLogger("BillaCrawler")
 
-        # ---------------- Load Category Page ----------------
-        logging.info(f"Navigating to {CATEGORY_URL}")
-        response = await page.goto(CATEGORY_URL, timeout=60000)
-        if response:
-            logging.info(f"✅ Loaded {CATEGORY_URL} [status={response.status}]")
-        else:
-            logging.error(f"❌ Failed to load {CATEGORY_URL}")
-            return
+    async def run(self):
+        """Main entry point"""
+        self.logger.info("Starting Billa crawler...")
+        async with async_playwright() as p:
+            browser = await p.chromium.launch(headless=False)
+            context = await browser.new_context(user_agent="Mozilla/5.0 (compatible; BillaCrawler/1.0)")
+            page = await context.new_page()
 
-        # ---------------- Extract Category URLs ----------------
-        category_links = await page.eval_on_selector_all(
-            XPATH_CATEGORY,
-            "elements => elements.map(el => el.href)"
-        )
-        logging.info(f"Found {len(category_links)} category URLs")
+            categories = await self.get_categories(page)
 
-        # ---------------- Loop through Categories ----------------
-        for category_url in category_links:
+            for name, url in categories.items():
+                self.logger.info(f"Scraping category: {name} -> {url}")
+                try:
+                    product_urls = await self.scrape_category(page, url)
+                    self.save_to_mongo(name, url, product_urls)
+                except Exception as e:
+                    self.logger.error(f"Failed scraping {name}: {e}")
+
+            await browser.close()
+        self.logger.info("Crawler finished successfully.")
+
+    async def get_categories(self, page):
+        """Extract category URLs from main category page"""
+        await page.goto(self.start_url)
+        await page.wait_for_selector("xpath=//a[@data-test='category-tree-navigation-button']")
+
+        elements = await page.query_selector_all("xpath=//a[@data-test='category-tree-navigation-button']")
+        categories = {}
+        for el in elements:
+            href = await el.get_attribute("href")
+            text = (await el.inner_text()) or "Unnamed"
+            if href:
+                full_url = urljoin(self.start_url, href)
+                categories[text.strip()] = full_url
+        return categories
+
+    async def scrape_category(self, page, category_url):
+        """Scrape all product URLs for a given category (with pagination)"""
+        product_urls = set()
+        next_page = category_url
+        page_number = 1
+
+        while next_page:
+            self.logger.info(f"Scraping page {page_number} -> {next_page}")
+            await page.goto(next_page, wait_until="domcontentloaded", timeout=90000)
+
+    
             try:
-                logging.info(f"➡️ Visiting category: {category_url}")
-                resp_cat = await page.goto(category_url, timeout=60000)
-                if resp_cat:
-                    logging.info(f"✅ Loaded {category_url} [status={resp_cat.status}]")
+                await page.wait_for_selector("xpath=//a[@data-test='product-tile-link']", timeout=15000)
+            except Exception:
+                self.logger.warning(f"No products found on {next_page}")
+                break
+
+        
+            prev_height = 0
+            while True:
+                current_height = await page.evaluate("document.body.scrollHeight")
+                await page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+                await page.wait_for_timeout(2000)
+                new_height = await page.evaluate("document.body.scrollHeight")
+                if new_height == prev_height:
+                    break
+                prev_height = new_height
+
+
+            items = await page.query_selector_all("xpath=//a[@data-test='product-tile-link']")
+            for item in items:
+                href = await item.get_attribute("href")
+                if href:
+                    product_urls.add(urljoin(self.start_url, href))
+
+            self.logger.info(f"Collected {len(product_urls)} product URLs so far for {category_url}")
+
+        
+            next_btn = await page.query_selector(
+                "xpath=//a[@aria-label='Next page' or @aria-label='Nächste Seite']"
+            )
+            if next_btn:
+                href = await next_btn.get_attribute("href")
+                if href:
+                    next_page = urljoin(self.start_url, href)
+                    page_number += 1
                 else:
-                    logging.warning(f"⚠️ No response for {category_url}")
-                    continue
+                    next_page = None
+            else:
+                next_page = None
 
-                # Extract Subcategory URLs
-                subcategory_links = await page.eval_on_selector_all(
-                    XPATH_SUBCATEGORY,
-                    "elements => elements.map(el => el.href)"
-                )
-                logging.info(f"Found {len(subcategory_links)} subcategories in {category_url}")
+        return list(product_urls)
 
-                # ---------------- Loop through Subcategories ----------------
-                for sub_url in subcategory_links:
-                    try:
-                        logging.info(f"➡️ Visiting subcategory: {sub_url}")
-                        await page.goto(sub_url, timeout=60000)
 
-                        # Loop through pagination
-                        while True:
-                            # Extract product URLs
-                            product_links = await page.eval_on_selector_all(
-                                XPATH_PRODUCT,
-                                "elements => elements.map(el => el.href)"
-                            )
-                            logging.info(f"Found {len(product_links)} products in {sub_url}")
-
-                            for product_url in product_links:
-                                save_record(category_url, sub_url, product_url)
-                                logging.info(f"💾 Saved product: {product_url}")
-
-                            # Check for pagination "next page"
-                            next_button = await page.query_selector(XPATH_NEXT_PAGE)
-                            if next_button:
-                                next_href = await next_button.get_attribute("href")
-                                if next_href:
-                                    logging.info(f"➡️ Going to next page: {next_href}")
-                                    await page.goto(next_href, timeout=60000)
-                                    continue
-                            break  # No more pages
-
-                    except Exception as e:
-                        logging.error(f"❌ Error in subcategory {sub_url}: {e}")
-
-            except Exception as e:
-                logging.error(f"❌ Error in category {category_url}: {e}")
-
-        await browser.close()
-        logging.info("🎉 Crawler finished successfully!")
+    def save_to_mongo(self, category_name, category_url, product_urls):
+        """Save category & product URLs to MongoDB"""
+        record = {
+            "category_name": category_name,
+            "category_url": category_url,
+            "product_urls": product_urls,
+            "scraped_at": datetime.utcnow(),
+        }
+        self.product_urls_col.update_one(
+            {"category_url": category_url}, {"$set": record}, upsert=True
+        )
+        self.logger.info(f"Saved {len(product_urls)} products for category: {category_name}")
 
 
 if __name__ == "__main__":
-    asyncio.run(scrape_billa())
+    start_url = "https://shop.billa.at/kategorie"
+    crawler = BillaCrawler(start_url=start_url)
+    asyncio.run(crawler.run())

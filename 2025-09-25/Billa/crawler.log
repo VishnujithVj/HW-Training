@@ -1,0 +1,644 @@
+2025-09-26 17:44:03,004 [INFO] Starting Billa crawler...
+2025-09-26 17:44:09,138 [INFO] Scraping category: Neu im Online Shop
+412 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:09,138 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:18,615 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:18,627 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=2
+2025-09-26 17:44:27,404 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:27,419 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=3
+2025-09-26 17:44:33,193 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:33,201 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=4
+2025-09-26 17:44:40,309 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:40,319 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=5
+2025-09-26 17:44:46,682 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:46,695 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=6
+2025-09-26 17:44:52,464 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:52,473 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=7
+2025-09-26 17:44:58,311 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:44:58,320 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=8
+2025-09-26 17:45:05,584 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:45:05,597 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=9
+2025-09-26 17:45:14,589 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:45:14,597 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=10
+2025-09-26 17:45:20,349 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:45:20,362 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=11
+2025-09-26 17:45:28,749 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:45:28,760 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=12
+2025-09-26 17:45:34,262 [INFO] Collected 360 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:45:34,270 [INFO] Scraping page 13 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=13
+2025-09-26 17:45:40,115 [INFO] Collected 390 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:45:40,128 [INFO] Scraping page 14 -> https://shop.billa.at/kategorie/neu-im-online-shop-14506?page=14
+2025-09-26 17:45:46,900 [INFO] Collected 412 product URLs so far for https://shop.billa.at/kategorie/neu-im-online-shop-14506
+2025-09-26 17:45:46,933 [INFO] Saved 412 products for category: Neu im Online Shop
+412
+2025-09-26 17:45:46,933 [INFO] Scraping category: Obst & Gemüse
+335 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:45:46,933 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:45:52,339 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:45:52,349 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=2
+2025-09-26 17:45:58,495 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:45:58,508 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=3
+2025-09-26 17:46:04,402 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:04,409 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=4
+2025-09-26 17:46:12,191 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:12,203 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=5
+2025-09-26 17:46:19,253 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:19,263 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=6
+2025-09-26 17:46:26,423 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:26,438 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=7
+2025-09-26 17:46:31,965 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:31,972 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=8
+2025-09-26 17:46:39,129 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:39,137 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=9
+2025-09-26 17:46:44,552 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:44,569 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=10
+2025-09-26 17:46:52,789 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:52,799 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=11
+2025-09-26 17:46:58,398 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:46:58,413 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/obst-und-gemuese-13751?page=12
+2025-09-26 17:47:06,420 [INFO] Collected 335 product URLs so far for https://shop.billa.at/kategorie/obst-und-gemuese-13751
+2025-09-26 17:47:06,439 [INFO] Saved 335 products for category: Obst & Gemüse
+335
+2025-09-26 17:47:06,439 [INFO] Scraping category: Brot & Gebäck
+404 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:06,439 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:12,000 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:12,010 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=2
+2025-09-26 17:47:18,817 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:18,824 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=3
+2025-09-26 17:47:24,568 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:24,579 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=4
+2025-09-26 17:47:31,719 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:31,728 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=5
+2025-09-26 17:47:38,687 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:38,703 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=6
+2025-09-26 17:47:44,293 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:44,304 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=7
+2025-09-26 17:47:52,773 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:52,789 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=8
+2025-09-26 17:47:58,789 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:47:58,800 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=9
+2025-09-26 17:48:04,484 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:48:04,499 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=10
+2025-09-26 17:48:12,838 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:48:12,846 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=11
+2025-09-26 17:48:20,756 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:48:20,768 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=12
+2025-09-26 17:48:26,635 [INFO] Collected 360 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:48:26,650 [INFO] Scraping page 13 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=13
+2025-09-26 17:48:32,626 [INFO] Collected 390 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:48:32,635 [INFO] Scraping page 14 -> https://shop.billa.at/kategorie/brot-und-gebaeck-13766?page=14
+2025-09-26 17:48:38,202 [INFO] Collected 404 product URLs so far for https://shop.billa.at/kategorie/brot-und-gebaeck-13766
+2025-09-26 17:48:38,218 [INFO] Saved 404 products for category: Brot & Gebäck
+404
+2025-09-26 17:48:38,219 [INFO] Scraping category: Getränke
+2269 -> https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:48:38,219 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:48:45,328 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:48:45,337 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/getraenke-13784?page=2
+2025-09-26 17:48:52,440 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:48:52,448 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/getraenke-13784?page=3
+2025-09-26 17:48:59,686 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:48:59,693 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/getraenke-13784?page=4
+2025-09-26 17:49:05,290 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:05,298 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/getraenke-13784?page=5
+2025-09-26 17:49:13,950 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:13,962 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/getraenke-13784?page=6
+2025-09-26 17:49:24,043 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:24,051 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/getraenke-13784?page=7
+2025-09-26 17:49:29,956 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:29,968 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/getraenke-13784?page=8
+2025-09-26 17:49:36,684 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:36,692 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/getraenke-13784?page=9
+2025-09-26 17:49:42,467 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:42,477 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/getraenke-13784?page=10
+2025-09-26 17:49:50,490 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:50,506 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/getraenke-13784?page=11
+2025-09-26 17:49:56,344 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:49:56,354 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/getraenke-13784?page=12
+2025-09-26 17:50:02,361 [INFO] Collected 360 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:02,372 [INFO] Scraping page 13 -> https://shop.billa.at/kategorie/getraenke-13784?page=13
+2025-09-26 17:50:09,663 [INFO] Collected 390 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:09,677 [INFO] Scraping page 14 -> https://shop.billa.at/kategorie/getraenke-13784?page=14
+2025-09-26 17:50:16,837 [INFO] Collected 420 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:16,846 [INFO] Scraping page 15 -> https://shop.billa.at/kategorie/getraenke-13784?page=15
+2025-09-26 17:50:22,889 [INFO] Collected 450 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:22,898 [INFO] Scraping page 16 -> https://shop.billa.at/kategorie/getraenke-13784?page=16
+2025-09-26 17:50:29,008 [INFO] Collected 480 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:29,019 [INFO] Scraping page 17 -> https://shop.billa.at/kategorie/getraenke-13784?page=17
+2025-09-26 17:50:34,908 [INFO] Collected 510 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:34,916 [INFO] Scraping page 18 -> https://shop.billa.at/kategorie/getraenke-13784?page=18
+2025-09-26 17:50:44,529 [INFO] Collected 540 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:44,539 [INFO] Scraping page 19 -> https://shop.billa.at/kategorie/getraenke-13784?page=19
+2025-09-26 17:50:51,549 [INFO] Collected 570 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:51,559 [INFO] Scraping page 20 -> https://shop.billa.at/kategorie/getraenke-13784?page=20
+2025-09-26 17:50:58,558 [INFO] Collected 600 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:50:58,569 [INFO] Scraping page 21 -> https://shop.billa.at/kategorie/getraenke-13784?page=21
+2025-09-26 17:51:06,379 [INFO] Collected 630 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:06,391 [INFO] Scraping page 22 -> https://shop.billa.at/kategorie/getraenke-13784?page=22
+2025-09-26 17:51:13,620 [INFO] Collected 660 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:13,630 [INFO] Scraping page 23 -> https://shop.billa.at/kategorie/getraenke-13784?page=23
+2025-09-26 17:51:20,944 [INFO] Collected 690 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:20,955 [INFO] Scraping page 24 -> https://shop.billa.at/kategorie/getraenke-13784?page=24
+2025-09-26 17:51:26,693 [INFO] Collected 720 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:26,701 [INFO] Scraping page 25 -> https://shop.billa.at/kategorie/getraenke-13784?page=25
+2025-09-26 17:51:32,591 [INFO] Collected 750 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:32,600 [INFO] Scraping page 26 -> https://shop.billa.at/kategorie/getraenke-13784?page=26
+2025-09-26 17:51:41,907 [INFO] Collected 780 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:41,919 [INFO] Scraping page 27 -> https://shop.billa.at/kategorie/getraenke-13784?page=27
+2025-09-26 17:51:47,644 [INFO] Collected 810 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:47,655 [INFO] Scraping page 28 -> https://shop.billa.at/kategorie/getraenke-13784?page=28
+2025-09-26 17:51:56,601 [INFO] Collected 840 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:51:56,613 [INFO] Scraping page 29 -> https://shop.billa.at/kategorie/getraenke-13784?page=29
+2025-09-26 17:52:04,328 [INFO] Collected 870 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:04,339 [INFO] Scraping page 30 -> https://shop.billa.at/kategorie/getraenke-13784?page=30
+2025-09-26 17:52:11,807 [INFO] Collected 900 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:11,819 [INFO] Scraping page 31 -> https://shop.billa.at/kategorie/getraenke-13784?page=31
+2025-09-26 17:52:17,569 [INFO] Collected 930 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:17,578 [INFO] Scraping page 32 -> https://shop.billa.at/kategorie/getraenke-13784?page=32
+2025-09-26 17:52:23,810 [INFO] Collected 960 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:23,820 [INFO] Scraping page 33 -> https://shop.billa.at/kategorie/getraenke-13784?page=33
+2025-09-26 17:52:31,906 [INFO] Collected 990 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:31,916 [INFO] Scraping page 34 -> https://shop.billa.at/kategorie/getraenke-13784?page=34
+2025-09-26 17:52:37,636 [INFO] Collected 1020 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:37,646 [INFO] Scraping page 35 -> https://shop.billa.at/kategorie/getraenke-13784?page=35
+2025-09-26 17:52:45,812 [INFO] Collected 1050 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:45,821 [INFO] Scraping page 36 -> https://shop.billa.at/kategorie/getraenke-13784?page=36
+2025-09-26 17:52:51,527 [INFO] Collected 1080 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:52:51,541 [INFO] Scraping page 37 -> https://shop.billa.at/kategorie/getraenke-13784?page=37
+2025-09-26 17:53:00,714 [INFO] Collected 1110 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:00,724 [INFO] Scraping page 38 -> https://shop.billa.at/kategorie/getraenke-13784?page=38
+2025-09-26 17:53:08,121 [INFO] Collected 1140 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:08,132 [INFO] Scraping page 39 -> https://shop.billa.at/kategorie/getraenke-13784?page=39
+2025-09-26 17:53:15,472 [INFO] Collected 1170 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:15,483 [INFO] Scraping page 40 -> https://shop.billa.at/kategorie/getraenke-13784?page=40
+2025-09-26 17:53:21,166 [INFO] Collected 1200 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:21,177 [INFO] Scraping page 41 -> https://shop.billa.at/kategorie/getraenke-13784?page=41
+2025-09-26 17:53:27,834 [INFO] Collected 1230 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:27,842 [INFO] Scraping page 42 -> https://shop.billa.at/kategorie/getraenke-13784?page=42
+2025-09-26 17:53:33,471 [INFO] Collected 1260 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:33,479 [INFO] Scraping page 43 -> https://shop.billa.at/kategorie/getraenke-13784?page=43
+2025-09-26 17:53:39,468 [INFO] Collected 1290 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:39,474 [INFO] Scraping page 44 -> https://shop.billa.at/kategorie/getraenke-13784?page=44
+2025-09-26 17:53:47,977 [INFO] Collected 1320 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:47,989 [INFO] Scraping page 45 -> https://shop.billa.at/kategorie/getraenke-13784?page=45
+2025-09-26 17:53:56,101 [INFO] Collected 1350 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:53:56,109 [INFO] Scraping page 46 -> https://shop.billa.at/kategorie/getraenke-13784?page=46
+2025-09-26 17:54:01,960 [INFO] Collected 1380 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:01,970 [INFO] Scraping page 47 -> https://shop.billa.at/kategorie/getraenke-13784?page=47
+2025-09-26 17:54:08,073 [INFO] Collected 1410 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:08,081 [INFO] Scraping page 48 -> https://shop.billa.at/kategorie/getraenke-13784?page=48
+2025-09-26 17:54:15,297 [INFO] Collected 1440 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:15,308 [INFO] Scraping page 49 -> https://shop.billa.at/kategorie/getraenke-13784?page=49
+2025-09-26 17:54:20,882 [INFO] Collected 1470 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:20,894 [INFO] Scraping page 50 -> https://shop.billa.at/kategorie/getraenke-13784?page=50
+2025-09-26 17:54:29,770 [INFO] Collected 1500 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:29,779 [INFO] Scraping page 51 -> https://shop.billa.at/kategorie/getraenke-13784?page=51
+2025-09-26 17:54:35,475 [INFO] Collected 1530 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:35,486 [INFO] Scraping page 52 -> https://shop.billa.at/kategorie/getraenke-13784?page=52
+2025-09-26 17:54:44,489 [INFO] Collected 1560 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:44,498 [INFO] Scraping page 53 -> https://shop.billa.at/kategorie/getraenke-13784?page=53
+2025-09-26 17:54:50,490 [INFO] Collected 1590 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:50,498 [INFO] Scraping page 54 -> https://shop.billa.at/kategorie/getraenke-13784?page=54
+2025-09-26 17:54:56,117 [INFO] Collected 1620 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:54:56,125 [INFO] Scraping page 55 -> https://shop.billa.at/kategorie/getraenke-13784?page=55
+2025-09-26 17:55:02,341 [INFO] Collected 1650 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:02,351 [INFO] Scraping page 56 -> https://shop.billa.at/kategorie/getraenke-13784?page=56
+2025-09-26 17:55:11,189 [INFO] Collected 1680 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:11,200 [INFO] Scraping page 57 -> https://shop.billa.at/kategorie/getraenke-13784?page=57
+2025-09-26 17:55:19,317 [INFO] Collected 1710 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:19,328 [INFO] Scraping page 58 -> https://shop.billa.at/kategorie/getraenke-13784?page=58
+2025-09-26 17:55:26,843 [INFO] Collected 1740 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:26,855 [INFO] Scraping page 59 -> https://shop.billa.at/kategorie/getraenke-13784?page=59
+2025-09-26 17:55:34,090 [INFO] Collected 1770 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:34,098 [INFO] Scraping page 60 -> https://shop.billa.at/kategorie/getraenke-13784?page=60
+2025-09-26 17:55:39,724 [INFO] Collected 1800 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:39,734 [INFO] Scraping page 61 -> https://shop.billa.at/kategorie/getraenke-13784?page=61
+2025-09-26 17:55:48,706 [INFO] Collected 1830 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:48,718 [INFO] Scraping page 62 -> https://shop.billa.at/kategorie/getraenke-13784?page=62
+2025-09-26 17:55:54,405 [INFO] Collected 1860 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:55:54,415 [INFO] Scraping page 63 -> https://shop.billa.at/kategorie/getraenke-13784?page=63
+2025-09-26 17:56:01,622 [INFO] Collected 1890 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:01,634 [INFO] Scraping page 64 -> https://shop.billa.at/kategorie/getraenke-13784?page=64
+2025-09-26 17:56:09,007 [INFO] Collected 1920 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:09,015 [INFO] Scraping page 65 -> https://shop.billa.at/kategorie/getraenke-13784?page=65
+2025-09-26 17:56:20,271 [INFO] Collected 1950 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:20,284 [INFO] Scraping page 66 -> https://shop.billa.at/kategorie/getraenke-13784?page=66
+2025-09-26 17:56:26,037 [INFO] Collected 1980 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:26,046 [INFO] Scraping page 67 -> https://shop.billa.at/kategorie/getraenke-13784?page=67
+2025-09-26 17:56:34,780 [INFO] Collected 2010 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:34,792 [INFO] Scraping page 68 -> https://shop.billa.at/kategorie/getraenke-13784?page=68
+2025-09-26 17:56:40,787 [INFO] Collected 2040 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:40,797 [INFO] Scraping page 69 -> https://shop.billa.at/kategorie/getraenke-13784?page=69
+2025-09-26 17:56:50,606 [INFO] Collected 2070 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:50,618 [INFO] Scraping page 70 -> https://shop.billa.at/kategorie/getraenke-13784?page=70
+2025-09-26 17:56:58,351 [INFO] Collected 2100 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:56:58,365 [INFO] Scraping page 71 -> https://shop.billa.at/kategorie/getraenke-13784?page=71
+2025-09-26 17:57:05,594 [INFO] Collected 2130 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:57:05,606 [INFO] Scraping page 72 -> https://shop.billa.at/kategorie/getraenke-13784?page=72
+2025-09-26 17:57:11,813 [INFO] Collected 2160 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:57:11,822 [INFO] Scraping page 73 -> https://shop.billa.at/kategorie/getraenke-13784?page=73
+2025-09-26 17:57:20,343 [INFO] Collected 2190 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:57:20,355 [INFO] Scraping page 74 -> https://shop.billa.at/kategorie/getraenke-13784?page=74
+2025-09-26 17:57:27,790 [INFO] Collected 2220 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:57:27,798 [INFO] Scraping page 75 -> https://shop.billa.at/kategorie/getraenke-13784?page=75
+2025-09-26 17:57:34,954 [INFO] Collected 2250 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:57:34,966 [INFO] Scraping page 76 -> https://shop.billa.at/kategorie/getraenke-13784?page=76
+2025-09-26 17:57:42,068 [INFO] Collected 2268 product URLs so far for https://shop.billa.at/kategorie/getraenke-13784
+2025-09-26 17:57:42,087 [INFO] Saved 2268 products for category: Getränke
+2269
+2025-09-26 17:57:42,088 [INFO] Scraping category: Kühlwaren
+1823 -> https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:57:42,088 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:57:50,677 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:57:50,686 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=2
+2025-09-26 17:57:56,459 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:57:56,468 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=3
+2025-09-26 17:58:02,851 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:02,857 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=4
+2025-09-26 17:58:08,670 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:08,680 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=5
+2025-09-26 17:58:17,463 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:17,474 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=6
+2025-09-26 17:58:24,759 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:24,768 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=7
+2025-09-26 17:58:30,335 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:30,344 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=8
+2025-09-26 17:58:39,128 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:39,135 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=9
+2025-09-26 17:58:45,006 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:45,016 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=10
+2025-09-26 17:58:54,627 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:58:54,638 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=11
+2025-09-26 17:59:00,437 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:00,450 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=12
+2025-09-26 17:59:07,868 [INFO] Collected 360 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:07,878 [INFO] Scraping page 13 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=13
+2025-09-26 17:59:14,452 [INFO] Collected 390 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:14,461 [INFO] Scraping page 14 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=14
+2025-09-26 17:59:22,262 [INFO] Collected 420 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:22,272 [INFO] Scraping page 15 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=15
+2025-09-26 17:59:32,874 [INFO] Collected 450 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:32,884 [INFO] Scraping page 16 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=16
+2025-09-26 17:59:40,798 [INFO] Collected 480 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:40,806 [INFO] Scraping page 17 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=17
+2025-09-26 17:59:46,459 [INFO] Collected 510 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:46,470 [INFO] Scraping page 18 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=18
+2025-09-26 17:59:52,581 [INFO] Collected 540 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 17:59:52,590 [INFO] Scraping page 19 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=19
+2025-09-26 18:00:00,033 [INFO] Collected 570 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:00,041 [INFO] Scraping page 20 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=20
+2025-09-26 18:00:05,707 [INFO] Collected 600 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:05,726 [INFO] Scraping page 21 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=21
+2025-09-26 18:00:12,179 [INFO] Collected 630 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:12,191 [INFO] Scraping page 22 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=22
+2025-09-26 18:00:17,954 [INFO] Collected 660 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:17,962 [INFO] Scraping page 23 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=23
+2025-09-26 18:00:25,008 [INFO] Collected 690 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:25,019 [INFO] Scraping page 24 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=24
+2025-09-26 18:00:30,800 [INFO] Collected 720 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:30,811 [INFO] Scraping page 25 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=25
+2025-09-26 18:00:39,148 [INFO] Collected 750 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:39,156 [INFO] Scraping page 26 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=26
+2025-09-26 18:00:46,813 [INFO] Collected 780 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:46,821 [INFO] Scraping page 27 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=27
+2025-09-26 18:00:52,544 [INFO] Collected 810 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:00:52,552 [INFO] Scraping page 28 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=28
+2025-09-26 18:01:01,060 [INFO] Collected 840 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:01,068 [INFO] Scraping page 29 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=29
+2025-09-26 18:01:08,188 [INFO] Collected 870 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:08,199 [INFO] Scraping page 30 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=30
+2025-09-26 18:01:14,297 [INFO] Collected 900 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:14,306 [INFO] Scraping page 31 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=31
+2025-09-26 18:01:19,959 [INFO] Collected 930 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:19,968 [INFO] Scraping page 32 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=32
+2025-09-26 18:01:26,058 [INFO] Collected 960 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:26,065 [INFO] Scraping page 33 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=33
+2025-09-26 18:01:35,044 [INFO] Collected 990 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:35,051 [INFO] Scraping page 34 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=34
+2025-09-26 18:01:42,167 [INFO] Collected 1020 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:42,180 [INFO] Scraping page 35 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=35
+2025-09-26 18:01:50,096 [INFO] Collected 1050 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:50,105 [INFO] Scraping page 36 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=36
+2025-09-26 18:01:57,649 [INFO] Collected 1080 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:01:57,657 [INFO] Scraping page 37 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=37
+2025-09-26 18:02:04,925 [INFO] Collected 1110 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:04,935 [INFO] Scraping page 38 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=38
+2025-09-26 18:02:16,008 [INFO] Collected 1140 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:16,020 [INFO] Scraping page 39 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=39
+2025-09-26 18:02:23,525 [INFO] Collected 1170 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:23,537 [INFO] Scraping page 40 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=40
+2025-09-26 18:02:31,046 [INFO] Collected 1200 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:31,056 [INFO] Scraping page 41 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=41
+2025-09-26 18:02:36,873 [INFO] Collected 1230 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:36,883 [INFO] Scraping page 42 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=42
+2025-09-26 18:02:42,723 [INFO] Collected 1260 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:42,739 [INFO] Scraping page 43 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=43
+2025-09-26 18:02:49,178 [INFO] Collected 1290 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:49,187 [INFO] Scraping page 44 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=44
+2025-09-26 18:02:55,805 [INFO] Collected 1320 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:02:55,814 [INFO] Scraping page 45 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=45
+2025-09-26 18:03:02,275 [INFO] Collected 1350 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:02,285 [INFO] Scraping page 46 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=46
+2025-09-26 18:03:12,313 [INFO] Collected 1380 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:12,325 [INFO] Scraping page 47 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=47
+2025-09-26 18:03:19,736 [INFO] Collected 1410 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:19,749 [INFO] Scraping page 48 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=48
+2025-09-26 18:03:27,092 [INFO] Collected 1440 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:27,102 [INFO] Scraping page 49 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=49
+2025-09-26 18:03:33,187 [INFO] Collected 1470 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:33,194 [INFO] Scraping page 50 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=50
+2025-09-26 18:03:39,076 [INFO] Collected 1500 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:39,090 [INFO] Scraping page 51 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=51
+2025-09-26 18:03:45,102 [INFO] Collected 1530 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:45,118 [INFO] Scraping page 52 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=52
+2025-09-26 18:03:51,512 [INFO] Collected 1560 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:51,528 [INFO] Scraping page 53 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=53
+2025-09-26 18:03:58,025 [INFO] Collected 1590 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:03:58,038 [INFO] Scraping page 54 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=54
+2025-09-26 18:04:04,970 [INFO] Collected 1620 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:04,984 [INFO] Scraping page 55 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=55
+2025-09-26 18:04:14,442 [INFO] Collected 1650 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:14,457 [INFO] Scraping page 56 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=56
+2025-09-26 18:04:20,800 [INFO] Collected 1680 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:20,815 [INFO] Scraping page 57 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=57
+2025-09-26 18:04:26,555 [INFO] Collected 1710 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:26,569 [INFO] Scraping page 58 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=58
+2025-09-26 18:04:36,399 [INFO] Collected 1740 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:36,409 [INFO] Scraping page 59 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=59
+2025-09-26 18:04:42,179 [INFO] Collected 1770 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:42,192 [INFO] Scraping page 60 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=60
+2025-09-26 18:04:48,735 [INFO] Collected 1800 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:48,748 [INFO] Scraping page 61 -> https://shop.billa.at/kategorie/kuehlwaren-13841?page=61
+2025-09-26 18:04:56,596 [INFO] Collected 1821 product URLs so far for https://shop.billa.at/kategorie/kuehlwaren-13841
+2025-09-26 18:04:56,619 [INFO] Saved 1821 products for category: Kühlwaren
+1823
+2025-09-26 18:04:56,619 [INFO] Scraping category: Tiefkühl
+791 -> https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:04:56,619 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:04,045 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:04,058 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=2
+2025-09-26 18:05:11,679 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:11,692 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=3
+2025-09-26 18:05:19,115 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:19,124 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=4
+2025-09-26 18:05:24,963 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:24,976 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=5
+2025-09-26 18:05:33,432 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:33,446 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=6
+2025-09-26 18:05:41,505 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:41,518 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=7
+2025-09-26 18:05:47,424 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:47,435 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=8
+2025-09-26 18:05:56,467 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:05:56,481 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=9
+2025-09-26 18:06:03,719 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:03,733 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=10
+2025-09-26 18:06:11,012 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:11,028 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=11
+2025-09-26 18:06:18,549 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:18,562 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=12
+2025-09-26 18:06:26,088 [INFO] Collected 360 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:26,103 [INFO] Scraping page 13 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=13
+2025-09-26 18:06:33,036 [INFO] Collected 390 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:33,048 [INFO] Scraping page 14 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=14
+2025-09-26 18:06:40,473 [INFO] Collected 420 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:40,496 [INFO] Scraping page 15 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=15
+2025-09-26 18:06:46,202 [INFO] Collected 450 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:46,213 [INFO] Scraping page 16 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=16
+2025-09-26 18:06:52,698 [INFO] Collected 480 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:52,713 [INFO] Scraping page 17 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=17
+2025-09-26 18:06:58,283 [INFO] Collected 510 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:06:58,296 [INFO] Scraping page 18 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=18
+2025-09-26 18:07:06,026 [INFO] Collected 540 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:06,035 [INFO] Scraping page 19 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=19
+2025-09-26 18:07:13,508 [INFO] Collected 570 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:13,516 [INFO] Scraping page 20 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=20
+2025-09-26 18:07:19,510 [INFO] Collected 600 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:19,525 [INFO] Scraping page 21 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=21
+2025-09-26 18:07:28,418 [INFO] Collected 630 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:28,428 [INFO] Scraping page 22 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=22
+2025-09-26 18:07:35,906 [INFO] Collected 660 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:35,919 [INFO] Scraping page 23 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=23
+2025-09-26 18:07:41,844 [INFO] Collected 690 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:41,857 [INFO] Scraping page 24 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=24
+2025-09-26 18:07:47,557 [INFO] Collected 720 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:47,570 [INFO] Scraping page 25 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=25
+2025-09-26 18:07:53,505 [INFO] Collected 750 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:07:53,518 [INFO] Scraping page 26 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=26
+2025-09-26 18:08:00,930 [INFO] Collected 780 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:08:00,945 [INFO] Scraping page 27 -> https://shop.billa.at/kategorie/tiefkuehl-13916?page=27
+2025-09-26 18:08:06,883 [INFO] Collected 791 product URLs so far for https://shop.billa.at/kategorie/tiefkuehl-13916
+2025-09-26 18:08:06,904 [INFO] Saved 791 products for category: Tiefkühl
+791
+2025-09-26 18:08:06,904 [INFO] Scraping category: Nahrungsmittel
+2984 -> https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:06,904 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:14,290 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:14,300 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=2
+2025-09-26 18:08:20,648 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:20,662 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=3
+2025-09-26 18:08:31,993 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:32,003 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=4
+2025-09-26 18:08:38,249 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:38,262 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=5
+2025-09-26 18:08:47,438 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:47,452 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=6
+2025-09-26 18:08:53,838 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:53,851 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=7
+2025-09-26 18:08:59,563 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:08:59,574 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=8
+2025-09-26 18:09:06,346 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:06,359 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=9
+2025-09-26 18:09:14,499 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:14,514 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=10
+2025-09-26 18:09:23,478 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:23,492 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=11
+2025-09-26 18:09:30,924 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:30,940 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=12
+2025-09-26 18:09:39,357 [INFO] Collected 360 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:39,370 [INFO] Scraping page 13 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=13
+2025-09-26 18:09:45,477 [INFO] Collected 390 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:45,492 [INFO] Scraping page 14 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=14
+2025-09-26 18:09:51,738 [INFO] Collected 420 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:51,752 [INFO] Scraping page 15 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=15
+2025-09-26 18:09:57,436 [INFO] Collected 450 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:09:57,450 [INFO] Scraping page 16 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=16
+2025-09-26 18:10:03,545 [INFO] Collected 480 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:03,560 [INFO] Scraping page 17 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=17
+2025-09-26 18:10:09,308 [INFO] Collected 510 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:09,323 [INFO] Scraping page 18 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=18
+2025-09-26 18:10:17,076 [INFO] Collected 540 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:17,091 [INFO] Scraping page 19 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=19
+2025-09-26 18:10:24,791 [INFO] Collected 570 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:24,804 [INFO] Scraping page 20 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=20
+2025-09-26 18:10:32,836 [INFO] Collected 600 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:32,843 [INFO] Scraping page 21 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=21
+2025-09-26 18:10:40,976 [INFO] Collected 630 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:40,990 [INFO] Scraping page 22 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=22
+2025-09-26 18:10:47,222 [INFO] Collected 660 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:47,234 [INFO] Scraping page 23 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=23
+2025-09-26 18:10:56,260 [INFO] Collected 690 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:10:56,275 [INFO] Scraping page 24 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=24
+2025-09-26 18:11:02,074 [INFO] Collected 720 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:02,087 [INFO] Scraping page 25 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=25
+2025-09-26 18:11:08,277 [INFO] Collected 750 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:08,292 [INFO] Scraping page 26 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=26
+2025-09-26 18:11:14,252 [INFO] Collected 780 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:14,260 [INFO] Scraping page 27 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=27
+2025-09-26 18:11:22,552 [INFO] Collected 810 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:22,566 [INFO] Scraping page 28 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=28
+2025-09-26 18:11:28,639 [INFO] Collected 840 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:28,649 [INFO] Scraping page 29 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=29
+2025-09-26 18:11:34,937 [INFO] Collected 870 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:34,950 [INFO] Scraping page 30 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=30
+2025-09-26 18:11:41,191 [INFO] Collected 900 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:41,205 [INFO] Scraping page 31 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=31
+2025-09-26 18:11:48,021 [INFO] Collected 930 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:48,035 [INFO] Scraping page 32 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=32
+2025-09-26 18:11:54,121 [INFO] Collected 960 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:11:54,134 [INFO] Scraping page 33 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=33
+2025-09-26 18:12:00,861 [INFO] Collected 990 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:00,885 [INFO] Scraping page 34 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=34
+2025-09-26 18:12:07,374 [INFO] Collected 1020 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:07,389 [INFO] Scraping page 35 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=35
+2025-09-26 18:12:16,140 [INFO] Collected 1050 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:16,154 [INFO] Scraping page 36 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=36
+2025-09-26 18:12:23,715 [INFO] Collected 1080 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:23,728 [INFO] Scraping page 37 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=37
+2025-09-26 18:12:29,658 [INFO] Collected 1110 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:29,671 [INFO] Scraping page 38 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=38
+2025-09-26 18:12:37,817 [INFO] Collected 1140 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:37,829 [INFO] Scraping page 39 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=39
+2025-09-26 18:12:45,441 [INFO] Collected 1170 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:45,459 [INFO] Scraping page 40 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=40
+2025-09-26 18:12:51,600 [INFO] Collected 1200 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:51,613 [INFO] Scraping page 41 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=41
+2025-09-26 18:12:57,621 [INFO] Collected 1230 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:12:57,633 [INFO] Scraping page 42 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=42
+2025-09-26 18:13:03,412 [INFO] Collected 1260 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:03,425 [INFO] Scraping page 43 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=43
+2025-09-26 18:13:12,619 [INFO] Collected 1290 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:12,634 [INFO] Scraping page 44 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=44
+2025-09-26 18:13:19,013 [INFO] Collected 1320 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:19,022 [INFO] Scraping page 45 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=45
+2025-09-26 18:13:25,540 [INFO] Collected 1350 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:25,554 [INFO] Scraping page 46 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=46
+2025-09-26 18:13:33,289 [INFO] Collected 1380 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:33,300 [INFO] Scraping page 47 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=47
+2025-09-26 18:13:39,709 [INFO] Collected 1410 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:39,719 [INFO] Scraping page 48 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=48
+2025-09-26 18:13:45,899 [INFO] Collected 1440 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:45,923 [INFO] Scraping page 49 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=49
+2025-09-26 18:13:54,428 [INFO] Collected 1470 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:13:54,445 [INFO] Scraping page 50 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=50
+2025-09-26 18:14:03,281 [INFO] Collected 1500 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:14:03,295 [INFO] Scraping page 51 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=51
+2025-09-26 18:14:09,143 [INFO] Collected 1530 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:14:09,150 [INFO] Scraping page 52 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=52
+2025-09-26 18:14:18,235 [INFO] Collected 1560 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:14:18,246 [INFO] Scraping page 53 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=53
+2025-09-26 18:14:24,195 [INFO] Collected 1590 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:14:24,206 [INFO] Scraping page 54 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=54
+2025-09-26 18:14:31,048 [INFO] Collected 1620 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:14:31,062 [INFO] Scraping page 55 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=55
+2025-09-26 18:14:39,597 [INFO] Collected 1650 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:14:39,609 [INFO] Scraping page 56 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=56
+2025-09-26 18:14:50,467 [INFO] Collected 1680 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:14:50,482 [INFO] Scraping page 57 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=57
+2025-09-26 18:15:01,650 [INFO] Collected 1710 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:01,663 [INFO] Scraping page 58 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=58
+2025-09-26 18:15:07,677 [INFO] Collected 1740 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:07,691 [INFO] Scraping page 59 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=59
+2025-09-26 18:15:14,237 [INFO] Collected 1770 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:14,246 [INFO] Scraping page 60 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=60
+2025-09-26 18:15:23,736 [INFO] Collected 1800 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:23,746 [INFO] Scraping page 61 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=61
+2025-09-26 18:15:29,706 [INFO] Collected 1830 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:29,721 [INFO] Scraping page 62 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=62
+2025-09-26 18:15:37,335 [INFO] Collected 1860 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:37,349 [INFO] Scraping page 63 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=63
+2025-09-26 18:15:45,329 [INFO] Collected 1890 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:45,343 [INFO] Scraping page 64 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=64
+2025-09-26 18:15:53,620 [INFO] Collected 1920 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:53,634 [INFO] Scraping page 65 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=65
+2025-09-26 18:15:59,469 [INFO] Collected 1950 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:15:59,483 [INFO] Scraping page 66 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=66
+2025-09-26 18:16:07,945 [INFO] Collected 1980 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:16:07,957 [INFO] Scraping page 67 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=67
+2025-09-26 18:16:16,649 [INFO] Collected 2010 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:16:16,659 [INFO] Scraping page 68 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=68
+2025-09-26 18:16:22,816 [INFO] Collected 2040 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:16:22,830 [INFO] Scraping page 69 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=69
+2025-09-26 18:16:30,753 [INFO] Collected 2070 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:16:30,764 [INFO] Scraping page 70 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=70
+2025-09-26 18:16:40,221 [INFO] Collected 2100 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:16:40,229 [INFO] Scraping page 71 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=71
+2025-09-26 18:16:46,103 [INFO] Collected 2130 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:16:46,112 [INFO] Scraping page 72 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=72
+2025-09-26 18:16:53,369 [INFO] Collected 2160 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:16:53,377 [INFO] Scraping page 73 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=73
+2025-09-26 18:17:02,203 [INFO] Collected 2190 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:02,216 [INFO] Scraping page 74 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=74
+2025-09-26 18:17:10,144 [INFO] Collected 2220 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:10,154 [INFO] Scraping page 75 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=75
+2025-09-26 18:17:15,913 [INFO] Collected 2250 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:15,933 [INFO] Scraping page 76 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=76
+2025-09-26 18:17:26,227 [INFO] Collected 2280 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:26,237 [INFO] Scraping page 77 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=77
+2025-09-26 18:17:34,148 [INFO] Collected 2310 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:34,156 [INFO] Scraping page 78 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=78
+2025-09-26 18:17:41,774 [INFO] Collected 2340 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:41,786 [INFO] Scraping page 79 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=79
+2025-09-26 18:17:47,752 [INFO] Collected 2370 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:47,766 [INFO] Scraping page 80 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=80
+2025-09-26 18:17:56,407 [INFO] Collected 2400 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:17:56,420 [INFO] Scraping page 81 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=81
+2025-09-26 18:18:02,433 [INFO] Collected 2430 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:18:02,448 [INFO] Scraping page 82 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=82
+2025-09-26 18:18:11,716 [INFO] Collected 2460 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:18:11,731 [INFO] Scraping page 83 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=83
+2025-09-26 18:18:18,281 [INFO] Collected 2490 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:18:18,294 [INFO] Scraping page 84 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=84
+2025-09-26 18:18:25,198 [INFO] Collected 2520 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:18:25,207 [INFO] Scraping page 85 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=85
+2025-09-26 18:18:32,769 [INFO] Collected 2550 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:18:32,785 [INFO] Scraping page 86 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=86
+2025-09-26 18:18:40,484 [INFO] Collected 2580 product URLs so far for https://shop.billa.at/kategorie/nahrungsmittel-13943
+2025-09-26 18:18:40,497 [INFO] Scraping page 87 -> https://shop.billa.at/kategorie/nahrungsmittel-13943?page=87
+2025-09-26 18:18:56,403 [WARNING] No products found on https://shop.billa.at/kategorie/nahrungsmittel-13943?page=87
+2025-09-26 18:18:56,415 [INFO] Saved 2580 products for category: Nahrungsmittel
+2984
+2025-09-26 18:18:56,415 [INFO] Scraping category: Süßes & Salziges
+1025 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:18:56,415 [INFO] Scraping page 1 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:04,359 [INFO] Collected 30 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:04,367 [INFO] Scraping page 2 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=2
+2025-09-26 18:19:11,831 [INFO] Collected 60 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:11,844 [INFO] Scraping page 3 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=3
+2025-09-26 18:19:19,378 [INFO] Collected 90 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:19,393 [INFO] Scraping page 4 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=4
+2025-09-26 18:19:24,983 [INFO] Collected 120 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:24,997 [INFO] Scraping page 5 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=5
+2025-09-26 18:19:31,031 [INFO] Collected 150 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:31,047 [INFO] Scraping page 6 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=6
+2025-09-26 18:19:41,834 [INFO] Collected 180 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:41,846 [INFO] Scraping page 7 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=7
+2025-09-26 18:19:49,924 [INFO] Collected 210 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:49,934 [INFO] Scraping page 8 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=8
+2025-09-26 18:19:57,603 [INFO] Collected 240 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:19:57,619 [INFO] Scraping page 9 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=9
+2025-09-26 18:20:03,761 [INFO] Collected 270 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:20:03,775 [INFO] Scraping page 10 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=10
+2025-09-26 18:20:09,712 [INFO] Collected 300 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:20:09,728 [INFO] Scraping page 11 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=11
+2025-09-26 18:20:17,472 [INFO] Collected 330 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:20:17,485 [INFO] Scraping page 12 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=12
+2025-09-26 18:20:25,395 [INFO] Collected 360 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:20:25,408 [INFO] Scraping page 13 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=13
+2025-09-26 18:20:33,363 [INFO] Collected 390 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:20:33,376 [INFO] Scraping page 14 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=14
+2025-09-26 18:20:39,274 [INFO] Collected 420 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:20:39,283 [INFO] Scraping page 15 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=15
+2025-09-26 18:20:45,454 [INFO] Collected 450 product URLs so far for https://shop.billa.at/kategorie/suesses-und-salziges-14057
+2025-09-26 18:20:45,468 [INFO] Scraping page 16 -> https://shop.billa.at/kategorie/suesses-und-salziges-14057?page=16
