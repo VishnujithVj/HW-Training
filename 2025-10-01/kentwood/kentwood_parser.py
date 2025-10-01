@@ -114,7 +114,6 @@ class KentwoodParser:
         self.driver.get(url)
         time.sleep(2)
 
-        # Full Name
         first_name = middle_name = last_name = ""
         try:
             p_elem = self.driver.find_element(By.XPATH, "//p[@class='rng-agent-profile-contact-name']")
