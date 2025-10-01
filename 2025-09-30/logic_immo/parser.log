@@ -1,0 +1,641 @@
+2025-10-01 12:17:50,636 - INFO - Launching browser...
+2025-10-01 12:18:00,860 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249510687.htm
+2025-10-01 12:18:00,860 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249510687.htm
+2025-10-01 12:18:00,889 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249510687.htm
+2025-10-01 12:18:17,249 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-241783713.htm
+2025-10-01 12:18:17,249 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-241783713.htm
+2025-10-01 12:18:17,252 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-241783713.htm
+2025-10-01 12:18:24,777 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249587239.htm
+2025-10-01 12:18:24,777 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249587239.htm
+2025-10-01 12:18:24,780 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249587239.htm
+2025-10-01 12:18:33,236 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249129449.htm
+2025-10-01 12:18:33,237 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249129449.htm
+2025-10-01 12:18:33,239 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249129449.htm
+2025-10-01 12:18:42,588 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242389911.htm
+2025-10-01 12:18:42,588 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242389911.htm
+2025-10-01 12:18:42,590 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242389911.htm
+2025-10-01 12:18:50,848 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246530775.htm
+2025-10-01 12:18:50,849 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246530775.htm
+2025-10-01 12:18:50,851 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246530775.htm
+2025-10-01 12:18:58,806 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249046267.htm
+2025-10-01 12:18:58,806 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249046267.htm
+2025-10-01 12:18:58,809 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249046267.htm
+2025-10-01 12:19:06,786 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247976755.htm
+2025-10-01 12:19:06,786 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247976755.htm
+2025-10-01 12:19:06,788 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247976755.htm
+2025-10-01 12:19:14,663 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-228124689.htm
+2025-10-01 12:19:14,664 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-228124689.htm
+2025-10-01 12:19:14,666 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-228124689.htm
+2025-10-01 12:19:22,608 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245437251.htm
+2025-10-01 12:19:22,614 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245437251.htm
+2025-10-01 12:19:22,616 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245437251.htm
+2025-10-01 12:19:31,302 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-225227197.htm
+2025-10-01 12:19:31,302 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-225227197.htm
+2025-10-01 12:19:31,305 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-225227197.htm
+2025-10-01 12:19:39,986 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246530691.htm
+2025-10-01 12:19:39,987 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246530691.htm
+2025-10-01 12:19:39,988 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246530691.htm
+2025-10-01 12:19:48,355 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-236951173.htm
+2025-10-01 12:19:48,356 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-236951173.htm
+2025-10-01 12:19:48,357 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-236951173.htm
+2025-10-01 12:19:56,264 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248323997.htm
+2025-10-01 12:19:56,265 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248323997.htm
+2025-10-01 12:19:56,267 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248323997.htm
+2025-10-01 12:20:05,041 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248455659.htm
+2025-10-01 12:20:05,041 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248455659.htm
+2025-10-01 12:20:05,049 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248455659.htm
+2025-10-01 12:20:13,084 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-234823479.htm
+2025-10-01 12:20:13,084 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-234823479.htm
+2025-10-01 12:20:13,086 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-234823479.htm
+2025-10-01 12:20:20,674 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242536419.htm
+2025-10-01 12:20:20,674 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242536419.htm
+2025-10-01 12:20:20,676 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242536419.htm
+2025-10-01 12:20:28,478 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249215837.htm
+2025-10-01 12:20:28,478 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249215837.htm
+2025-10-01 12:20:28,481 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249215837.htm
+2025-10-01 12:20:37,637 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-177330769.htm
+2025-10-01 12:20:37,637 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-177330769.htm
+2025-10-01 12:20:37,641 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-177330769.htm
+2025-10-01 12:20:46,056 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-234076133.htm
+2025-10-01 12:20:46,057 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-234076133.htm
+2025-10-01 12:20:46,059 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-234076133.htm
+2025-10-01 12:20:53,730 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249718849.htm
+2025-10-01 12:20:53,731 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249718849.htm
+2025-10-01 12:20:53,734 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249718849.htm
+2025-10-01 12:21:02,634 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249647389.htm
+2025-10-01 12:21:02,635 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249647389.htm
+2025-10-01 12:21:02,643 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249647389.htm
+2025-10-01 12:21:11,653 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247251289.htm
+2025-10-01 12:21:11,653 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247251289.htm
+2025-10-01 12:21:11,655 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247251289.htm
+2025-10-01 12:21:19,682 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247079453.htm
+2025-10-01 12:21:19,682 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247079453.htm
+2025-10-01 12:21:19,684 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247079453.htm
+2025-10-01 12:21:29,079 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248344001.htm
+2025-10-01 12:21:29,079 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248344001.htm
+2025-10-01 12:21:29,081 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248344001.htm
+2025-10-01 12:21:37,088 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245648171.htm
+2025-10-01 12:21:37,091 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245648171.htm
+2025-10-01 12:21:37,094 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245648171.htm
+2025-10-01 12:21:45,029 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248541009.htm
+2025-10-01 12:21:45,030 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248541009.htm
+2025-10-01 12:21:45,034 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248541009.htm
+2025-10-01 12:21:52,772 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248880637.htm
+2025-10-01 12:21:52,774 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248880637.htm
+2025-10-01 12:21:52,777 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248880637.htm
+2025-10-01 12:22:00,509 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250932061.htm
+2025-10-01 12:22:00,510 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250932061.htm
+2025-10-01 12:22:00,512 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250932061.htm
+2025-10-01 12:22:09,744 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250612621.htm
+2025-10-01 12:22:09,744 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250612621.htm
+2025-10-01 12:22:09,746 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250612621.htm
+2025-10-01 12:22:17,169 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-251098823.htm
+2025-10-01 12:22:17,171 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-251098823.htm
+2025-10-01 12:22:17,176 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-251098823.htm
+2025-10-01 12:22:26,850 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250568641.htm
+2025-10-01 12:22:26,853 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250568641.htm
+2025-10-01 12:22:26,857 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250568641.htm
+2025-10-01 12:22:35,016 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250947571.htm
+2025-10-01 12:22:35,017 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250947571.htm
+2025-10-01 12:22:35,021 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250947571.htm
+2025-10-01 12:22:42,830 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250239151.htm
+2025-10-01 12:22:42,831 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250239151.htm
+2025-10-01 12:22:42,833 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250239151.htm
+2025-10-01 12:22:50,905 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-243574789.htm
+2025-10-01 12:22:50,908 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-243574789.htm
+2025-10-01 12:22:50,919 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-243574789.htm
+2025-10-01 12:22:59,048 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250129881.htm
+2025-10-01 12:22:59,050 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250129881.htm
+2025-10-01 12:22:59,055 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250129881.htm
+2025-10-01 12:23:07,119 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249434417.htm
+2025-10-01 12:23:07,120 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249434417.htm
+2025-10-01 12:23:07,122 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249434417.htm
+2025-10-01 12:23:14,251 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250006211.htm
+2025-10-01 12:23:14,252 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250006211.htm
+2025-10-01 12:23:14,253 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250006211.htm
+2025-10-01 12:23:21,601 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250929323.htm
+2025-10-01 12:23:21,601 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250929323.htm
+2025-10-01 12:23:21,603 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250929323.htm
+2025-10-01 12:23:29,946 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250006275.htm
+2025-10-01 12:23:29,947 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250006275.htm
+2025-10-01 12:23:29,949 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250006275.htm
+2025-10-01 12:23:37,765 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249810523.htm
+2025-10-01 12:23:37,766 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249810523.htm
+2025-10-01 12:23:37,767 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249810523.htm
+2025-10-01 12:23:45,688 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250506475.htm
+2025-10-01 12:23:45,689 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250506475.htm
+2025-10-01 12:23:45,690 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250506475.htm
+2025-10-01 12:23:54,119 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-243196921.htm
+2025-10-01 12:23:54,122 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-243196921.htm
+2025-10-01 12:23:54,202 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-243196921.htm
+2025-10-01 12:24:03,075 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-237073829.htm
+2025-10-01 12:24:03,076 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-237073829.htm
+2025-10-01 12:24:03,153 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-237073829.htm
+2025-10-01 12:24:10,926 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250353027.htm
+2025-10-01 12:24:10,929 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250353027.htm
+2025-10-01 12:24:10,931 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250353027.htm
+2025-10-01 12:24:18,613 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250246451.htm
+2025-10-01 12:24:18,614 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250246451.htm
+2025-10-01 12:24:18,616 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250246451.htm
+2025-10-01 12:24:26,516 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249761451.htm
+2025-10-01 12:24:26,516 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249761451.htm
+2025-10-01 12:24:26,519 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249761451.htm
+2025-10-01 12:24:34,440 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250128681.htm
+2025-10-01 12:24:34,441 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250128681.htm
+2025-10-01 12:24:34,443 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250128681.htm
+2025-10-01 12:24:42,225 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-231371137.htm
+2025-10-01 12:24:42,225 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-231371137.htm
+2025-10-01 12:24:42,233 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-231371137.htm
+2025-10-01 12:24:50,053 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249814433.htm
+2025-10-01 12:24:50,053 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249814433.htm
+2025-10-01 12:24:50,055 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249814433.htm
+2025-10-01 12:24:57,876 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248422945.htm
+2025-10-01 12:24:57,876 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248422945.htm
+2025-10-01 12:24:57,879 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248422945.htm
+2025-10-01 12:25:05,041 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249291249.htm
+2025-10-01 12:25:05,041 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249291249.htm
+2025-10-01 12:25:05,044 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249291249.htm
+2025-10-01 12:25:12,431 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250825851.htm
+2025-10-01 12:25:12,431 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250825851.htm
+2025-10-01 12:25:12,434 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250825851.htm
+2025-10-01 12:25:21,977 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250436125.htm
+2025-10-01 12:25:21,978 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250436125.htm
+2025-10-01 12:25:21,980 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250436125.htm
+2025-10-01 12:25:29,939 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249433257.htm
+2025-10-01 12:25:29,939 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249433257.htm
+2025-10-01 12:25:29,941 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249433257.htm
+2025-10-01 12:25:37,786 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248834521.htm
+2025-10-01 12:25:37,787 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248834521.htm
+2025-10-01 12:25:37,789 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248834521.htm
+2025-10-01 12:25:46,765 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250294371.htm
+2025-10-01 12:25:46,766 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250294371.htm
+2025-10-01 12:25:46,768 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250294371.htm
+2025-10-01 12:25:54,187 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249172869.htm
+2025-10-01 12:25:54,188 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249172869.htm
+2025-10-01 12:25:54,190 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249172869.htm
+2025-10-01 12:26:03,474 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249225873.htm
+2025-10-01 12:26:03,474 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249225873.htm
+2025-10-01 12:26:03,476 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249225873.htm
+2025-10-01 12:26:10,999 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250769535.htm
+2025-10-01 12:26:11,000 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250769535.htm
+2025-10-01 12:26:11,003 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250769535.htm
+2025-10-01 12:26:19,053 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249554805.htm
+2025-10-01 12:26:19,054 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249554805.htm
+2025-10-01 12:26:19,057 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249554805.htm
+2025-10-01 12:26:27,086 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248707331.htm
+2025-10-01 12:26:27,086 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248707331.htm
+2025-10-01 12:26:27,088 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248707331.htm
+2025-10-01 12:26:36,493 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248707329.htm
+2025-10-01 12:26:36,494 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248707329.htm
+2025-10-01 12:26:36,496 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248707329.htm
+2025-10-01 12:26:43,717 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-232164835.htm
+2025-10-01 12:26:43,718 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-232164835.htm
+2025-10-01 12:26:43,720 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-232164835.htm
+2025-10-01 12:26:50,885 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250068367.htm
+2025-10-01 12:26:50,885 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250068367.htm
+2025-10-01 12:26:50,888 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250068367.htm
+2025-10-01 12:26:58,363 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249183991.htm
+2025-10-01 12:26:58,363 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249183991.htm
+2025-10-01 12:26:58,366 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249183991.htm
+2025-10-01 12:27:07,233 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246668395.htm
+2025-10-01 12:27:07,233 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246668395.htm
+2025-10-01 12:27:07,235 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246668395.htm
+2025-10-01 12:27:14,944 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250246445.htm
+2025-10-01 12:27:14,944 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250246445.htm
+2025-10-01 12:27:14,946 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250246445.htm
+2025-10-01 12:27:24,340 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249622583.htm
+2025-10-01 12:27:24,341 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249622583.htm
+2025-10-01 12:27:24,349 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249622583.htm
+2025-10-01 12:27:33,596 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247204799.htm
+2025-10-01 12:27:33,596 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247204799.htm
+2025-10-01 12:27:33,598 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247204799.htm
+2025-10-01 12:27:41,255 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246584315.htm
+2025-10-01 12:27:41,256 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246584315.htm
+2025-10-01 12:27:41,258 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246584315.htm
+2025-10-01 12:27:48,362 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249828799.htm
+2025-10-01 12:27:48,362 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249828799.htm
+2025-10-01 12:27:48,365 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249828799.htm
+2025-10-01 12:27:55,855 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249380757.htm
+2025-10-01 12:27:55,856 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249380757.htm
+2025-10-01 12:27:55,857 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249380757.htm
+2025-10-01 12:28:03,786 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-240851359.htm
+2025-10-01 12:28:03,787 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-240851359.htm
+2025-10-01 12:28:03,789 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-240851359.htm
+2025-10-01 12:28:11,599 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248013293.htm
+2025-10-01 12:28:11,600 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248013293.htm
+2025-10-01 12:28:11,601 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248013293.htm
+2025-10-01 12:28:19,575 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244897987.htm
+2025-10-01 12:28:19,575 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244897987.htm
+2025-10-01 12:28:19,577 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244897987.htm
+2025-10-01 12:28:27,726 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-236680943.htm
+2025-10-01 12:28:27,726 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-236680943.htm
+2025-10-01 12:28:27,728 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-236680943.htm
+2025-10-01 12:28:34,879 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244655039.htm
+2025-10-01 12:28:34,879 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244655039.htm
+2025-10-01 12:28:34,881 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244655039.htm
+2025-10-01 12:28:42,696 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249662775.htm
+2025-10-01 12:28:42,697 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249662775.htm
+2025-10-01 12:28:42,704 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249662775.htm
+2025-10-01 12:28:50,434 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249338511.htm
+2025-10-01 12:28:50,435 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249338511.htm
+2025-10-01 12:28:50,437 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249338511.htm
+2025-10-01 12:28:58,135 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249679551.htm
+2025-10-01 12:28:58,135 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249679551.htm
+2025-10-01 12:28:58,137 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249679551.htm
+2025-10-01 12:29:05,543 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248233683.htm
+2025-10-01 12:29:05,543 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248233683.htm
+2025-10-01 12:29:05,546 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248233683.htm
+2025-10-01 12:29:13,478 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244848911.htm
+2025-10-01 12:29:13,478 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244848911.htm
+2025-10-01 12:29:13,480 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244848911.htm
+2025-10-01 12:29:20,795 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248691127.htm
+2025-10-01 12:29:20,796 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248691127.htm
+2025-10-01 12:29:20,797 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248691127.htm
+2025-10-01 12:29:25,445 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250777831.htm
+2025-10-01 12:29:25,445 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250777831.htm
+2025-10-01 12:29:25,447 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250777831.htm
+2025-10-01 12:29:33,453 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250050285.htm
+2025-10-01 12:29:33,458 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250050285.htm
+2025-10-01 12:29:33,461 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250050285.htm
+2025-10-01 12:29:40,574 - INFO - Extracted details for URL: https://www.lux-residence.com/redirect-to-ad/?id_annonce=248219891
+2025-10-01 12:29:40,574 - INFO - Saved to JSON: https://www.lux-residence.com/redirect-to-ad/?id_annonce=248219891
+2025-10-01 12:29:40,576 - INFO - Saved to MongoDB: https://www.lux-residence.com/redirect-to-ad/?id_annonce=248219891
+2025-10-01 12:29:50,796 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242889135.htm
+2025-10-01 12:29:50,797 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242889135.htm
+2025-10-01 12:29:50,799 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242889135.htm
+2025-10-01 12:29:58,808 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250230349.htm
+2025-10-01 12:29:58,809 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250230349.htm
+2025-10-01 12:29:58,810 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250230349.htm
+2025-10-01 12:30:06,826 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249287693.htm
+2025-10-01 12:30:06,826 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249287693.htm
+2025-10-01 12:30:06,828 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249287693.htm
+2025-10-01 12:30:13,954 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250424479.htm
+2025-10-01 12:30:13,954 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250424479.htm
+2025-10-01 12:30:13,956 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250424479.htm
+2025-10-01 12:30:22,048 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245005819.htm
+2025-10-01 12:30:22,049 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245005819.htm
+2025-10-01 12:30:22,051 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245005819.htm
+2025-10-01 12:30:29,812 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249071119.htm
+2025-10-01 12:30:29,812 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249071119.htm
+2025-10-01 12:30:29,814 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249071119.htm
+2025-10-01 12:30:38,868 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249071557.htm
+2025-10-01 12:30:38,868 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249071557.htm
+2025-10-01 12:30:38,870 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249071557.htm
+2025-10-01 12:30:45,986 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249071131.htm
+2025-10-01 12:30:45,986 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249071131.htm
+2025-10-01 12:30:45,988 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249071131.htm
+2025-10-01 12:30:53,480 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249071111.htm
+2025-10-01 12:30:53,480 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249071111.htm
+2025-10-01 12:30:53,483 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249071111.htm
+2025-10-01 12:31:01,171 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-237917761.htm
+2025-10-01 12:31:01,172 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-237917761.htm
+2025-10-01 12:31:01,173 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-237917761.htm
+2025-10-01 12:31:08,425 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247480197.htm
+2025-10-01 12:31:08,425 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247480197.htm
+2025-10-01 12:31:08,427 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247480197.htm
+2025-10-01 12:31:16,383 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246607915.htm
+2025-10-01 12:31:16,385 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246607915.htm
+2025-10-01 12:31:16,387 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246607915.htm
+2025-10-01 12:31:24,187 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245451351.htm
+2025-10-01 12:31:24,187 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245451351.htm
+2025-10-01 12:31:24,188 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245451351.htm
+2025-10-01 12:31:31,379 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-240908607.htm
+2025-10-01 12:31:31,380 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-240908607.htm
+2025-10-01 12:31:31,382 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-240908607.htm
+2025-10-01 12:31:39,528 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247297815.htm
+2025-10-01 12:31:39,531 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247297815.htm
+2025-10-01 12:31:39,533 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247297815.htm
+2025-10-01 12:31:47,273 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242113867.htm
+2025-10-01 12:31:47,276 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242113867.htm
+2025-10-01 12:31:47,327 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242113867.htm
+2025-10-01 12:31:55,952 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-236103735.htm
+2025-10-01 12:31:55,955 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-236103735.htm
+2025-10-01 12:31:56,064 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-236103735.htm
+2025-10-01 12:32:06,342 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246068585.htm
+2025-10-01 12:32:06,346 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246068585.htm
+2025-10-01 12:32:06,422 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246068585.htm
+2025-10-01 12:32:14,397 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-232201049.htm
+2025-10-01 12:32:14,399 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-232201049.htm
+2025-10-01 12:32:14,476 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-232201049.htm
+2025-10-01 12:32:22,093 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246239727.htm
+2025-10-01 12:32:22,094 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246239727.htm
+2025-10-01 12:32:22,096 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246239727.htm
+2025-10-01 12:32:30,269 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-243233289.htm
+2025-10-01 12:32:30,271 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-243233289.htm
+2025-10-01 12:32:30,272 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-243233289.htm
+2025-10-01 12:32:37,468 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242901329.htm
+2025-10-01 12:32:37,471 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242901329.htm
+2025-10-01 12:32:37,501 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242901329.htm
+2025-10-01 12:32:45,521 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249071545.htm
+2025-10-01 12:32:45,523 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249071545.htm
+2025-10-01 12:32:45,559 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249071545.htm
+2025-10-01 12:32:53,210 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246409129.htm
+2025-10-01 12:32:53,210 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246409129.htm
+2025-10-01 12:32:53,212 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246409129.htm
+2025-10-01 12:33:00,974 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244461707.htm
+2025-10-01 12:33:00,974 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244461707.htm
+2025-10-01 12:33:00,977 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244461707.htm
+2025-10-01 12:33:08,987 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-241949303.htm
+2025-10-01 12:33:08,987 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-241949303.htm
+2025-10-01 12:33:08,989 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-241949303.htm
+2025-10-01 12:33:16,358 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249169435.htm
+2025-10-01 12:33:16,359 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249169435.htm
+2025-10-01 12:33:16,361 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249169435.htm
+2025-10-01 12:33:23,846 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242420721.htm
+2025-10-01 12:33:23,846 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242420721.htm
+2025-10-01 12:33:23,848 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242420721.htm
+2025-10-01 12:33:31,075 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244634239.htm
+2025-10-01 12:33:31,076 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244634239.htm
+2025-10-01 12:33:31,083 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244634239.htm
+2025-10-01 12:33:38,748 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248622263.htm
+2025-10-01 12:33:38,748 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248622263.htm
+2025-10-01 12:33:38,753 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248622263.htm
+2025-10-01 12:33:43,275 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247684405.htm
+2025-10-01 12:33:43,275 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247684405.htm
+2025-10-01 12:33:43,278 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247684405.htm
+2025-10-01 12:33:50,628 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246882989.htm
+2025-10-01 12:33:50,629 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246882989.htm
+2025-10-01 12:33:50,632 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246882989.htm
+2025-10-01 12:33:58,693 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-230209847.htm
+2025-10-01 12:33:58,693 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-230209847.htm
+2025-10-01 12:33:58,696 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-230209847.htm
+2025-10-01 12:34:06,495 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250498999.htm
+2025-10-01 12:34:06,495 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250498999.htm
+2025-10-01 12:34:06,497 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250498999.htm
+2025-10-01 12:34:15,621 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-237598809.htm
+2025-10-01 12:34:15,621 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-237598809.htm
+2025-10-01 12:34:15,624 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-237598809.htm
+2025-10-01 12:34:20,455 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244614281.htm
+2025-10-01 12:34:20,456 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244614281.htm
+2025-10-01 12:34:20,457 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244614281.htm
+2025-10-01 12:34:27,593 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244394561.htm
+2025-10-01 12:34:27,593 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244394561.htm
+2025-10-01 12:34:27,595 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244394561.htm
+2025-10-01 12:34:35,223 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-243936593.htm
+2025-10-01 12:34:35,224 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-243936593.htm
+2025-10-01 12:34:35,226 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-243936593.htm
+2025-10-01 12:34:42,526 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242379107.htm
+2025-10-01 12:34:42,527 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242379107.htm
+2025-10-01 12:34:42,529 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242379107.htm
+2025-10-01 12:34:50,231 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249272201.htm
+2025-10-01 12:34:50,232 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249272201.htm
+2025-10-01 12:34:50,234 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249272201.htm
+2025-10-01 12:34:58,178 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-233629595.htm
+2025-10-01 12:34:58,184 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-233629595.htm
+2025-10-01 12:34:58,186 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-233629595.htm
+2025-10-01 12:35:06,457 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-219550977.htm
+2025-10-01 12:35:06,458 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-219550977.htm
+2025-10-01 12:35:06,480 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-219550977.htm
+2025-10-01 12:35:14,352 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250156495.htm
+2025-10-01 12:35:14,353 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250156495.htm
+2025-10-01 12:35:14,354 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250156495.htm
+2025-10-01 12:35:21,981 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249153945.htm
+2025-10-01 12:35:21,981 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249153945.htm
+2025-10-01 12:35:21,983 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249153945.htm
+2025-10-01 12:35:29,304 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248783887.htm
+2025-10-01 12:35:29,305 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248783887.htm
+2025-10-01 12:35:29,307 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248783887.htm
+2025-10-01 12:35:37,150 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-226231779.htm
+2025-10-01 12:35:37,150 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-226231779.htm
+2025-10-01 12:35:37,153 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-226231779.htm
+2025-10-01 12:35:44,221 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246800941.htm
+2025-10-01 12:35:44,221 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246800941.htm
+2025-10-01 12:35:44,223 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246800941.htm
+2025-10-01 12:35:51,394 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250065495.htm
+2025-10-01 12:35:51,394 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250065495.htm
+2025-10-01 12:35:51,397 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250065495.htm
+2025-10-01 12:35:56,292 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249683799.htm
+2025-10-01 12:35:56,292 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249683799.htm
+2025-10-01 12:35:56,295 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249683799.htm
+2025-10-01 12:36:03,620 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244870947.htm
+2025-10-01 12:36:03,620 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244870947.htm
+2025-10-01 12:36:03,623 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244870947.htm
+2025-10-01 12:36:11,311 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244938523.htm
+2025-10-01 12:36:11,311 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244938523.htm
+2025-10-01 12:36:11,314 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244938523.htm
+2025-10-01 12:36:19,033 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-233666305.htm
+2025-10-01 12:36:19,033 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-233666305.htm
+2025-10-01 12:36:19,038 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-233666305.htm
+2025-10-01 12:36:26,031 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248387187.htm
+2025-10-01 12:36:26,032 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248387187.htm
+2025-10-01 12:36:26,034 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248387187.htm
+2025-10-01 12:36:33,688 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242462527.htm
+2025-10-01 12:36:33,689 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242462527.htm
+2025-10-01 12:36:33,692 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242462527.htm
+2025-10-01 12:36:41,276 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246435579.htm
+2025-10-01 12:36:41,277 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246435579.htm
+2025-10-01 12:36:41,279 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246435579.htm
+2025-10-01 12:36:48,336 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248306529.htm
+2025-10-01 12:36:48,336 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248306529.htm
+2025-10-01 12:36:48,344 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248306529.htm
+2025-10-01 12:36:55,714 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-239356193.htm
+2025-10-01 12:36:55,714 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-239356193.htm
+2025-10-01 12:36:55,717 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-239356193.htm
+2025-10-01 12:37:03,396 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244870697.htm
+2025-10-01 12:37:03,396 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244870697.htm
+2025-10-01 12:37:03,399 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244870697.htm
+2025-10-01 12:37:10,512 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248387167.htm
+2025-10-01 12:37:10,512 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248387167.htm
+2025-10-01 12:37:10,516 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248387167.htm
+2025-10-01 12:37:18,219 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-236910991.htm
+2025-10-01 12:37:18,220 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-236910991.htm
+2025-10-01 12:37:18,223 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-236910991.htm
+2025-10-01 12:37:25,272 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248387825.htm
+2025-10-01 12:37:25,272 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248387825.htm
+2025-10-01 12:37:25,274 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248387825.htm
+2025-10-01 12:37:32,495 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248387837.htm
+2025-10-01 12:37:32,495 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248387837.htm
+2025-10-01 12:37:32,497 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248387837.htm
+2025-10-01 12:37:39,917 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244893697.htm
+2025-10-01 12:37:39,917 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244893697.htm
+2025-10-01 12:37:39,920 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244893697.htm
+2025-10-01 12:37:47,121 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250568945.htm
+2025-10-01 12:37:47,122 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250568945.htm
+2025-10-01 12:37:47,124 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250568945.htm
+2025-10-01 12:37:54,385 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-240163955.htm
+2025-10-01 12:37:54,386 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-240163955.htm
+2025-10-01 12:37:54,388 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-240163955.htm
+2025-10-01 12:38:02,370 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-241548051.htm
+2025-10-01 12:38:02,370 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-241548051.htm
+2025-10-01 12:38:02,373 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-241548051.htm
+2025-10-01 12:38:09,577 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248637563.htm
+2025-10-01 12:38:09,577 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248637563.htm
+2025-10-01 12:38:09,580 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248637563.htm
+2025-10-01 12:38:16,745 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249548089.htm
+2025-10-01 12:38:16,745 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249548089.htm
+2025-10-01 12:38:16,748 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249548089.htm
+2025-10-01 12:38:24,331 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245015205.htm
+2025-10-01 12:38:24,331 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245015205.htm
+2025-10-01 12:38:24,334 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245015205.htm
+2025-10-01 12:38:31,414 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249182365.htm
+2025-10-01 12:38:31,416 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249182365.htm
+2025-10-01 12:38:31,419 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249182365.htm
+2025-10-01 12:38:38,540 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244393305.htm
+2025-10-01 12:38:38,541 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244393305.htm
+2025-10-01 12:38:38,544 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244393305.htm
+2025-10-01 12:38:43,467 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-240501259.htm
+2025-10-01 12:38:43,468 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-240501259.htm
+2025-10-01 12:38:43,470 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-240501259.htm
+2025-10-01 12:38:50,847 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-238199521.htm
+2025-10-01 12:38:50,847 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-238199521.htm
+2025-10-01 12:38:50,850 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-238199521.htm
+2025-10-01 12:38:58,964 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245815771.htm
+2025-10-01 12:38:58,964 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245815771.htm
+2025-10-01 12:38:58,967 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245815771.htm
+2025-10-01 12:39:06,284 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-238365711.htm
+2025-10-01 12:39:06,284 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-238365711.htm
+2025-10-01 12:39:06,292 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-238365711.htm
+2025-10-01 12:39:13,668 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248502665.htm
+2025-10-01 12:39:13,669 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248502665.htm
+2025-10-01 12:39:13,672 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248502665.htm
+2025-10-01 12:39:21,330 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249183993.htm
+2025-10-01 12:39:21,330 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249183993.htm
+2025-10-01 12:39:21,338 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249183993.htm
+2025-10-01 12:39:29,360 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247907557.htm
+2025-10-01 12:39:29,360 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247907557.htm
+2025-10-01 12:39:29,368 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247907557.htm
+2025-10-01 12:39:36,564 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-240663723.htm
+2025-10-01 12:39:36,564 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-240663723.htm
+2025-10-01 12:39:36,572 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-240663723.htm
+2025-10-01 12:39:43,718 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246170815.htm
+2025-10-01 12:39:43,718 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246170815.htm
+2025-10-01 12:39:43,726 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246170815.htm
+2025-10-01 12:39:51,466 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245718009.htm
+2025-10-01 12:39:51,467 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245718009.htm
+2025-10-01 12:39:51,468 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245718009.htm
+2025-10-01 12:39:58,804 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245428677.htm
+2025-10-01 12:39:58,805 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245428677.htm
+2025-10-01 12:39:58,812 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245428677.htm
+2025-10-01 12:40:06,479 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-221522681.htm
+2025-10-01 12:40:06,480 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-221522681.htm
+2025-10-01 12:40:06,487 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-221522681.htm
+2025-10-01 12:40:14,229 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246218109.htm
+2025-10-01 12:40:14,229 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246218109.htm
+2025-10-01 12:40:14,232 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246218109.htm
+2025-10-01 12:40:21,633 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-240410087.htm
+2025-10-01 12:40:21,633 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-240410087.htm
+2025-10-01 12:40:21,636 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-240410087.htm
+2025-10-01 12:40:29,505 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-239447535.htm
+2025-10-01 12:40:29,505 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-239447535.htm
+2025-10-01 12:40:29,513 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-239447535.htm
+2025-10-01 12:40:37,254 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245451355.htm
+2025-10-01 12:40:37,254 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245451355.htm
+2025-10-01 12:40:37,261 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245451355.htm
+2025-10-01 12:40:44,332 - INFO - Extracted details for URL: https://www.lux-residence.com/redirect-to-ad/?id_annonce=235728509
+2025-10-01 12:40:44,332 - INFO - Saved to JSON: https://www.lux-residence.com/redirect-to-ad/?id_annonce=235728509
+2025-10-01 12:40:44,335 - INFO - Saved to MongoDB: https://www.lux-residence.com/redirect-to-ad/?id_annonce=235728509
+2025-10-01 12:40:51,955 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248506537.htm
+2025-10-01 12:40:51,956 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248506537.htm
+2025-10-01 12:40:51,958 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248506537.htm
+2025-10-01 12:40:59,436 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-246387511.htm
+2025-10-01 12:40:59,436 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-246387511.htm
+2025-10-01 12:40:59,438 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-246387511.htm
+2025-10-01 12:41:06,845 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249423823.htm
+2025-10-01 12:41:06,845 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249423823.htm
+2025-10-01 12:41:06,847 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249423823.htm
+2025-10-01 12:41:14,699 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250804425.htm
+2025-10-01 12:41:14,699 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250804425.htm
+2025-10-01 12:41:14,700 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250804425.htm
+2025-10-01 12:41:21,957 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-241943417.htm
+2025-10-01 12:41:21,958 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-241943417.htm
+2025-10-01 12:41:21,960 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-241943417.htm
+2025-10-01 12:41:29,893 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-238968231.htm
+2025-10-01 12:41:29,893 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-238968231.htm
+2025-10-01 12:41:29,894 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-238968231.htm
+2025-10-01 12:41:37,139 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-236853551.htm
+2025-10-01 12:41:37,139 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-236853551.htm
+2025-10-01 12:41:37,141 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-236853551.htm
+2025-10-01 12:41:44,924 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244594759.htm
+2025-10-01 12:41:44,924 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244594759.htm
+2025-10-01 12:41:44,926 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244594759.htm
+2025-10-01 12:41:53,166 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-245957483.htm
+2025-10-01 12:41:53,166 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-245957483.htm
+2025-10-01 12:41:53,168 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-245957483.htm
+2025-10-01 12:42:00,854 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-243612979.htm
+2025-10-01 12:42:00,855 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-243612979.htm
+2025-10-01 12:42:00,862 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-243612979.htm
+2025-10-01 12:42:08,547 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-235081539.htm
+2025-10-01 12:42:08,547 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-235081539.htm
+2025-10-01 12:42:08,554 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-235081539.htm
+2025-10-01 12:42:15,913 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-215749947.htm
+2025-10-01 12:42:15,913 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-215749947.htm
+2025-10-01 12:42:15,920 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-215749947.htm
+2025-10-01 12:42:23,799 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-237044637.htm
+2025-10-01 12:42:23,800 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-237044637.htm
+2025-10-01 12:42:23,801 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-237044637.htm
+2025-10-01 12:42:30,890 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249169427.htm
+2025-10-01 12:42:30,891 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249169427.htm
+2025-10-01 12:42:30,898 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249169427.htm
+2025-10-01 12:42:39,721 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247503391.htm
+2025-10-01 12:42:39,721 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247503391.htm
+2025-10-01 12:42:39,728 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247503391.htm
+2025-10-01 12:42:47,207 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-243076471.htm
+2025-10-01 12:42:47,208 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-243076471.htm
+2025-10-01 12:42:47,216 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-243076471.htm
+2025-10-01 12:42:54,413 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244870975.htm
+2025-10-01 12:42:54,413 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244870975.htm
+2025-10-01 12:42:54,421 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244870975.htm
+2025-10-01 12:43:01,765 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-243597947.htm
+2025-10-01 12:43:01,765 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-243597947.htm
+2025-10-01 12:43:01,773 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-243597947.htm
+2025-10-01 12:43:09,351 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248387805.htm
+2025-10-01 12:43:09,352 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248387805.htm
+2025-10-01 12:43:09,359 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248387805.htm
+2025-10-01 12:43:17,014 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-218936709.htm
+2025-10-01 12:43:17,014 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-218936709.htm
+2025-10-01 12:43:17,017 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-218936709.htm
+2025-10-01 12:43:24,231 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-239123501.htm
+2025-10-01 12:43:24,232 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-239123501.htm
+2025-10-01 12:43:24,239 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-239123501.htm
+2025-10-01 12:43:31,621 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-165128569.htm
+2025-10-01 12:43:31,621 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-165128569.htm
+2025-10-01 12:43:31,623 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-165128569.htm
+2025-10-01 12:43:36,154 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250274065.htm
+2025-10-01 12:43:36,155 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250274065.htm
+2025-10-01 12:43:36,158 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250274065.htm
+2025-10-01 12:43:44,336 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248491209.htm
+2025-10-01 12:43:44,337 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248491209.htm
+2025-10-01 12:43:44,339 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248491209.htm
+2025-10-01 12:43:51,837 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-244820059.htm
+2025-10-01 12:43:51,838 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-244820059.htm
+2025-10-01 12:43:51,839 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-244820059.htm
+2025-10-01 12:43:59,369 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-250643651.htm
+2025-10-01 12:43:59,370 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-250643651.htm
+2025-10-01 12:43:59,372 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-250643651.htm
+2025-10-01 12:44:06,695 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248462155.htm
+2025-10-01 12:44:06,695 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248462155.htm
+2025-10-01 12:44:06,697 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248462155.htm
+2025-10-01 12:44:14,456 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-247543441.htm
+2025-10-01 12:44:14,456 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-247543441.htm
+2025-10-01 12:44:14,459 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-247543441.htm
+2025-10-01 12:44:21,913 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-242772335.htm
+2025-10-01 12:44:21,914 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-242772335.htm
+2025-10-01 12:44:21,915 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-242772335.htm
+2025-10-01 12:44:29,585 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-235988599.htm
+2025-10-01 12:44:29,585 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-235988599.htm
+2025-10-01 12:44:29,588 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-235988599.htm
+2025-10-01 12:44:36,933 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249628277.htm
+2025-10-01 12:44:36,934 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249628277.htm
+2025-10-01 12:44:36,936 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249628277.htm
+2025-10-01 12:44:44,346 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-241411139.htm
+2025-10-01 12:44:44,346 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-241411139.htm
+2025-10-01 12:44:44,348 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-241411139.htm
+2025-10-01 12:44:52,101 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-234950409.htm
+2025-10-01 12:44:52,102 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-234950409.htm
+2025-10-01 12:44:52,104 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-234950409.htm
+2025-10-01 12:45:00,247 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-237147167.htm
+2025-10-01 12:45:00,247 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-237147167.htm
+2025-10-01 12:45:00,250 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-237147167.htm
+2025-10-01 12:45:04,846 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-248905569.htm
+2025-10-01 12:45:04,847 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-248905569.htm
+2025-10-01 12:45:04,849 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-248905569.htm
+2025-10-01 12:45:12,277 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249240677.htm
+2025-10-01 12:45:12,277 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249240677.htm
+2025-10-01 12:45:12,285 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249240677.htm
+2025-10-01 12:45:19,959 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-241574505.htm
+2025-10-01 12:45:19,959 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-241574505.htm
+2025-10-01 12:45:19,962 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-241574505.htm
+2025-10-01 12:45:27,336 - INFO - Extracted details for URL: https://www.logic-immo.com/detail-vente-249268157.htm
+2025-10-01 12:45:27,336 - INFO - Saved to JSON: https://www.logic-immo.com/detail-vente-249268157.htm
+2025-10-01 12:45:27,338 - INFO - Saved to MongoDB: https://www.logic-immo.com/detail-vente-249268157.htm
+2025-10-01 12:45:27,809 - INFO - Parsing finished.

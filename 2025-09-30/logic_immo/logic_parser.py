@@ -3,6 +3,8 @@ import json
 import logging
 import re
 from pathlib import Path
+
+from lxml import html
 from pymongo import MongoClient
 from playwright.async_api import async_playwright, Page, Browser, BrowserContext
 
@@ -27,13 +29,15 @@ details_collection = db[DETAILS_COLLECTION]
 DETAILS_JSON_FILE = Path("product_details.json")
 DETAILS_JSON_FILE.touch(exist_ok=True)
 
+
 # Helper
 def clean_text(text: str) -> str:
     if not text:
         return None
     text = text.replace("\u00a0", " ").replace("\u202f", " ")
-    text = re.sub(r"\s+", " ", text)  
+    text = re.sub(r"\s+", " ", text)
     return text.strip()
+
 
 class LogicImmoParser:
     def __init__(self):
@@ -42,7 +46,11 @@ class LogicImmoParser:
             "Accept-Encoding": "gzip, deflate, br, zstd",
             "Accept-Language": "en-US,en;q=0.9",
             "Content-Type": "application/json; charset=utf-8",
-            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36"
+            "User-Agent": (
+                "Mozilla/5.0 (X11; Linux x86_64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/139.0.0.0 Safari/537.36"
+            )
         }
 
     async def launch_browser(self) -> Browser:
@@ -51,76 +59,67 @@ class LogicImmoParser:
         browser = await self.playwright.chromium.launch(headless=False)
         return browser
 
-    async def extract_product_details(self, page: Page, url: str):
+    async def parse_listing(self, page: Page, url: str) -> dict:
+        """Extract required fields from a listing page using lxml + XPath."""
+        data = {"URL": url}
         try:
-            await page.goto(url, timeout=60000)
+            # Navigate
+            await page.goto(url, timeout=30000)
+            await page.wait_for_load_state("domcontentloaded")
+            await page.wait_for_timeout(3000)
 
-            content = await page.content()
-
-            phone_number = None
+            # --- Try clicking "show phone" button if present ---
             try:
-    
-                phone_btn = page.locator('//div[contains(@data-testid,"aviv.CDP.Contacting.ProviderSection.PhoneNumber.0")]//button')
+                phone_button = page.locator('xpath=//button[@aria-label="Tel"]')
+                if await phone_button.count() > 0:
+                    await phone_button.first.click()
+                    await page.wait_for_timeout(2000)
+            except Exception:
+                pass
 
-                if await phone_btn.count() > 0:
-        
-                    btn_text = (await phone_btn.first.inner_text()).strip()
-                    if "Afficher" in btn_text or "numéro" in btn_text:
-                        await phone_btn.first.click()
-                        await page.wait_for_timeout(1500)  
+            # --- Get page content ---
+            content = await page.content()
+            tree = html.fromstring(content)
 
-                    raw_phone = (await phone_btn.first.inner_text()).strip()
-                    match = re.search(r"\+?\d[\d\s]+", raw_phone)
-                    if match:
-                        phone_number = re.sub(r"\s+", "", match.group())
+            # --- Seller Phone ---
+            phone_number = None
+            phone_texts = tree.xpath('//div[@class="css-12m0k8p"]//text()')
+            if phone_texts:
+                raw_phone = phone_texts[0].strip()
+                match = re.search(r"\+?\d[\d\s]+", raw_phone)
+                if match:
+                    phone_number = re.sub(r"\s+", "", match.group())
+            # fallback JSON
+            if not phone_number:
+                phone_match = re.search(r'"phoneNumbers":\s*\[\s*"([^"]+)"\s*\]', content)
+                if phone_match:
+                    phone_number = phone_match.group(1).strip()
+            data["seller_phone"] = phone_number
 
-                if not phone_number:
-                    content = await page.content()
-                    phone_match = re.search(r'"phoneNumbers":\s*\["([^"]+)"\]', content)
-                    if phone_match:
-                        phone_number = phone_match.group(1).strip()
+            # --- Email ---
+            seller_email = tree.xpath('//a[contains(@href,"mailto:")]/text()')
+            data["seller_email"] = clean_text(seller_email[0]) if seller_email else None
 
-            except Exception as e:
-                logging.warning(f"Failed to extract phone number on {url}: {e}")
+            # --- Property Type ---
+            property_type = tree.xpath('//span[contains(@class,"css-1nxshv1")]/text()')
+            data["property_type"] = clean_text(property_type[0]) if property_type else None
 
-            email = None
-            email_locator = page.locator('//span[contains(@class,"css-nrs666")]')
-            if await email_locator.count() > 0:
-                email = clean_text(await email_locator.first.inner_text())
-
-    
-            property_type = None
-            type_locator = page.locator('//span[contains(@class,"css-1nxshv1")]')
-            if await type_locator.count() > 0:
-                property_type = clean_text(await type_locator.first.inner_text())
-
+            # --- Property Size ---
             property_size = None
-            size_locator = page.locator('//div[contains(@class,"css-7tj8u")]/span')
-            if await size_locator.count() >= 5:
-                property_size = clean_text(await size_locator.nth(4).inner_text())
+            size_nodes = tree.xpath('//div[contains(@class,"css-7tj8u")]/span/text()')
+            if len(size_nodes) >= 5:
+                property_size = clean_text(size_nodes[4])
+            data["property_size"] = property_size
 
-    
-            property_price = None
-            price_locator = page.locator('//span[contains(@class,"css-9wpf20")]')
-            if await price_locator.count() > 0:
-                raw_price = await price_locator.first.inner_text()
-                property_price = clean_text(raw_price)
+            # --- Price ---
+            property_price = tree.xpath('//span[contains(@class,"css-9wpf20")]/text()')
+            data["property_price"] = clean_text(property_price[0]) if property_price else None
 
-    
-            city = "Franconville"
-
-            details = {
-                "URL": url,
-                "seller_phone": phone_number,
-                "seller_email": email,
-                "property_type": property_type,
-                "property_size": property_size,
-                "property_price": property_price,
-                "city": city
-            }
+            # --- City (static for now) ---
+            data["city"] = "Franconville"
 
             logging.info(f"Extracted details for URL: {url}")
-            return details
+            return data
 
         except Exception as e:
             logging.error(f"Error extracting details from {url}: {e}")
@@ -128,13 +127,13 @@ class LogicImmoParser:
 
     async def save_details(self, details: dict):
         if details:
-        
+            # Save to JSON
             with open(DETAILS_JSON_FILE, "a", encoding="utf-8") as f:
                 json.dump(details, f, ensure_ascii=False)
                 f.write("\n")
             logging.info(f"Saved to JSON: {details['URL']}")
 
-            
+            # Save to MongoDB
             if not details_collection.find_one({"URL": details["URL"]}):
                 details_collection.insert_one(details)
                 logging.info(f"Saved to MongoDB: {details['URL']}")
@@ -148,7 +147,7 @@ class LogicImmoParser:
         for url_doc in urls_cursor:
             url = url_doc.get("url")
             if url:
-                details = await self.extract_product_details(page, url)
+                details = await self.parse_listing(page, url)
                 await self.save_details(details)
 
         await browser.close()
