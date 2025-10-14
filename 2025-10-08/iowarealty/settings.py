@@ -32,10 +32,8 @@ HEADERS = {
     "x-requested-with": "XMLHttpRequest",
 }
 
-# ---------------- COLLECTION NAMES ----------------
 COLL_URLS = f"{PROJECT_NAME}_urls"
 COLL_DATA = f"{PROJECT_NAME}_data"
 COLL_FAILED = f"{PROJECT_NAME}_failed"
 
-# ---------------- PAGE SIZE ----------------
 PAGE_SIZE = 10

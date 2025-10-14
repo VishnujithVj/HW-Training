@@ -68,20 +68,18 @@ class Parser:
             val = tree.xpath(xpath)
             return val[0].strip() if val and isinstance(val[0], str) else default
 
-        # --- Name & Title ---
         name_full = x('//section[contains(@class,"rng-bio-account-content-office")]//h1/text()')
         name_parts = name_full.split()
         first_name = name_parts[0] if len(name_parts) > 0 else ""
         middle_name = name_parts[1] if len(name_parts) == 3 else ""
         last_name = name_parts[-1] if len(name_parts) >= 2 else ""
+
         title = x('//section[contains(@class,"rng-bio-account-content-office")]//span[1]/text()')
 
-        # --- Image URL ---
         image_style = x('//div[contains(@class,"site-account-image")]/@style')
         image_url_match = re.search(r'url\((.*?)\)', image_style)
         image_url = image_url_match.group(1).strip() if image_url_match else ""
 
-        # --- Office Info (includes address & ZIP) ---
         office_section = " ".join(tree.xpath('//section[contains(@class,"rng-bio-account-content-office")]//div/text()'))
         office_section = re.sub(r'\s+', ' ', office_section).strip()
 
@@ -90,7 +88,6 @@ class Parser:
         zipcode = ""
 
         if office_section:
-            # Example: "Iowa Realty | Altoona 809 8th St. SW Ste A Altoona IA 50009"
             parts = office_section.split("|", 1)
             if len(parts) == 2:
                 office_name = parts[0].strip()
@@ -98,23 +95,19 @@ class Parser:
             else:
                 address = office_section.strip()
 
-            # Extract ZIP code (5-digit)
             zip_match = re.search(r"\b\d{5}(?:-\d{4})?\b", address)
             if zip_match:
                 zipcode = zip_match.group(0)
 
-        # --- Agent Phone ---
         agent_phone_numbers = [
             p.strip() for p in tree.xpath('//section[contains(@class,"rng-bio-account-details")]//a[contains(@href,"tel:")]/text()')
             if p.strip()
         ]
 
-        # --- Description ---
         desc_nodes = tree.xpath('//section[contains(@class,"rng-bio-account-content-description")]//div[@id="bioAccountContentDesc"]//text()')
         description = " ".join([d.strip() for d in desc_nodes if d.strip()])
         description = re.sub(r'\s+', ' ', description).strip()
 
-        # --- Social Media Links ---
         social_links = {}
         for li in tree.xpath('//ul[contains(@class,"rng-agent-bio-content-contact-social")]/li'):
             cls_list = li.xpath('./@class')
@@ -124,20 +117,17 @@ class Parser:
                 platform = cls.replace("social-", "").strip().lower()
                 social_links[platform] = link
 
-        # --- Languages ---
         languages = [
             l.strip() for l in tree.xpath('//section[contains(@class,"rng-bio-account-languages")]//div/text()')
             if l.strip() and l.strip().lower() != "languages"
         ]
 
-        # --- Country, State, City ---
         country = "USA"
         state = "IA"
 
         city_match = re.search(r"\b([A-Za-z]+)\s+IA\b", address)
         city = city_match.group(1) if city_match else ""
 
-        # --- Other Info ---
         email = x('//a[contains(@href,"mailto:")]/text()')
         website = x('//a[contains(@href,"http") and contains(text(),"Website")]/@href')
 

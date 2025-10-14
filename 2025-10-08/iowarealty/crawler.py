@@ -8,7 +8,7 @@ from lxml import html
 from mongoengine import Document, StringField, ListField
 from settings import BASE_URL, API_URL, HEADERS, PAGE_SIZE
 
-# ---------------- SINGLE DOCUMENT MODEL ----------------
+
 class AgentURLs(Document):
     """Single document to store all agent URLs"""
     _id = StringField(primary_key=True, default="agents")
@@ -59,15 +59,15 @@ class Crawler:
             urls, _ = self.fetch_agents(page)
             all_urls.extend(urls)
 
-        all_urls = list(dict.fromkeys(all_urls))  # remove duplicates
+        all_urls = list(dict.fromkeys(all_urls))  
         logging.info(f"Collected {len(all_urls)} agent URLs")
 
-        # ---------------- UPSERT SINGLE DOCUMENT ----------------
+        
         AgentURLs.objects(_id="agents").update_one(
             set__urls=all_urls,
             upsert=True
         )
-        logging.info("💾 All URLs saved to single MongoDB document successfully.")
+        logging.info("All URLs saved to single MongoDB document successfully.")
 
 
 if __name__ == "__main__":
