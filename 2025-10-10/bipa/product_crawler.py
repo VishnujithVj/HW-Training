@@ -1,101 +1,108 @@
-import requests
 import logging
-import time
+import requests
 from parsel import Selector
 from items import ProductUrlItem, CategoryUrlItem
 from settings import HEADERS, BASE_URL, PRODUCTS_PER_PAGE
 
-class ProductCrawler:
-    """Crawling Product URLs"""
 
+class ProductCrawler:
+    """Crawling Product URLs in company-standard template"""
+
+    # INIT
     def __init__(self):
         self.session = requests.Session()
         self.session.headers.update(HEADERS)
+        self.mongo = ''  
 
+
+    # START
     def start(self):
-        """Start crawling products from categories"""
-        categories = CategoryUrlItem.objects()
-        logging.info(f"Found {categories.count()} categories to process")
-        
-        for i, category in enumerate(categories, 1):
-            logging.info(f"[{i}/{categories.count()}] Processing: {category.name}")
-            self.process_category(category)
-            time.sleep(1)
+        """Start crawling product URLs from category pages"""
 
-    def process_category(self, category):
-        """Process single category with pagination using offset"""
-        page = 0
-        seen_urls = set()
-        has_more_products = True
-        
-        while has_more_products:
+        categories = CategoryUrlItem.objects()
+        logging.info(f"Found {categories.count()} categories to process.")
+
+        for idx, category in enumerate(categories, 1):
+            logging.info(f"[{idx}/{categories.count()}] Processing Category: {category.name}")
+            page = 0
+            self.parse_category(category, page)
+
+        self.close()
+
+
+    # CLOSE
+    def close(self):
+        """Close session"""
+        self.session.close()
+        logging.info("Product crawling completed")
+
+
+    # PARSE ITEM 
+    def parse_category(self, category, page):
+        """Parse category with pagination"""
+
+        while True:
             offset = page * PRODUCTS_PER_PAGE
             paged_url = f"{category.url}?offset={offset}"
-            
-            try:
-                response = self.session.get(paged_url)
-                if response.status_code != 200:
-                    logging.warning(f"Failed to fetch page {page + 1} for {category.name}")
-                    break
-                    
-                product_urls = self.extract_product_urls(response.text)
-                
-                if not product_urls:
-                    logging.info(f"No more products found for {category.name} at page {page + 1}")
-                    has_more_products = False
-                    break
-                    
-                new_urls = [url for url in product_urls if url not in seen_urls]
-                
-                if not new_urls:
-                    logging.info(f"No new products found for {category.name} at page {page + 1}")
-                    has_more_products = False
-                    break
-                    
-                """Save new product URLs"""
-                for url in new_urls:
-                    product_item = ProductUrlItem(
-                        url=url,
-                        category_url=category.url
-                    )
-                    product_item.save()
-                    seen_urls.add(url)
-                
-                logging.info(f"Category: {category.name} | Page {page + 1}: Saved {len(new_urls)} products (Offset: {offset})")
-                page += 1
-                time.sleep(0.5) 
-                
-            except Exception as e:
-                logging.error(f"Error processing category {category.name} at page {page + 1}: {e}")
+
+            response = self.session.get(paged_url)
+            if response.status_code != 200:
+                logging.warning(f"[{category.name}] Failed to fetch page {page + 1}")
                 break
 
-        logging.info(f"Completed {category.name}: Found {len(seen_urls)} total products")
+            is_next = self.parse_item(response, category)
+            if not is_next:
+                logging.info(f"[{category.name}] Pagination completed at page {page + 1}")
+                break
 
-    def extract_product_urls(self, html_content):
-        """Extract product URLs from HTML"""
-        sel = Selector(html_content)
-        product_links = sel.xpath('//a[contains(@href,"/p/")]/@href').getall()
+            page += 1
 
-        """Clean and format URLs"""
+
+    # XPATH
+    def parse_item(self, response, category):
+        """Extract product URLs from a category page"""
+        sel = Selector(response.text)
+
+        PRODUCT_XPATH = '//a[contains(@href,"/p/")]/@href'
+
+        product_links = sel.xpath(PRODUCT_XPATH).getall()
+        urls = self.clean_urls(product_links)
+
+        if not urls:
+            return False
+
+        self.item_yield(urls, category)
+        return True
+
+    # CLEAN
+    def clean_urls(self, links):
+        """Normalize and deduplicate product URLs"""
         clean_urls = []
-        for link in product_links:
-            if link and '/p/' in link:
-                if link.startswith('/'):
-                    clean_url = BASE_URL + link.split('?')[0]
-                else:
-                    clean_url = link.split('?')[0]
-                
-                if clean_url.startswith('http') and clean_url not in clean_urls:
-                    clean_urls.append(clean_url)
-            
-        return list(set(clean_urls)) 
+        for link in links:
+            if not link or "/p/" not in link:
+                continue
 
-    def close(self):
-        self.session.close()
-        logging.info("Product crawler completed")
+            if link.startswith("/"):
+                full_url = BASE_URL.rstrip("/") + link.split("?")[0]
+            else:
+                full_url = link.split("?")[0]
+
+            if full_url.startswith("http") and full_url not in clean_urls:
+                clean_urls.append(full_url)
+
+        return list(set(clean_urls))
+
+    # ITEM YIELD
+    def item_yield(self, urls, category):
+        """Save product URLs to MongoDB"""
+        for url in urls:
+            try:
+                ProductUrlItem(url=url, category_url=category.url).save()
+            except Exception as e:
+                logging.warning(f"Failed to save URL {url}: {e}")
 
 
+# ENTRY POINT
 if __name__ == "__main__":
     crawler = ProductCrawler()
     crawler.start()
-    crawler.close()
