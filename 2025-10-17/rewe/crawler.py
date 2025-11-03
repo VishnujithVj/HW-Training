@@ -38,20 +38,19 @@ class Crawler:
         """Parse category page"""
         cat_html = self.fetch(meta['category_url'])
         subcats = Selector(text=cat_html).xpath('//a[contains(@class,"plr-CategoryNavigationTile__Item")]/@href').extract() or [meta['category_url']]
-        
+
         for sub in subcats:
-            meta['subcategory_url'] = urljoin(BASE_URL, sub)
-            logging.info(f"  Subcategory: {meta['subcategory_url']}")
+            meta = {"subcategory_url": urljoin(BASE_URL, sub), "page": 1}
+            logging.info(f"Processing Subcategory: {meta['subcategory_url']}")
             
-            page = meta.get("page", 1)
             while True:
                 is_next = self.parse_subcategory(meta)
                 if not is_next:
                     logging.info("Pagination completed")
                     break
-                
-                page += 1
-                meta["page"] = page
+                meta["page"] += 1
+
+
 
     def parse_subcategory(self, meta):
         """Parse subcategory page with products"""
