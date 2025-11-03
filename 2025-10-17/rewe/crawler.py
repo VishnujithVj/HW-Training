@@ -10,7 +10,7 @@ from settings import HEADERS, BASE_URL, MONGO_DB
 
 
 class Crawler:
-    """Crawling Urls"""
+    """REWE Crawler"""
 
     def __init__(self):
         self.mongo = connect(alias="default", db=MONGO_DB, host="mongodb://localhost:27017/")
@@ -67,14 +67,14 @@ class Crawler:
                 item['subcategory_url'] = meta.get('subcategory_url')
                 
                 try:
-                    # save
+                    """ save """
                     ProductUrlItem(**item).save()
                     logging.info(f"Saved: {item['url']}")
 
                 except Exception as e:
                     logging.error(f"Save error for {item['url']}: {e}")
 
-            # Next page
+            """ Next_page """
             next_page = Selector(text=html).xpath('//a[contains(@class,"plr-pagination-button-right")]/@href').extract_first()
             if next_page:
                 meta['subcategory_url'] = urljoin(BASE_URL, next_page)
