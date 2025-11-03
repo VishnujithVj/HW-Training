@@ -20,6 +20,7 @@ class Export:
         logging.info(f"Exporting data with headers: {len(FILE_HEADERS)} columns")
 
         cursor = self.collection.find({}, no_cursor_timeout=True)
+        product_count = 0
 
         try:
             for item in cursor:
@@ -41,10 +42,16 @@ class Export:
 
                     row_data.append(value)
 
+                self.writer.writerow(row_data)
+                product_count += 1
+
+                if product_count % 100 == 0:
+                    logging.info(f"Exported {product_count} products...")
+
         finally:
             cursor.close()
-            
-        logging.info(f"Export completed successfully.")
+
+        logging.info(f"Export completed successfully. Total products exported: {product_count}")
 
     def close(self):
         """Close MongoDB connection"""
