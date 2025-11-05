@@ -79,19 +79,11 @@ HEADERS = {
     "Priority": "u=0, i",
 }
 
-COOKIES = {
-            'OptanonAlertBoxClosed': '2025-10-20T10:04:09.055Z',
-            'usid_AT': '22ba7b8d-30d6-44d2-9d3e-6cae00a296bb',
-        }
 
 
 # PAGINATION CONFIGURATION
 PRODUCTS_PER_PAGE = 24
 
-
-# EXPORT CONFIG
-file_name = f"exports/{FILE_NAME}.csv"
-os.makedirs("exports", exist_ok=True)
 
 FILE_HEADERS = [
     "pdp_url",

@@ -1,7 +1,7 @@
 import logging
 import requests
 from items import CategoryUrlItem
-from settings import HEADERS, COOKIES
+from settings import HEADERS
 
 
 class CategoryCrawler:
@@ -17,7 +17,7 @@ class CategoryCrawler:
         """Start crawling category URLs"""
         logging.info("Starting category crawler")
 
-        response = requests.get(self.url, headers=HEADERS, cookies=COOKIES)
+        response = requests.get(self.url, headers=HEADERS,)
         if response.status_code == 200:
             categories_data = response.json()
             self.parse_item(categories_data)
@@ -26,17 +26,9 @@ class CategoryCrawler:
             
         self.close()
 
-    # CLOSE
-    def close(self):
-        """Close connections"""
-        if self.mongo:
-            self.mongo.close()
-
-        logging.info("Category crawler completed")
-
 
     # PARSE ITEM
-    def parse_item(self, categories, parent_url="", level="main"):
+    def parse_item(self, categories,  level="main"):
         """Parse categories recursively"""
         for category in categories:
             name = category.get("name")
@@ -46,7 +38,6 @@ class CategoryCrawler:
                 item = CategoryUrlItem(
                     url=url,
                     name=name,
-                    parent_url=parent_url,
                     level=level
                 )
         
@@ -59,6 +50,13 @@ class CategoryCrawler:
                 next_level = "sub" if level == "main" else "subsub"
                 self.parse_item(sub_categories, url, next_level)
 
+    # CLOSE
+    def close(self):
+        """Close connections"""
+        if self.mongo:
+            self.mongo.close()
+
+        logging.info("Category crawler completed")
 
 # ENTRY POINT
 if __name__ == "__main__":
