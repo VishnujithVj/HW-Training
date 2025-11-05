@@ -1,103 +1,163 @@
-""" FEASIBILITY WORK REPORT - FATFACE.COM """
+""" FEASIBILITY WORKFLOW REPORT - FATFACE.COM """
 
-from curl_cffi import requests
+import requests
 from parsel import Selector
-from urllib.parse import urljoin
+from pymongo import MongoClient
 import math
-import time
+import re
+from urllib.parse import urljoin
 
-""" CONFIG """
-BASE_URL = "https://www.fatface.com"
-START_URL = "https://www.fatface.com/shop/f/feat-newin?p=1"
 
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/120.0.0.0 Safari/537.36"
-    )
+headers = {
+    'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.5',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Priority': 'u=0, i',
 }
 
+""" CATEGORY CRAWLER """
+API_URL = "https://www.fatface.com/headerstatic/seo-content"
+BASE_URL = "https://www.fatface.com"
 
-""" CRAWLER """
+""" Fetch category JSON data from API """
+response = requests.get(API_URL, headers=headers, timeout=30)
+category_data = response.json().get("items", [])
+
+""" Extract categories recursively """
+def parse_categories(data):
+    results = []
+
+    def recurse(items, parent_title= "", parent_url= ""):
+        for item in items:
+            title = item.get("title")
+            target = item.get("target")
+            if not title or not target:
+                continue
+
+            url = urljoin(BASE_URL, target.strip())
+
+            results.append({
+                "category_title": parent_title or title,
+                "subcategory_title": title if parent_title else "",
+                "category_url": parent_url or url,
+                "subcategory_url": url if parent_title else "",
+
+            })
+
+            """ recurse if has nested items """
+            if isinstance(item.get("items"), list):
+                recurse(item["items"], parent_title=title, parent_url=url)
+
+    recurse(data)
+    return [r for r in results if r["subcategory_url"]]
+
+subcategories = parse_categories(category_data)
+print(f"Found {len(subcategories)} subcategories")
+
+
+""" PRODUCT CRAWLER """
+subcategory_url = subcategories[0]["subcategory_url"] if subcategories else ""
+category_url = subcategories[0]["category_url"] if subcategories else ""
+
+""" Paginate through product listings """
 page = 1
+total_pages = None
 total_products = 0
+seen = set()
 product_urls = []
 
 while True:
-    page_url = f"{START_URL.split('?')[0]}?p={page}"
+    page_url = f"{subcategory_url.split('?')[0]}?p={page}"
+    print(f"Fetching page {page}: {page_url}")
 
-    response = requests.get(page_url, headers=HEADERS,timeout=30)
+    response = requests.get(page_url, headers=headers, timeout=30)
     sel = Selector(text=response.text)
 
-    """ Extract product count """
+    """ Extract total product count on first page """
     if page == 1:
         count_text = sel.xpath('//span[@class="esi-count"]/text()').get()
         if count_text:
-            digits = "".join([c for c in count_text if c.isdigit()])
-            total_products = int(digits) if digits else 0
-
+            total_products = int(''.join([c for c in count_text if c.isdigit()]) or 0)
+            print(f"Total products listed: {total_products}")
 
     """ Extract product URLs """
-    links = sel.xpath('//a[contains(@class,"MuiCardMedia-root") and @href]/@href').getall()
-    links = [urljoin(BASE_URL, href.split("#")[0]) for href in links if href.strip()]
-    product_urls.extend(links)
+    product_links = sel.xpath('//a[contains(@class,"MuiCardMedia-root")]/@href').getall()
+    product_links = [urljoin(BASE_URL, href.split('#')[0]) for href in product_links if href.strip()]
+
+    if not product_links:
+        print("No more product links found. Ending pagination.")
+        break
+
+    new_links = [link for link in product_links if link not in seen]
+    seen.update(new_links)
+    product_urls.extend(new_links)
+
+    print(f"Page {page}: {len(new_links)} new products found")
 
     """ Pagination logic """
-    if total_products and len(links) > 0:
-        per_page = len(links)
-        total_pages = math.ceil(total_products / per_page)
-        if page >= total_pages:
-            break
+    if total_products and not total_pages:
+        per_page = len(product_links)
+        total_pages = math.ceil(total_products / per_page) if per_page else 1
+        print(f"Total estimated pages: {total_pages}")
+
+    if total_pages and page >= total_pages:
+        break
 
     page += 1
-    time.sleep(1)
+
+print(f"Total product URLs collected: {len(product_urls)}")
 
 
 """ PARSER """
-PRODUCT_TITLE = '//h1[@data-testid="product-title"]/text()'
-PRODUCT_PRICE = '//div[@data-testid="product-now-price"]/span/text()'
-PRODUCT_COLOUR = '//span[@data-testid="selected-colour-label"]/text()'
-PRODUCT_DESCRIPTION = '//p[@data-testid="item-description"]/text()'
-PRODUCT_CODE = '//div[@class="MuiBox-root pdp-css-lhfv11"]/span/text()'
+# Test with first product URL
+if product_urls:
+    test_product_url = product_urls[0]
+    print(f"Testing parser with: {test_product_url}")
+    
+    response = requests.get(test_product_url, headers=headers, timeout=30)
+    sel = Selector(text=response.text)
 
-results = []
+    # Product Code
+    UNIQUE_ID = '//h2[contains(text(),"Product Code")]/following-sibling::span/text()'
+    unique_id = sel.xpath(UNIQUE_ID).get()
+    unique_id = re.sub(r"\s+", " ", unique_id).strip() if unique_id else ""
 
-for idx, url in enumerate(product_urls[:50]):  
+    # Product Name 
+    PRODUCT_NAME = '//h1[@data-testid="product-title"]/text()'
+    product_name = sel.xpath(PRODUCT_NAME).get()
+    product_name = re.sub(r"\s+", " ", product_name).strip() if product_name else ""
 
-    res = requests.get(url, headers=HEADERS,timeout=20)
-    if res.status_code != 200:
-        continue
+    # Price
+    PRICE = '//div[@data-testid="product-now-price"]/span/text()'
+    price = sel.xpath(PRICE).get()
+    price = price.strip() if price else "",
 
-    sel = Selector(text=res.text)
+    # Product Description 
+    DESCRIPTION = '//div[@data-testid="item-description"]//text()'
+    description = " ".join(sel.xpath(DESCRIPTION).getall())
+    description = re.sub(r"\s+", " ", description).strip() if description else ""
 
-    title = sel.xpath(PRODUCT_TITLE).get()
-    price = sel.xpath(PRODUCT_PRICE).get()
-    colour = sel.xpath(PRODUCT_COLOUR).get()
-    description = sel.xpath(PRODUCT_DESCRIPTION).get()
-    product_id = sel.xpath(PRODUCT_CODE).get()
-
-    product_data = {
-        "url": url,
-        "title": title.strip() if title else None,
-        "price": price.strip() if price else None,
-        "colour": colour.strip() if colour else None,
-        "description": description.strip() if description else None,
-        "product_id": product_id.strip() if product_id else None,
-        "status": res.status_code,
-    }
-
-    results.append(product_data)
+    # Images 
+    IMAGES = '//div[@data-testid="image-gallery-slide"]//img/@src'
+    images = sel.xpath(IMAGES).getall()
+    images = [urljoin(BASE_URL, i) for i in images if i.strip()]
 
 
-("############################## FINDINGS ##############################")
+############################## FINDINGS ##############################
 
-("""
-- The site implements infinite scroll pagination. The crawler must programmatically generate scroll events to load all content and collect the product URLs.
-- Product listing  pagination like this (?p=1, ?p=2, ...).
-- Product count available under //span[@class="esi-count"].
-- Product URLs extracted from <a class="MuiCardMedia-root ..."> tags.
-- All visible fields can be  extracted.
-- Available Product details (title, price, colour, review, description, product_id, fit, care & fabric) are accessible in  HTML.
-- Crawling can proceed safely using polite delays.
-""")
+# - Category structure available via API endpoint (/headerstatic/seo-content)
+# - Pagination uses simple ?p= parameter like this (?p=1, ?p=2, ...).
+# - Product URLs extracted from MuiCardMedia-root class anchors
+# - Product details well-structured with data-testid attributes
+# - Product code available as unique identifier
+# - Images available in gallery with multiple views
+# - Rating and review count available on PDP
+# - Available Product details (title, price, colour, image ,review, rating, description, product_id, fit, care & fabric) are accessible in  HTML.
+# - Crawling can proceed safely using polite delays.
+
