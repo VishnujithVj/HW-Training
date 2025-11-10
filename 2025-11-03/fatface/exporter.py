@@ -4,12 +4,7 @@ from mongoengine import connect
 from items import ProductItem
 from settings import MONGO_DB, FILE_NAME, FILE_HEADERS
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s: %(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-)
-
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s: %(message)s")
 
 class Export:
     """Post-Processing Exporter"""
@@ -45,9 +40,7 @@ class Export:
         logging.info(f"Successfully exported {len(products)} products to CSV")
 
     def close(self):
-        """Close connections"""
         pass
-
 
 if __name__ == "__main__":
     with open(f"{FILE_NAME}.csv", "w", newline="", encoding="utf-8") as file:
@@ -55,4 +48,3 @@ if __name__ == "__main__":
         export = Export(writer)
         export.start()
         export.close()
-        logging.info("Export completed successfully")
