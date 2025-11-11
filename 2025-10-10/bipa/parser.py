@@ -4,50 +4,50 @@ import json
 from datetime import datetime, timezone
 from parsel import Selector
 import requests
-from settings import HEADERS
+from mongoengine import connect
+from settings import HEADERS, MONGO_COLLECTION_DATA, MONGO_DB
 from items import ProductItem, ProductUrlItem
 
 
 class Parser:
-    """BIPA Parser - Company Standard Template"""
+    """parser"""
 
     def __init__(self):
         """initialize connections"""
-        self.mongo = ""
+        self.mongo = connect(alias="default", db=MONGO_DB, host="mongodb://localhost:27017/")
+        logging.info("MongoDB connected")
 
-    # START    
     def start(self):
-        """start code"""
         logging.info("Starting parser")
 
         urls = ProductUrlItem.objects().only("url")
+        total_urls = urls.count()
+        
         if not urls:
             logging.warning("No product URLs found in MongoDB")
             return
 
-        for record in urls:
+        logging.info(f"Found {total_urls} URLs to process")
+
+        for idx, record in enumerate(urls, 1):
             url = record.url
-            response = requests.get(url, headers=HEADERS, timeout=30)
-            if response.status_code == 200:
-                self.parse_item(url, response)
-            else:
-                logging.error(f"Failed: {url} ({response.status_code})")
+            logging.info(f"[{idx}/{total_urls}] Processing: {url}")
+            
+            try:
+                response = requests.get(url, headers=HEADERS, timeout=30)
+                if response.status_code == 200:
+                    self.parse_item(url, response)
+                else:
+                    logging.error(f"Failed: {url} ({response.status_code})")
+            except Exception as e:
+                logging.error(f"Error processing {url}: {e}")
 
-    
-    # CLOSE
-    def close(self):
-        """connection close"""
-        logging.info("Parser completed")
-        self.mongo.close()
 
-    # PARSE ITEM
     def parse_item(self, url, response):
         """item part"""
-
         sel = Selector(text=response.text)
 
-
-        # XPATH SECTION
+        """ XPATH """
         JSON_LD_XPATH = '//script[@type="application/ld+json"]/text()'
         PRICE_XPATH = '//span[contains(@class, "price")]//text()'
         NAME_XPATH = '//h1//text()'
@@ -56,7 +56,7 @@ class Parser:
         BREADCRUMB_XPATH = '//nav[contains(@aria-label, "breadcrumb")]//a//text()'
         IMAGE_XPATH = '//img[contains(@class, "product")]/@src'
 
-        # EXTRACT SECTION
+        """ EXTRACT """
         product_id = self.extract_product_id(url)
         product_name = sel.xpath(NAME_XPATH).get()
         brand = sel.xpath(BRAND_XPATH).get()
@@ -66,7 +66,7 @@ class Parser:
         images = sel.xpath(IMAGE_XPATH).getall()
         json_scripts = sel.xpath(JSON_LD_XPATH).getall()
 
-        # EXTRACT FROM JSON-LD
+        """ EXTRACT FROM JSON-LD """
         json_data = {}
         for script in json_scripts:
             try:
@@ -80,8 +80,7 @@ class Parser:
             except json.JSONDecodeError:
                 continue
 
-    
-        # CLEAN SECTION
+        """ CLEAN """
         product_name = product_name.strip() if product_name else json_data.get('name', '')
         brand = brand.strip() if brand else (
             json_data.get('brand', {}).get('name') if isinstance(json_data.get('brand'), dict)
@@ -113,8 +112,7 @@ class Parser:
         elif images:
             img_clean = [x for x in images]
 
-
-        # ITEM YIELD SECTION 
+        """ ITEM YIELD """
         item = {}
         item["unique_id"] = product_id
         item["product_name"] = product_name
@@ -122,7 +120,7 @@ class Parser:
         item["product_description"] = description
         item["selling_price"] = price
         item["currency"] = "EUR"
-        item["breadcrumbs"] = breadcrumbs_joined
+        item["breadcrumb"] = breadcrumbs_joined
         item["pdp_url"] = url
         item["instock"] = True
         item["extraction_date"] = datetime.now(timezone.utc)
@@ -137,21 +135,33 @@ class Parser:
         item["producthierarchy_level6"] = crumbs_clean[5] if len(crumbs_clean) > 5 else ""
         item["producthierarchy_level7"] = crumbs_clean[6] if len(crumbs_clean) > 6 else ""
 
-
         try:
-            product_doc = ProductItem(**item)
-            product_doc.save()
+            """ Check if product already exists """
+            existing_product = ProductItem.objects(unique_id=product_id).first()
+            if existing_product:
+                """ Update existing product """
+                for key, value in item.items():
+                    setattr(existing_product, key, value)
+                existing_product.save()
+                logging.info(f"Updated product: {product_name}")
+            else:
+                """ Create new product """
+                product_doc = ProductItem(**item)
+                product_doc.save()
+                logging.info(f"Saved new product: {product_name}")
         except Exception as e:
             logging.warning(f"Failed to save product {url}: {e}")
-
 
     def extract_product_id(self, url):
         """Extract product ID from URL"""
         match = re.search(r"/p/(B3-\w+)", url)
         return match.group(1) if match else url.split("/")[-1]
-
+    
+    def close(self):
+        self.mongo.close()
+        logging.info("Parser completed")
 
 if __name__ == "__main__":
-    parser_obj = Parser()
-    parser_obj.start()
-    parser_obj.close()
+    parser = Parser()
+    parser.start()
+    parser.close()

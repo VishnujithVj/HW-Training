@@ -1,111 +1,100 @@
 import csv
 import logging
+import os
+import re
 from mongoengine import connect
-from settings import FILE_NAME, FILE_HEADERS, MONGO_DB
 from items import ProductItem
+from settings import MONGO_DB, FILE_NAME, FILE_HEADERS
 
-
-# Logging Setup
 logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s:%(message)s",
-    datefmt="%Y-%m-%d %H:%M:%S",
-)
-
-
-# MongoDB Connection
-connect(db=MONGO_DB, host=f"mongodb://localhost:27017/{MONGO_DB}", alias="default")
-
+    level=logging.INFO, format="%(asctime)s %(levelname)s: %(message)s",  datefmt="%Y-%m-%d %H:%M:%S",)
 
 class Export:
-    """Post-Processing: Export MongoEngine ProductItem to CSV"""
+    """Post-Processing Exporter"""
 
     def __init__(self, writer):
+        self.mongo = connect(alias="default", db=MONGO_DB, host="mongodb://localhost:27017/")
+        logging.info("MongoDB connected")
         self.writer = writer
 
     def start(self):
         """Export as CSV file"""
 
-        # Write headers
         self.writer.writerow(FILE_HEADERS)
-        logging.info(f"CSV Header written: {FILE_HEADERS}")
+        logging.info(f"CSV Header written with {len(FILE_HEADERS)} columns")
 
-        # Iterate over products
-        for item in ProductItem.objects():
-        
-            pdp_url = item.pdp_url or ""
-            unique_id = item.unique_id or ""
-            product_name = item.product_name or ""
-            brand = item.brand or ""
-            brand_type = item.brand_type or ""
-            selling_price = item.selling_price or ""
-            regular_price = item.regular_price or ""
-            price_was = item.price_was or ""
-            promotion_price = item.promotion_price or ""
-            promotion_type = item.promotion_type or ""
-            percentage_discount = item.percentage_discount or ""
-            promotion_description = item.promotion_description or ""
-            currency = item.currency or "EUR"
-            product_description = item.product_description or ""
-            producthierarchy_level1 = item.producthierarchy_level1 or ""
-            producthierarchy_level2 = item.producthierarchy_level2 or ""
-            producthierarchy_level3 = item.producthierarchy_level3 or ""
-            producthierarchy_level4 = item.producthierarchy_level4 or ""
-            producthierarchy_level5 = item.producthierarchy_level5 or ""
-            producthierarchy_level6 = item.producthierarchy_level6 or ""
-            producthierarchy_level7 = item.producthierarchy_level7 or ""
-            image_url_1 = item.image_url_1 or ""
-            image_url_2 = item.image_url_2 or ""
-            image_url_3 = item.image_url_3 or ""
-            breadcrumbs = item.breadcrumbs or ""
-            instock = item.instock if item.instock is not None else True
-            extraction_date = item.extraction_date.strftime("%Y-%m-%d %H:%M:%S") if item.extraction_date else ""
+        products = ProductItem.objects()
+        total_products = products.count()
+        logging.info(f"Exporting {total_products} products")
 
+        for idx, item in enumerate(products, 1):
+            if idx % 100 == 0:
+                logging.info(f"Exported {idx}/{total_products} products")
+                
+            record = item.to_mongo().to_dict()
+            row = []
 
-            # all extracted variables into a data list
-            data = [
-                pdp_url,
-                unique_id,
-                product_name,
-                brand,
-                brand_type,
-                selling_price,
-                regular_price,
-                price_was,
-                promotion_price,
-                promotion_type,
-                percentage_discount,
-                promotion_description,
-                currency,
-                product_description,
-                producthierarchy_level1,
-                producthierarchy_level2,
-                producthierarchy_level3,
-                producthierarchy_level4,
-                producthierarchy_level5,
-                producthierarchy_level6,
-                producthierarchy_level7,
-                image_url_1,
-                image_url_2,
-                image_url_3,
-                breadcrumbs,
-                instock,
-                extraction_date,
-            ]
+            for field in FILE_HEADERS:
+                value = record.get(field, "")
 
-            # Write the row
-            self.writer.writerow(data)
+                """Clean product_description field"""
+                if field == "product_description":
+                    value = self.clean_description(value)
 
-        logging.info(f"Export completed. CSV file saved as: {FILE_NAME}.csv")
+                """(Normalize None → "")"""
+                if value is None:
+                    value = ""
+
+                """Convert non-string types safely"""
+                if isinstance(value, (list, dict)):
+                    value = str(value)
+
+                row.append(value)
+
+            """Ensure exactly correct number of fields"""
+            total_fields = len(FILE_HEADERS)
+            if len(row) < total_fields:
+                row += [""] * (total_fields - len(row))
+            elif len(row) > total_fields:
+                row = row[:total_fields]
+
+            self.writer.writerow(row)
+
+        logging.info(f"Export completed. Saved {total_products} records")
+
+    def clean_description(self, text):
+        """Clean unwanted symbols, emojis, and ad text from product description."""
+        if not text:
+            return ""
+
+        """Remove emojis and non-standard symbols"""
+        text = re.sub(r"[^\x00-\x7F]+", " ", text)
+
+        """Remove ad-related words/phrases"""
+        text = re.sub(
+            r"(online kaufen|jetzt kaufen|gratis versand|click & collect|später zahlen)",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        )
+
+        """Replace multiple spaces and strip """
+        text = re.sub(r"\s+", " ", text).strip()
+
+        return text
+
+    def close(self):
+        """Close connections"""
+        logging.info("Export completed")
 
 
-# Entry Point
 if __name__ == "__main__":
-    import os
+    """ Create exports directory if it doesn't exist """
     os.makedirs("exports", exist_ok=True)
     file_path = f"exports/{FILE_NAME}.csv"
-
+    
     with open(file_path, "w", encoding="utf-8", newline="") as file:
         writer_file = csv.writer(file, delimiter="|", quotechar='"')
-        exporter = Export(writer_file)
-        exporter.start()
+        export = Export(writer_file)
+        export.start()
+        export.close()

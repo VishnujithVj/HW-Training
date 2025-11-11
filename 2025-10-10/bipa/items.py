@@ -1,42 +1,37 @@
 from mongoengine import DynamicDocument, StringField, BooleanField, DateTimeField
 from datetime import datetime, timezone
-# from settings import (
-#     MONGO_COL_URL, MONGO_COLLECTION_EMPTY,
-#     MONGO_COLLECTION_URL_FAILED, MONGO_COLLECTION_DATA,
-#     MONGO_COLLECTION_MISMATCH, MONGO_COLLECTION_RESPONSE,
-#     MONGO_COLLECTION_IMAGES, MONGO_COLLECTION_CATEGORY,
-#     MONGO_COLLECTION_STORE_CODE, MONGO_COLLECTION_COUNT,
-#     MONGO_COLLECTION_PAGINATION
-# )
+from settings import (
+    MONGO_COL_URL, MONGO_COLLECTION_EMPTY,
+    MONGO_COLLECTION_URL_FAILED, MONGO_COLLECTION_DATA,
+    MONGO_COLLECTION_MISMATCH, MONGO_COLLECTION_RESPONSE,
+    MONGO_COLLECTION_CATEGORY, MONGO_COLLECTION_PAGINATION
+)
 
 
 class CategoryUrlItem(DynamicDocument):
     """Initializing Category URL fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_CATEGORY}
     url = StringField(required=True)
     name = StringField()
     parent_url = StringField()
     level = StringField()
     timestamp = DateTimeField(default=lambda: datetime.now(timezone.utc))
 
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_CATEGORY}
-    meta = {"collection": "category_urls", "db_alias": "default"}
-
 
 class ProductUrlItem(DynamicDocument):
     """Initializing Product URL fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COL_URL}
     url = StringField(required=True)
     category_url = StringField()
     timestamp = DateTimeField(default=lambda: datetime.now(timezone.utc))
-
-    # meta = {"db_alias": "default", "collection": MONGO_COL_URL}
-    meta = {"collection": "product_urls", "db_alias": "default"}
 
 
 class ProductItem(DynamicDocument):
     """Initializing Product Data fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_DATA}
     unique_id = StringField(required=True, unique=True)
     competitor_name = StringField(default="BIPA")
     store_name = StringField(default="BIPA Online")
@@ -166,56 +161,41 @@ class ProductItem(DynamicDocument):
     Warning = StringField(default="")
     suitable_for = StringField(default="")
     standard_drinks = StringField(default="")
+    environmental = StringField(default="")
     grape_variety = StringField(default="")
     retail_limit = StringField(default="")
-
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_DATA}
-    meta = {"collection": "product_data", "db_alias": "default"}
 
 
 class ProductFailedItem(DynamicDocument):
     """Initializing Failed URL fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_URL_FAILED}
     url = StringField(required=True)
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_URL_FAILED}
-    meta = {"collection": "product_failed_urls", "db_alias": "default"}
 
 
 class ProductEmptyItem(DynamicDocument):
     """Initializing Empty URL fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_EMPTY}
     input_style = StringField(required=True)
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_EMPTY}
-    meta = {"collection": "product_empty", "db_alias": "default"}
 
 
 class ProductMismatchItem(DynamicDocument):
     """Initializing Mismatch fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_MISMATCH}
     input_style = StringField(required=True)
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_MISMATCH}
-    meta = {"collection": "product_mismatch", "db_alias": "default"}
-
-
-class ProductCountItem(DynamicDocument):
-    """Initializing Count fields and their Data-Types"""
-
-    zipcode = StringField(required=True)
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_COUNT}
-    meta = {"collection": "product_count", "db_alias": "default"}
 
 
 class ProductResponseItem(DynamicDocument):
     """Initializing Response fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_RESPONSE}
     url = StringField(required=True)
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_RESPONSE}
-    meta = {"collection": "product_response", "db_alias": "default"}
 
 
 class ProductPageItem(DynamicDocument):
     """Initializing Pagination URL fields and their Data-Types"""
 
+    meta = {"db_alias": "default", "collection": MONGO_COLLECTION_PAGINATION}
     url = StringField(required=True)
-    # meta = {"db_alias": "default", "collection": MONGO_COLLECTION_PAGINATION}
-    meta = {"collection": "product_pagination", "db_alias": "default"}
