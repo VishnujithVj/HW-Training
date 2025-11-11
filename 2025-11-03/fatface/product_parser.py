@@ -41,8 +41,9 @@ class ProductParser:
 
         unique_id = get('//h2[contains(text(),"Product Code")]/following-sibling::span/text()')
         name = get('//h1[@data-testid="product-title"]/text()')
-        price_now = get('//div[@data-testid="product-now-price"]//span/text()')
-        price_was = get('//div[@data-testid="product-was-price"]/text()')
+        price_now = ''.join([text for text in select.xpath('//div[@data-testid="product-now-price"]//text()').getall() if '£' in text]).strip().replace('£', '')
+        price_was = ''.join([text for text in select.xpath('//div[@data-testid="product-was-price"]//text()').getall() if '£' in text]).strip().replace('£', '')
+    
         promo_date = get('//table//p[@data-testid="price-history-date-0"]/text()')
         desc = clean(" ".join(select.xpath('//div[@data-testid="item-description-tone-of-voice"]//text()').getall()))
         care_data = getall('//h2[contains(.,"Care")]/ancestor::div[contains(@class,"MuiAccordion-root")]//p/text()')
@@ -50,14 +51,15 @@ class ProductParser:
 
         material = " ".join([t for t in care_data if "%" in t or "cotton" in t.lower()])
         care = " ".join([t for t in care_data if t not in material])
-
         instock = "Add" in (get('//button[contains(@data-testid,"add-to-bag")]/text()') or "")
         rating = re.search(r'([\d\.]+)', select.xpath('//figure[@role="img"]/@aria-label').get() or "")
         review = re.search(r'\d+', select.xpath('//span[@data-testid="rating-style-badge"]/text()').get() or "")
-
-        price = lambda v: float(re.search(r"([\d\.]+)", v).group(1)) if v and re.search(r"([\d\.]+)", v) else None
-        current_price, original_price = price(price_now), price(price_was)
-        promo_price = current_price if original_price and current_price and original_price != current_price else None
+   
+        price = lambda v: float(v) if v else None
+        current_price = price(price_now)
+        original_price = price(price_was)
+        has_discount = bool(original_price and current_price and original_price != current_price)
+        promo_price = current_price if has_discount else None
 
         item = {
             "unique_id": unique_id,
