@@ -1,108 +1,151 @@
 import requests
+from parsel import Selector
+from urllib.parse import urljoin
+import datetime
 import json
 import time
 
-# ================================================
-# categories crawler - test
-# ================================================
+##############################################################
+# SECTION 1 — CRAWLER
+##############################################################
 
-url = "https://arfigyelo.gvh.hu/api/categories"
-base = "https://arfigyelo.gvh.hu/k/"
-result = []
+BASE_URL = "https://sa.aqar.fm/"
+OUTPUT_FILE = "aqar_all_urls.txt"
 
-r = requests.get(url, timeout=15)
-data = r.json()
-
-categories = data.get("categories", [])
-for cat in categories:
-    node = {
-        "id": cat.get("id"),
-        "name": cat.get("name"),
-        "path": cat.get("path"),
-        "url": base + cat.get("path", ""),
-        "subcategories": []
-    }
-    
-    children = cat.get("categoryNodes", [])
-    for sub in children:
-        node["subcategories"].append({
-            "id": sub.get("id"),
-            "name": sub.get("name"),
-            "path": sub.get("path"),
-            "url": base + sub.get("path", "")
-        })
-    
-    result.append(node)
+HEADERS = {
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36',
+}
 
 
-# ===============================================
-# crawler test
-# ===============================================
+def save_url(url):
+    with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
+        f.write(url + "\n")
 
-with open("categories.json", "r", encoding="utf-8") as f:
-    categories = json.load(f)
+    resp = requests.get(BASE_URL, headers=HEADERS, timeout=10)
+    sel = Selector(resp.text)
 
-for cat in categories:
-    cat_name = cat.get("name")
-    subcats = cat.get("subcategories", [])
+    categories = sel.xpath('//div[contains(@class, "_list__")]/a')
 
-    for sub in subcats:
-        sub_id = sub.get("id")
-        sub_name = sub.get("name")
-        
-        offset = 0
+    for cat in categories:
+        cat_name = cat.xpath('string(.)').get().strip()
+        cat_href = cat.xpath('./@href').get()
+        cat_base_url = urljoin(BASE_URL, cat_href).rstrip("/")
+        save_url(cat_base_url)
+
+        page_num = 1
+
         while True:
-            url = f"https://arfigyelo.gvh.hu/api/products-by-category/{sub_id}?limit=24&offset={offset}&order=unitAmount_asc"
-            
-            r = requests.get(url, timeout=20)
-            if r.status_code != 200:
-                break
-                
-            data = r.json()
-            products = data.get("products", [])
-            total_count = data.get("count", 0)
+            page_url = f"{cat_base_url}/{page_num}"
+            print(f"Scraping Page {page_num}: {page_url}")
 
-            if not products:
+            try:
+                page_resp = requests.get(page_url, headers=HEADERS, timeout=10)
+            except:
                 break
 
-            for p in products:
-                out = {
-                    "product_id": p.get("id"),
-                    "name": p.get("name"),
-                    "category_path": p.get("categoryPath"),
-                    "category": cat_name,
-                    "subcategory": sub_name,
-                    "image": p.get("imageUrl"),
-                    "unit": p.get("unit"),
-                    "packaging": p.get("packaging"),
-                    "min_price": p.get("minUnitPrice"),
-                    "chain_store_prices": [],
-                }
+            page_sel = Selector(page_resp.text)
 
-                for store in p.get("pricesOfChainStores", []):
-                    store_name = store.get("name")
-                    for price_info in store.get("prices", []):
-                        out["chain_store_prices"].append({
-                            "store": store_name,
-                            "amount": price_info.get("amount"),
-                            "unit_amount": price_info.get("unitAmount"),
-                            "type": price_info.get("type"),
-                            "same_everywhere": price_info.get("sameAmountEverywhere"),
-                        })
+            product_links = page_sel.xpath(
+                '//div[contains(@class, "_list__")]/div/a/@href'
+            ).getall()
 
-            offset += 24
-            if offset >= total_count:
+            if not product_links:
+                print("No listings found → stop pagination")
                 break
 
-            time.sleep(0.3)
+            for link in product_links:
+                full_url = urljoin(BASE_URL, link)
+                save_url(full_url)
 
-"""
-FINDINGS:
-1. Category and subcategory URLs are obtained through the API, not available in HTML.
+            page_num += 1
+            time.sleep(0.5)
 
-2. The crawler retrieves product details via API by parsing the category ID.
 
-3. Product URLs are generated using the category path and product ID.
+##############################################################
+# SECTION 2 — PARSER
+##############################################################
 
-4. Parser does not need, all visible data extracts through crawler.
-"""
+def parse_property(url):
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=10)
+        sel = Selector(resp.text)
+    except Exception as e:
+        return {"url": url, "error": f"Request failed: {e}"}
+
+    data = {}
+
+    # ID fields
+    data["id"] = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][span[contains(text(), "Ad number")]]'
+        '/following-sibling::div//span/text()'
+    ).get()
+
+    data["reference_number"] = data["id"]
+    data["url"] = url
+    data["category"] = sel.xpath(
+        '//div[contains(@class, "_auction__")]//h2/text()'
+    ).get()
+
+    data["category_url"] = url
+    data["title"] = data["category"]
+
+    data["description"] = sel.xpath(
+        '//div[contains(@class, "_root__")]//p/text()'
+    ).get()
+
+    data["location"] = sel.xpath(
+        '//div[contains(@class, "_approvedPreciseLocation__")]//span/text()'
+    ).get()
+
+    data["price"] = sel.xpath(
+        '//h2[contains(@class, "_price__")]//span/text()'
+    ).get()
+    data["currency"] = "SAR"
+    data["price_per"] = sel.xpath(
+        '//h2[contains(@class, "_price__")]/font/text()'
+    ).get()
+    data["bedrooms"] = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][div[contains(text(), "bedrooms")]]'
+        '/following-sibling::div/text()'
+    ).get()
+
+    data["bathrooms"] = None
+    data["scraped_ts"] = datetime.datetime.now().isoformat()
+    amenities = sel.xpath('//div[contains(@class, "_boolean__")]/font/text()').getall()
+    data["amenities"] = ", ".join(amenities) if amenities else None
+
+    area = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][div[contains(text(), "Area")]]'
+        '/following-sibling::div/text()'
+    ).get()
+
+    details = []
+    if area:
+        details.append(f"Area: {area}")
+
+    data["details"] = " | ".join(details) if details else None
+    data["agent_name"] = sel.xpath(
+        '//h2[contains(@class, "_name__")]/text()'
+    ).get()
+    data["number_of_photos"] = None
+    data["phone_number"] = None
+
+    data["date"] = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][span[contains(text(), "Date Added")]]/span/text()'
+    ).get()
+    data["property_type"] = data["category"]
+    data["published_at"] = data["date"]
+
+    return data
+
+
+##############################################################
+# FINDINGS 
+##############################################################
+
+
+
+
+
