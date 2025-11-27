@@ -1,101 +1,151 @@
 import requests
 from parsel import Selector
-import datetime
 from urllib.parse import urljoin
+import datetime
+import json
+import time
 
-headers = {
+##############################################################
+# SECTION 1 — CRAWLER
+##############################################################
+
+BASE_URL = "https://sa.aqar.fm/"
+OUTPUT_FILE = "aqar_all_urls.txt"
+
+HEADERS = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9',
-    'cache-control': 'max-age=0',
-    'priority': 'u=0, i',
-    'sec-ch-ua': '"Chromium";v="142", "Google Chrome";v="142", "Not_A Brand";v="99"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Linux"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36',
 }
 
-base_url = "https://sa.aqar.fm/"
-output_file = "aqar_urls.txt"
-property_output_file = "aqar_properties.json"
 
-# =========== crawer ====================
-all_urls = []
-all_properties = []
-response = requests.get(base_url, headers=headers, timeout=10)
-sel = Selector(response.text)
+def save_url(url):
+    with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
+        f.write(url + "\n")
 
-categories = sel.xpath('//div[contains(@class, "_list__")]/a')
+    resp = requests.get(BASE_URL, headers=HEADERS, timeout=10)
+    sel = Selector(resp.text)
 
-for cat in categories:
-    category_name = cat.xpath('string(.)').get().strip()
-    category_href = cat.xpath('./@href').get()
-    category_url = urljoin(base_url, category_href)
+    categories = sel.xpath('//div[contains(@class, "_list__")]/a')
 
-    current_page_url = category_url
-    page_count = 0
-    category_urls = []
+    for cat in categories:
+        cat_name = cat.xpath('string(.)').get().strip()
+        cat_href = cat.xpath('./@href').get()
+        cat_base_url = urljoin(BASE_URL, cat_href).rstrip("/")
+        save_url(cat_base_url)
 
-    while True:
-        page_count += 1
+        page_num = 1
 
-        try:
-            page_response = requests.get(current_page_url, headers=headers, timeout=10)
-            page_sel = Selector(page_response.text)
+        while True:
+            page_url = f"{cat_base_url}/{page_num}"
+            print(f"Scraping Page {page_num}: {page_url}")
 
-            listing_links = page_sel.xpath('//div[contains(@class, "_list__")]/div/a/@href').getall()
-            
-            for link in listing_links:
-                full_link = urljoin(base_url, link)
-                if full_link not in all_urls:
-                    category_urls.append(full_link)
-            next_page = page_sel.xpath('//div[contains(@class, "_pagination__")]//a[not(contains(@class,"_active__"))]/@href').get()
-
-            if not next_page:
+            try:
+                page_resp = requests.get(page_url, headers=HEADERS, timeout=10)
+            except:
                 break
-            
-            current_page_url = urljoin(base_url, next_page)
 
-        except Exception as e:
-            break
+            page_sel = Selector(page_resp.text)
 
-# ====================== parser ====================================
-for i, url in enumerate(all_urls, 1):
-    response = requests.get(url, headers=headers, timeout=10)
-    response.raise_for_status()
-    
-    sel = Selector(response.text)
-    
-    property_data = {}
-    
-    property_data['id'] = sel.xpath('//div[contains(@class, "_item___4Sv8")][span[contains(text(), "Ad number")]]/following-sibling::div//span/text()').get()
-    property_data['reference_number'] = property_data['id']
-    property_data['url'] = url
-    property_data['category'] = sel.xpath('//div[contains(@class, "_auction__")]//h2/text()').get()
-    property_data['category_url'] = url
-    property_data['title'] = property_data['category']
-    property_data['description'] = sel.xpath('//div[contains(@class, "_root__")]//p/text()').get()
-    property_data['location'] = sel.xpath('//div[contains(@class, "_approvedPreciseLocation__")]//span/text()').get()
-    property_data['price'] = sel.xpath('//h2[contains(@class, "_price__")]//span/text()').get()
-    property_data['currency'] = 'SAR'
-    property_data['bedrooms'] = sel.xpath('//div[contains(@class, "_item___4Sv8")][div[contains(text(), "bedrooms")]]/following-sibling::div/text()').get()
-    property_data['bathrooms'] = None
-    property_data['scraped_ts'] = datetime.datetime.now().isoformat()
-    
-    amenities = sel.xpath('//div[contains(@class, "_boolean__waHdB")]//font/text()').getall()
-    property_data['amenities'] = ', '.join(amenities) if amenities else None
-    property_data['agent_name'] = sel.xpath('//h2[contains(@class, "_name__")]/text()').get()
-    property_data['number_of_photos'] = ""
-    property_data['phone_number'] = ""   
-    date_added = sel.xpath('//div[contains(@class, "_item___4Sv8")][span[contains(text(), "Date Added")]]/span/text()').get()
-    property_data['property_type'] = property_data['category']
-    property_data['published_at'] = date_added
-    
-#  ================== findings ====================================
-"""
-some of the fieds not availabe in html
-"""
+            product_links = page_sel.xpath(
+                '//div[contains(@class, "_list__")]/div/a/@href'
+            ).getall()
+
+            if not product_links:
+                print("No listings found → stop pagination")
+                break
+
+            for link in product_links:
+                full_url = urljoin(BASE_URL, link)
+                save_url(full_url)
+
+            page_num += 1
+            time.sleep(0.5)
+
+
+##############################################################
+# SECTION 2 — PARSER
+##############################################################
+
+def parse_property(url):
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=10)
+        sel = Selector(resp.text)
+    except Exception as e:
+        return {"url": url, "error": f"Request failed: {e}"}
+
+    data = {}
+
+    # ID fields
+    data["id"] = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][span[contains(text(), "Ad number")]]'
+        '/following-sibling::div//span/text()'
+    ).get()
+
+    data["reference_number"] = data["id"]
+    data["url"] = url
+    data["category"] = sel.xpath(
+        '//div[contains(@class, "_auction__")]//h2/text()'
+    ).get()
+
+    data["category_url"] = url
+    data["title"] = data["category"]
+
+    data["description"] = sel.xpath(
+        '//div[contains(@class, "_root__")]//p/text()'
+    ).get()
+
+    data["location"] = sel.xpath(
+        '//div[contains(@class, "_approvedPreciseLocation__")]//span/text()'
+    ).get()
+
+    data["price"] = sel.xpath(
+        '//h2[contains(@class, "_price__")]//span/text()'
+    ).get()
+    data["currency"] = "SAR"
+    data["price_per"] = sel.xpath(
+        '//h2[contains(@class, "_price__")]/font/text()'
+    ).get()
+    data["bedrooms"] = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][div[contains(text(), "bedrooms")]]'
+        '/following-sibling::div/text()'
+    ).get()
+
+    data["bathrooms"] = None
+    data["scraped_ts"] = datetime.datetime.now().isoformat()
+    amenities = sel.xpath('//div[contains(@class, "_boolean__")]/font/text()').getall()
+    data["amenities"] = ", ".join(amenities) if amenities else None
+
+    area = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][div[contains(text(), "Area")]]'
+        '/following-sibling::div/text()'
+    ).get()
+
+    details = []
+    if area:
+        details.append(f"Area: {area}")
+
+    data["details"] = " | ".join(details) if details else None
+    data["agent_name"] = sel.xpath(
+        '//h2[contains(@class, "_name__")]/text()'
+    ).get()
+    data["number_of_photos"] = None
+    data["phone_number"] = None
+
+    data["date"] = sel.xpath(
+        '//div[contains(@class, "_item___4Sv8")][span[contains(text(), "Date Added")]]/span/text()'
+    ).get()
+    data["property_type"] = data["category"]
+    data["published_at"] = data["date"]
+
+    return data
+
+
+##############################################################
+# FINDINGS 
+##############################################################
+
+
+
+
+
