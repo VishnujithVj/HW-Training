@@ -11,7 +11,7 @@ HEADERS = {
     "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
 }
 
-#------------------------------CATEGORY_CRAWLER & CRAWLER---------------------#
+#------------------------------CATEGORY_CRAWLER---------------------#
 
 """API: Returns category → subcategory hierarchy"""
 category_tree_api = "https://api.aldi.co.uk/v2/product-category-tree?serviceType=walk-in&servicePoint=C092"
@@ -45,7 +45,7 @@ listing_json = listing_response.json()
 # Sample constructed product URL:
 # https://www.aldi.co.uk/product/british-chicken-000000000000384321
 
-#--------------------PRODUCT DETAIL ------------------------------#
+#--------------------CRAWLER ------------------------------#
 
 """PDP API for complete product data"""
 sku = "000000000000384321"
@@ -54,6 +54,8 @@ pdp_api = f"https://api.aldi.co.uk/v2/products/{sku}?servicePoint=C092&serviceTy
 pdp_response = requests.get(pdp_api, headers=HEADERS)
 pdp_json = pdp_response.json()
 
+
+#--------------------PARSER AND PRODUCT DETAIL ------------------------------#
 """DATA FIELDS"""
 product_id = pdp_json.get("data", {}).get("sku")
 product_name = pdp_json.get("data", {}).get("name")
