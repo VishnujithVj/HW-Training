@@ -195,11 +195,8 @@ class Parser:
                             }
                             
                             try:
-                                self.mongo[MONGO_COLLECTION_VARIANTS].insert_one(
-                                    {"variant_sku": variant_sku},
-                                    {"$set": variant_doc},
-                                    upsert=True
-                                )
+                                self.mongo[MONGO_COLLECTION_VARIANTS].insert_one(variant_doc)
+
                                 logging.info(f"Stored variant: {variant_value} (SKU: {variant_sku})")
                             except Exception as e:
                                 logging.error(f"Failed to insert variant: {e}")
