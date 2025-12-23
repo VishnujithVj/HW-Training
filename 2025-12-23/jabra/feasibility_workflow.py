@@ -124,5 +124,6 @@ def crawl_all_products():
 # ==============================
 
 """
-1.
+1. product count not showing in site  count calculated  manually through backend.
+2. pagination is infinate scrolling handle through offset
    """
