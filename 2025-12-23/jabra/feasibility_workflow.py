@@ -3,6 +3,10 @@ from parsel import Selector
 from urllib.parse import urljoin
 import json
 
+# ===================================
+# CATEGORY TEST
+# ===================================
+
 URL = "https://www.jabra.com/"
 
 HEADERS = {
@@ -21,20 +25,19 @@ HEADERS = {
     ),
 }
 
-session = requests.Session()
-response = session.get(URL, headers=HEADERS, impersonate="chrome", timeout=30)
+response = requests.get(
+    URL,
+    headers=HEADERS,
+    impersonate="chrome",
+    timeout=30,
+)
 response.raise_for_status()
 
 selector = Selector(text=response.text)
-# ===================================
-# category_test
-# ===================================
 
-links = selector.xpath(
-    '//ul[@aria-label="Our products"]//a'
-)
+links = selector.xpath('//ul[@aria-label="Our products"]//a')
 
-results = []
+categories = []
 
 for a in links:
     href = a.xpath('./@href').get()
@@ -43,15 +46,15 @@ for a in links:
     if not href or not name:
         continue
 
-    results.append({
+    categories.append({
         "category": name,
         "slug": href.rstrip("/").split("/")[-1],
         "href": urljoin(URL, href),
     })
 
-# =================================
-# crawler_test.py
-# =================================
+# ===================================
+# CRAWLER TEST (SFCC API)
+# ===================================
 
 BASE_URL = "https://sfcc-prod-api.jabra.com/s/jabra-amer/dw/shop/v24_1/product_search"
 
@@ -67,8 +70,7 @@ PARAMS = {
     "start": 0,
 }
 
-
-JABRA_PRODUCT_URL_TEMPLATE = "https://www.jabra.com/business/buy?sku={sku}"
+PRODUCT_URL= "https://www.jabra.com/business/buy?sku={sku}"
 
 
 def crawl_all_products():
@@ -76,14 +78,12 @@ def crawl_all_products():
     start = 0
     total = None
 
-    session = requests.Session()
-    session.headers.update(HEADERS)
-
     while True:
         PARAMS["start"] = start
 
-        response = session.get(
+        response = requests.get(
             BASE_URL,
+            headers=HEADERS,
             params=PARAMS,
             impersonate="chrome",
             timeout=30,
@@ -107,10 +107,11 @@ def crawl_all_products():
             all_products.append({
                 "product_id": product_id,
                 "product_name": hit.get("product_name"),
+                "brand": "Jabra",
                 "price": hit.get("price"),
                 "price_per_unit": hit.get("price_per_unit"),
                 "currency": hit.get("currency"),
-                "product_url": JABRA_PRODUCT_URL_TEMPLATE.format(sku=product_id),
+                "product_url": PRODUCT_URL.format(sku=product_id),
             })
 
         start += PARAMS["count"]
@@ -119,11 +120,13 @@ def crawl_all_products():
             break
 
     return all_products
-# ==============================
-# findings 
-# ==============================
+
+
+# ===================================
+# FINDINGS
+# ===================================
 
 """
-1. product count not showing in site  count calculated  manually through backend.
-2. pagination is infinate scrolling handle through offset
-   """
+1. Product count not shown on the site count derived manually via backend API.
+2. Pagination is infinite scrolling handled using offset in API.
+"""
