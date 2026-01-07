@@ -35,8 +35,8 @@ FILE_NAME = f"jabra_{iteration}"
 # ==========================
 # MONGO DB AND COLLECTIONS
 # ==========================
-MONGO_URI = "mongodb://localhost:27017"
-MONGO_DB = f"jabra_db2"
+MONGO_URI = "mongodb://mongotraining:a4892e52373844dc4862e6c468d11b6df7938e16@167.172.244.21:27017/?authSource=admin"
+MONGO_DB = f"jabra_db_sample"
 
 MONGO_COLLECTION_PRODUCT_IDS = f"{PROJECT_NAME}_product_ids"
 MONGO_COLLECTION_GROUP_IDS = f"{PROJECT_NAME}_group_ids"
