@@ -1,7 +1,7 @@
 from datetime import datetime
 import calendar
 import logging
-import pytz
+# import pytz
 
 logging.basicConfig(
     level=logging.INFO,
@@ -21,16 +21,16 @@ BASE_URL = "https://www.jabra.com/"
 # ==========================
 # DATE INFORMATION
 # ==========================
-datetime_obj = datetime.now(pytz.timezone("Asia/Kolkata"))
+# datetime_obj = datetime.now(pytz.timezone("Asia/Kolkata"))
 
-iteration = datetime_obj.strftime("%Y_%m_%d")
-YEAR = datetime_obj.strftime("%Y")
-MONTH = datetime_obj.strftime("%m")
-DAY = datetime_obj.strftime("%d")
-MONTH_VALUE = calendar.month_abbr[int(MONTH.lstrip("0"))]
-WEEK = (int(DAY) - 1) // 7 + 1
+# iteration = datetime_obj.strftime("%Y_%m_%d")
+# YEAR = datetime_obj.strftime("%Y")
+# MONTH = datetime_obj.strftime("%m")
+# DAY = datetime_obj.strftime("%d")
+# MONTH_VALUE = calendar.month_abbr[int(MONTH.lstrip("0"))]
+# WEEK = (int(DAY) - 1) // 7 + 1
 
-FILE_NAME = f"jabra_{iteration}"
+FILE_NAME = f"jabra_sample"
 
 # ==========================
 # MONGO DB AND COLLECTIONS
