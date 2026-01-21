@@ -1,0 +1,24 @@
+Overview
+Today's session focused on practical application of new AI tools for web scraping, testing their capabilities on two distinct platforms: Nawy (property) and BigBasket (e-commerce). 
+
+AI Tools for Property Site Scraping
+
+    Implemented new AI tools for sample data extraction from Nawy property platform
+    Tested AI capabilities for real estate data extraction and structuring
+    Evaluated accuracy of AI-powered property listing parsing
+    Compared results with traditional scraping methods
+
+AI Tools for E-commerce Site Scraping
+
+    Applied AI tools to BigBasket e-commerce platform
+    Tested AI capabilities for product data extraction and categorization
+    Evaluated performance on complex e-commerce structures
+    Assessed AI tool adaptability to different website types
+
+Tasks Completion Status
+1. Nawy Property Site AI Scraping
+Status: COMPLETED & EVALUATED
+
+2. BigBasket E-commerce AI Scraping
+Status: COMPLETED & EVALUATED
+
